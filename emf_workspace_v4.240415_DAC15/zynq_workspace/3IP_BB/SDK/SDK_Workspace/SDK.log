@@ -1,0 +1,685 @@
+08:42:15.421 INFO  - Processing command line option -hwspec /home/ga46sam/Lab_Zynq/FROM_server/Project1_Optimized/SDK/SDK_Export/hw/system.xml. 
+08:50:46.106 INFO  - FPGA configured successfully with bitstream "/home/ga46sam/Lab_Zynq/FROM_server/Project1_Optimized/SDK/SDK_Workspace/Project1_Optimized_hw_platform/system.bit" 
+08:50:57.835 INFO  - Processor reset is completed for ps7_cortexa9_0 
+08:50:57.935 INFO  - PS initialization will be done as it is not done before. 
+08:50:57.936 INFO  - Running PS initialization.... 
+08:50:58.063 INFO  - ps7_init is completed. 
+08:50:58.163 INFO  - ps7_post_config is completed. 
+08:50:58.263 INFO  - PS Initialization is complete. 
+08:54:08.268 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:15:39.007 INFO  - FPGA configured successfully with bitstream "/home/ga46sam/Lab_Zynq/FROM_server/Project1_Optimized/SDK/SDK_Workspace/Project1_Optimized_hw_platform/system.bit" 
+12:15:53.919 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:15:54.019 INFO  - PS initialization will be done as it is not done before. 
+12:15:54.020 INFO  - Running PS initialization.... 
+12:15:54.145 INFO  - ps7_init is completed. 
+12:15:54.245 INFO  - ps7_post_config is completed. 
+12:15:54.346 INFO  - PS Initialization is complete. 
+12:19:55.831 INFO  - FPGA configured successfully with bitstream "/home/ga46sam/Lab_Zynq/FROM_server/Project1_Optimized/SDK/SDK_Workspace/Project1_Optimized_hw_platform/system.bit" 
+12:20:00.453 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:20:00.553 INFO  - PS initialization will be done as it is not done before. 
+12:20:00.554 INFO  - Running PS initialization.... 
+12:20:00.678 INFO  - ps7_init is completed. 
+12:20:00.778 INFO  - ps7_post_config is completed. 
+12:20:00.781 INFO  - PS Initialization is complete. 
+12:28:45.001 INFO  - FPGA configured successfully with bitstream "/home/ga46sam/Lab_Zynq/FROM_server/Project1_Optimized/SDK/SDK_Workspace/Project1_Optimized_hw_platform/system.bit" 
+12:28:52.335 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:28:52.435 INFO  - PS initialization will be done as it is not done before. 
+12:28:52.436 INFO  - Running PS initialization.... 
+12:28:52.565 INFO  - ps7_init is completed. 
+12:28:52.665 INFO  - ps7_post_config is completed. 
+12:28:52.765 INFO  - PS Initialization is complete. 
+12:30:35.369 INFO  - FPGA configured successfully with bitstream "/home/ga46sam/Lab_Zynq/FROM_server/Project1_Optimized/SDK/SDK_Workspace/Project1_Optimized_hw_platform/system.bit" 
+12:30:43.535 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:30:43.635 INFO  - PS initialization will be done as it is not done before. 
+12:30:43.636 INFO  - Running PS initialization.... 
+12:30:43.762 INFO  - ps7_init is completed. 
+12:30:43.862 INFO  - ps7_post_config is completed. 
+12:30:43.963 INFO  - PS Initialization is complete. 
+12:32:29.400 INFO  - FPGA configured successfully with bitstream "/home/ga46sam/Lab_Zynq/FROM_server/Project1_Optimized/SDK/SDK_Workspace/Project1_Optimized_hw_platform/system.bit" 
+12:32:39.712 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:32:39.812 INFO  - PS initialization will be done as it is not done before. 
+12:32:39.812 INFO  - Running PS initialization.... 
+12:32:39.938 INFO  - ps7_init is completed. 
+12:32:39.944 INFO  - ps7_post_config is completed. 
+12:32:40.044 INFO  - PS Initialization is complete. 
+12:33:19.933 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+12:33:19.936 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:11:45.277 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/Project1_Optimized/SDK/SDK_Workspace/Project1_Optimized_hw_platform/system.bit" 
+17:35:56.678 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+17:35:56.691 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+17:38:22.791 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+17:40:30.600 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+17:40:48.053 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:40:48.153 INFO  - PS initialization will be done as it is not done before. 
+17:40:48.153 INFO  - Running PS initialization.... 
+17:40:48.281 INFO  - ps7_init is completed. 
+17:40:48.381 INFO  - ps7_post_config is completed. 
+17:40:48.481 INFO  - PS Initialization is complete. 
+17:58:03.087 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:44:11.661 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+08:44:14.433 INFO  - The hardware specification for project '3IP_hw_platform' is different from /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+08:44:14.865 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml into /3IP_hw_platform/system.xml. 
+08:44:14.992 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.bit into /3IP_hw_platform/system.bit. 
+08:44:15.381 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.c into /3IP_hw_platform/ps7_init.c. 
+08:44:16.712 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.h into /3IP_hw_platform/ps7_init.h. 
+08:44:16.764 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.html into /3IP_hw_platform/ps7_init.html. 
+08:44:16.778 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.tcl into /3IP_hw_platform/ps7_init.tcl. 
+08:44:17.599 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+08:44:20.001 INFO  - Updating hardware inferred compiler options for software_prj. 
+08:44:20.004 INFO  - Clearing existing target manager status. 
+08:46:45.621 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+08:46:45.622 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+08:46:49.143 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:47:16.873 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+08:48:59.558 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+08:49:09.166 INFO  - Processor reset is completed for ps7_cortexa9_0 
+08:49:09.267 INFO  - PS initialization will be done as it is not done before. 
+08:49:09.268 INFO  - Running PS initialization.... 
+08:49:09.401 INFO  - ps7_init is completed. 
+08:49:09.501 INFO  - ps7_post_config is completed. 
+08:49:09.601 INFO  - PS Initialization is complete. 
+08:56:22.298 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+08:58:24.834 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+08:58:28.342 INFO  - Processor reset is completed for ps7_cortexa9_0 
+08:58:28.442 INFO  - PS initialization will be done as it is not done before. 
+08:58:28.443 INFO  - Running PS initialization.... 
+08:58:28.571 INFO  - ps7_init is completed. 
+08:58:28.671 INFO  - ps7_post_config is completed. 
+08:58:28.771 INFO  - PS Initialization is complete. 
+08:59:00.024 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+08:59:12.255 INFO  - Processor reset is completed for ps7_cortexa9_0 
+08:59:12.355 INFO  - PS initialization will be done as it is not done before. 
+08:59:12.356 INFO  - Running PS initialization.... 
+08:59:12.489 INFO  - ps7_init is completed. 
+08:59:12.589 INFO  - ps7_post_config is completed. 
+08:59:12.689 INFO  - PS Initialization is complete. 
+09:00:52.506 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+09:01:08.499 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+09:01:12.264 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:01:12.365 INFO  - PS initialization will be done as it is not done before. 
+09:01:12.366 INFO  - Running PS initialization.... 
+09:01:12.494 INFO  - ps7_init is completed. 
+09:01:12.594 INFO  - ps7_post_config is completed. 
+09:01:12.694 INFO  - PS Initialization is complete. 
+09:02:35.943 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:02:35.945 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+09:04:03.086 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+09:04:07.217 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:04:07.317 INFO  - PS initialization will be done as it is not done before. 
+09:04:07.318 INFO  - Running PS initialization.... 
+09:04:07.447 INFO  - ps7_init is completed. 
+09:04:07.547 INFO  - ps7_post_config is completed. 
+09:04:07.647 INFO  - PS Initialization is complete. 
+09:09:44.930 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+09:09:44.931 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:12:40.963 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+11:12:55.990 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+11:12:55.992 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+11:13:25.936 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+11:15:22.041 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+11:57:38.121 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+11:58:01.838 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:58:01.938 INFO  - PS initialization will be done as it is not done before. 
+11:58:01.939 INFO  - Running PS initialization.... 
+11:58:02.066 INFO  - ps7_init is completed. 
+11:58:02.166 INFO  - ps7_post_config is completed. 
+11:58:02.266 INFO  - PS Initialization is complete. 
+12:02:28.289 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+12:02:54.027 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:02:54.030 INFO  - PS initialization will be done as it is not done before. 
+12:02:54.031 INFO  - Running PS initialization.... 
+12:02:54.156 INFO  - ps7_init is completed. 
+12:02:54.264 INFO  - ps7_post_config is completed. 
+12:02:54.359 INFO  - PS Initialization is complete. 
+12:05:44.019 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:52:20.221 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+12:52:22.230 INFO  - The hardware specification for project '3IP_hw_platform' is different from /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+12:52:22.789 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml into /3IP_hw_platform/system.xml. 
+12:52:22.924 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.bit into /3IP_hw_platform/system.bit. 
+12:52:22.959 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.c into /3IP_hw_platform/ps7_init.c. 
+12:52:22.972 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.h into /3IP_hw_platform/ps7_init.h. 
+12:52:23.004 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.html into /3IP_hw_platform/ps7_init.html. 
+12:52:23.026 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.tcl into /3IP_hw_platform/ps7_init.tcl. 
+12:52:23.577 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:52:25.690 INFO  - Updating hardware inferred compiler options for software_prj. 
+12:52:25.702 INFO  - Clearing existing target manager status. 
+12:52:33.965 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+12:52:33.965 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+12:52:38.368 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:52:53.193 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+12:54:19.715 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+12:54:27.823 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:54:27.923 INFO  - PS initialization will be done as it is not done before. 
+12:54:27.924 INFO  - Running PS initialization.... 
+12:54:28.047 INFO  - ps7_init is completed. 
+12:54:28.148 INFO  - ps7_post_config is completed. 
+12:54:28.248 INFO  - PS Initialization is complete. 
+12:59:18.088 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+12:59:21.531 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:59:21.533 INFO  - PS initialization will be done as it is not done before. 
+12:59:21.533 INFO  - Running PS initialization.... 
+12:59:21.659 INFO  - ps7_init is completed. 
+12:59:21.759 INFO  - ps7_post_config is completed. 
+12:59:21.859 INFO  - PS Initialization is complete. 
+13:00:19.591 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:36:41.918 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+14:36:43.638 INFO  - The hardware specification for project '3IP_hw_platform' is different from /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+14:36:44.032 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml into /3IP_hw_platform/system.xml. 
+14:36:44.123 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.bit into /3IP_hw_platform/system.bit. 
+14:36:44.172 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.c into /3IP_hw_platform/ps7_init.c. 
+14:36:44.182 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.h into /3IP_hw_platform/ps7_init.h. 
+14:36:44.225 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.html into /3IP_hw_platform/ps7_init.html. 
+14:36:44.240 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.tcl into /3IP_hw_platform/ps7_init.tcl. 
+14:36:44.771 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:36:47.154 INFO  - Updating hardware inferred compiler options for software_prj. 
+14:36:47.167 INFO  - Clearing existing target manager status. 
+14:36:55.833 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+14:36:55.833 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+14:36:59.816 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:38:26.869 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+14:53:45.379 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:53:54.887 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:53:54.987 INFO  - PS initialization will be done as it is not done before. 
+14:53:54.988 INFO  - Running PS initialization.... 
+14:53:55.118 INFO  - ps7_init is completed. 
+14:53:55.218 INFO  - ps7_post_config is completed. 
+14:53:55.320 INFO  - PS Initialization is complete. 
+14:54:58.918 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:55:02.105 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:55:02.205 INFO  - PS initialization will be done as it is not done before. 
+14:55:02.206 INFO  - Running PS initialization.... 
+14:55:02.331 INFO  - ps7_init is completed. 
+14:55:02.431 INFO  - ps7_post_config is completed. 
+14:55:02.531 INFO  - PS Initialization is complete. 
+14:56:12.698 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+14:56:12.703 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+14:57:50.594 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:57:54.528 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:57:54.628 INFO  - PS initialization will be done as it is not done before. 
+14:57:54.629 INFO  - Running PS initialization.... 
+14:57:54.754 INFO  - ps7_init is completed. 
+14:57:54.854 INFO  - ps7_post_config is completed. 
+14:57:54.954 INFO  - PS Initialization is complete. 
+14:58:20.367 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:59:23.670 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+15:59:25.926 INFO  - The hardware specification for project '3IP_hw_platform' is different from /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+15:59:26.621 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml into /3IP_hw_platform/system.xml. 
+15:59:27.174 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.bit into /3IP_hw_platform/system.bit. 
+15:59:27.961 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.c into /3IP_hw_platform/ps7_init.c. 
+15:59:27.978 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.h into /3IP_hw_platform/ps7_init.h. 
+15:59:28.021 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.html into /3IP_hw_platform/ps7_init.html. 
+15:59:28.040 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/ps7_init.tcl into /3IP_hw_platform/ps7_init.tcl. 
+15:59:28.465 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:59:31.388 INFO  - Updating hardware inferred compiler options for software_prj. 
+15:59:31.394 INFO  - Clearing existing target manager status. 
+15:59:40.330 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+15:59:40.334 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+15:59:44.133 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:00:00.671 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+16:02:32.809 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:02:42.282 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:02:42.382 INFO  - PS initialization will be done as it is not done before. 
+16:02:42.383 INFO  - Running PS initialization.... 
+16:02:42.527 INFO  - ps7_init is completed. 
+16:02:42.627 INFO  - ps7_post_config is completed. 
+16:02:42.727 INFO  - PS Initialization is complete. 
+16:10:00.959 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+16:10:00.960 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+16:10:05.010 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:10:39.223 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+16:12:03.927 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:12:22.798 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:12:22.898 INFO  - PS initialization will be done as it is not done before. 
+16:12:22.899 INFO  - Running PS initialization.... 
+16:12:23.028 INFO  - ps7_init is completed. 
+16:12:23.128 INFO  - ps7_post_config is completed. 
+16:12:23.228 INFO  - PS Initialization is complete. 
+16:12:54.240 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:25:43.206 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+17:25:58.893 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:25:58.993 INFO  - PS initialization will be done as it is not done before. 
+17:25:58.994 INFO  - Running PS initialization.... 
+17:25:59.128 INFO  - ps7_init is completed. 
+17:25:59.228 INFO  - ps7_post_config is completed. 
+17:25:59.328 INFO  - PS Initialization is complete. 
+17:26:48.003 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+17:26:48.007 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:17:51.749 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+09:18:12.271 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+09:18:12.272 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+09:18:31.807 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Export/hw/system.xml. 
+09:24:55.103 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+09:26:16.258 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:26:16.358 INFO  - PS initialization will be done as it is not done before. 
+09:26:16.359 INFO  - Running PS initialization.... 
+09:26:16.486 INFO  - ps7_init is completed. 
+09:26:16.586 INFO  - ps7_post_config is completed. 
+09:26:16.686 INFO  - PS Initialization is complete. 
+09:29:41.005 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+09:29:41.008 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:16:43.679 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/smartxplorer/run8/system.bit" 
+14:16:55.556 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:16:55.656 INFO  - PS initialization will be done as it is not done before. 
+14:16:55.657 INFO  - Running PS initialization.... 
+14:16:55.783 INFO  - ps7_init is completed. 
+14:16:55.883 INFO  - ps7_post_config is completed. 
+14:16:55.983 INFO  - PS Initialization is complete. 
+14:57:20.009 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:54:28.754 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/smartxplorer/run8/system.bit" 
+15:54:41.652 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:54:41.752 INFO  - PS initialization will be done as it is not done before. 
+15:54:41.752 INFO  - Running PS initialization.... 
+15:54:41.880 INFO  - ps7_init is completed. 
+15:54:41.980 INFO  - ps7_post_config is completed. 
+15:54:42.080 INFO  - PS Initialization is complete. 
+16:06:11.052 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:06:30.387 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:06:30.487 INFO  - PS initialization will be done as it is not done before. 
+16:06:30.488 INFO  - Running PS initialization.... 
+16:06:30.613 INFO  - ps7_init is completed. 
+16:06:30.713 INFO  - ps7_post_config is completed. 
+16:06:30.813 INFO  - PS Initialization is complete. 
+16:34:43.345 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:34:51.079 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:34:51.179 INFO  - PS initialization will be done as it is not done before. 
+16:34:51.179 INFO  - Running PS initialization.... 
+16:34:51.303 INFO  - ps7_init is completed. 
+16:34:51.403 INFO  - ps7_post_config is completed. 
+16:34:51.503 INFO  - PS Initialization is complete. 
+16:36:56.042 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:37:00.478 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:37:00.578 INFO  - PS initialization will be done as it is not done before. 
+16:37:00.579 INFO  - Running PS initialization.... 
+16:37:00.700 INFO  - ps7_init is completed. 
+16:37:00.800 INFO  - ps7_post_config is completed. 
+16:37:00.900 INFO  - PS Initialization is complete. 
+16:42:41.855 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:42:48.017 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:42:48.117 INFO  - PS initialization will be done as it is not done before. 
+16:42:48.123 INFO  - Running PS initialization.... 
+16:42:48.253 INFO  - ps7_init is completed. 
+16:42:48.353 INFO  - ps7_post_config is completed. 
+16:42:48.453 INFO  - PS Initialization is complete. 
+19:05:20.789 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+19:05:29.062 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:05:29.162 INFO  - PS initialization will be done as it is not done before. 
+19:05:29.163 INFO  - Running PS initialization.... 
+19:05:29.288 INFO  - ps7_init is completed. 
+19:05:29.388 INFO  - ps7_post_config is completed. 
+19:05:29.488 INFO  - PS Initialization is complete. 
+19:16:12.104 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+19:16:17.272 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:16:17.372 INFO  - PS initialization will be done as it is not done before. 
+19:16:17.373 INFO  - Running PS initialization.... 
+19:16:17.495 INFO  - ps7_init is completed. 
+19:16:17.596 INFO  - ps7_post_config is completed. 
+19:16:17.696 INFO  - PS Initialization is complete. 
+19:18:50.910 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+19:18:56.088 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:18:56.188 INFO  - PS initialization will be done as it is not done before. 
+19:18:56.189 INFO  - Running PS initialization.... 
+19:18:56.315 INFO  - ps7_init is completed. 
+19:18:56.415 INFO  - ps7_post_config is completed. 
+19:18:56.516 INFO  - PS Initialization is complete. 
+19:20:48.296 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+19:21:20.768 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:47:17.067 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+19:47:24.648 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:47:24.748 INFO  - PS initialization will be done as it is not done before. 
+19:47:24.749 INFO  - Running PS initialization.... 
+19:47:24.875 INFO  - ps7_init is completed. 
+19:47:24.976 INFO  - ps7_post_config is completed. 
+19:47:25.076 INFO  - PS Initialization is complete. 
+19:48:24.642 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+19:48:24.645 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:25:44.415 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:25:58.303 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:25:58.403 INFO  - PS initialization will be done as it is not done before. 
+15:25:58.404 INFO  - Running PS initialization.... 
+15:25:58.528 INFO  - ps7_init is completed. 
+15:25:58.628 INFO  - ps7_post_config is completed. 
+15:25:58.728 INFO  - PS Initialization is complete. 
+15:29:55.455 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:09:23.866 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+20:09:29.384 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:09:29.484 INFO  - PS initialization will be done as it is not done before. 
+20:09:29.485 INFO  - Running PS initialization.... 
+20:09:29.609 INFO  - ps7_init is completed. 
+20:09:29.709 INFO  - ps7_post_config is completed. 
+20:09:29.809 INFO  - PS Initialization is complete. 
+20:11:04.457 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:46:51.961 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:46:55.386 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:46:55.487 INFO  - PS initialization will be done as it is not done before. 
+14:46:55.487 INFO  - Running PS initialization.... 
+14:46:55.612 INFO  - ps7_init is completed. 
+14:46:55.712 INFO  - ps7_post_config is completed. 
+14:46:55.812 INFO  - PS Initialization is complete. 
+14:49:20.293 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:49:23.771 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:49:23.872 INFO  - PS initialization will be done as it is not done before. 
+14:49:23.872 INFO  - Running PS initialization.... 
+14:49:23.997 INFO  - ps7_init is completed. 
+14:49:24.097 INFO  - ps7_post_config is completed. 
+14:49:24.197 INFO  - PS Initialization is complete. 
+14:50:31.689 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:50:39.535 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:50:39.635 INFO  - PS initialization will be done as it is not done before. 
+14:50:39.636 INFO  - Running PS initialization.... 
+14:50:39.758 INFO  - ps7_init is completed. 
+14:50:39.858 INFO  - ps7_post_config is completed. 
+14:50:39.958 INFO  - PS Initialization is complete. 
+14:51:29.504 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:51:32.376 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:51:32.476 INFO  - PS initialization will be done as it is not done before. 
+14:51:32.477 INFO  - Running PS initialization.... 
+14:51:32.598 INFO  - ps7_init is completed. 
+14:51:32.698 INFO  - ps7_post_config is completed. 
+14:51:32.798 INFO  - PS Initialization is complete. 
+14:54:37.080 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:54:40.890 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:54:40.990 INFO  - PS initialization will be done as it is not done before. 
+14:54:40.990 INFO  - Running PS initialization.... 
+14:54:41.115 INFO  - ps7_init is completed. 
+14:54:41.215 INFO  - ps7_post_config is completed. 
+14:54:41.315 INFO  - PS Initialization is complete. 
+14:56:23.370 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:57:37.516 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:59:55.465 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:00:02.598 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:00:02.698 INFO  - PS initialization will be done as it is not done before. 
+15:00:02.699 INFO  - Running PS initialization.... 
+15:00:02.851 INFO  - ps7_init is completed. 
+15:00:02.951 INFO  - ps7_post_config is completed. 
+15:00:03.051 INFO  - PS Initialization is complete. 
+15:00:50.848 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:01:59.082 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:03:15.077 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:04:59.489 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:05:57.456 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:06:33.673 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:07:32.321 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:12:07.854 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:12:10.998 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:12:11.098 INFO  - PS initialization will be done as it is not done before. 
+15:12:11.099 INFO  - Running PS initialization.... 
+15:12:11.227 INFO  - ps7_init is completed. 
+15:12:11.327 INFO  - ps7_post_config is completed. 
+15:12:11.427 INFO  - PS Initialization is complete. 
+15:12:50.225 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:13:54.872 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:15:18.567 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:15:33.232 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:15:59.425 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:16:35.580 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:16:35.680 INFO  - PS initialization will be done as it is not done before. 
+15:16:35.681 INFO  - Running PS initialization.... 
+15:16:35.805 INFO  - ps7_init is completed. 
+15:16:35.905 INFO  - ps7_post_config is completed. 
+15:16:36.005 INFO  - PS Initialization is complete. 
+15:17:37.332 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:26:02.477 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:26:05.695 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:26:05.795 INFO  - PS initialization will be done as it is not done before. 
+15:26:05.796 INFO  - Running PS initialization.... 
+15:26:05.921 INFO  - ps7_init is completed. 
+15:26:06.021 INFO  - ps7_post_config is completed. 
+15:26:06.121 INFO  - PS Initialization is complete. 
+15:26:44.405 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:30:34.379 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:39:27.673 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+10:39:34.477 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:39:34.577 INFO  - PS initialization will be done as it is not done before. 
+10:39:34.577 INFO  - Running PS initialization.... 
+10:39:34.702 INFO  - ps7_init is completed. 
+10:39:34.802 INFO  - ps7_post_config is completed. 
+10:39:34.902 INFO  - PS Initialization is complete. 
+10:40:50.650 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:42:44.453 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+10:42:47.889 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:42:47.989 INFO  - PS initialization will be done as it is not done before. 
+10:42:47.990 INFO  - Running PS initialization.... 
+10:42:48.119 INFO  - ps7_init is completed. 
+10:42:48.219 INFO  - ps7_post_config is completed. 
+10:42:48.319 INFO  - PS Initialization is complete. 
+10:46:47.323 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+10:47:13.083 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:47:13.183 INFO  - PS initialization will be done as it is not done before. 
+10:47:13.185 INFO  - Running PS initialization.... 
+10:47:13.317 INFO  - ps7_init is completed. 
+10:47:13.417 INFO  - ps7_post_config is completed. 
+10:47:13.419 INFO  - PS Initialization is complete. 
+12:33:56.176 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:31:26.399 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:31:42.627 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:31:42.729 INFO  - PS initialization will be done as it is not done before. 
+14:31:42.730 INFO  - Running PS initialization.... 
+14:31:42.870 INFO  - ps7_init is completed. 
+14:31:42.970 INFO  - ps7_post_config is completed. 
+14:31:43.070 INFO  - PS Initialization is complete. 
+14:33:56.625 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:03:39.715 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:04:54.124 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:04:54.126 INFO  - PS initialization will be done as it is not done before. 
+15:04:54.127 INFO  - Running PS initialization.... 
+15:04:54.284 INFO  - ps7_init is completed. 
+15:04:54.384 INFO  - ps7_post_config is completed. 
+15:04:54.484 INFO  - PS Initialization is complete. 
+15:06:18.500 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:50:59.553 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:51:13.057 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:51:13.157 INFO  - PS initialization will be done as it is not done before. 
+15:51:13.158 INFO  - Running PS initialization.... 
+15:51:13.282 INFO  - ps7_init is completed. 
+15:51:13.383 INFO  - ps7_post_config is completed. 
+15:51:13.483 INFO  - PS Initialization is complete. 
+15:52:12.006 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:52:46.044 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:55:18.866 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:59:07.889 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:06:24.510 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:59:18.988 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:59:43.074 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:59:43.174 INFO  - PS initialization will be done as it is not done before. 
+14:59:43.175 INFO  - Running PS initialization.... 
+14:59:43.297 INFO  - ps7_init is completed. 
+14:59:43.398 INFO  - ps7_post_config is completed. 
+14:59:43.498 INFO  - PS Initialization is complete. 
+15:10:51.729 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:13:02.605 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:13:02.705 INFO  - PS initialization will be done as it is not done before. 
+15:13:02.705 INFO  - Running PS initialization.... 
+15:13:02.824 INFO  - ps7_init is completed. 
+15:13:02.925 INFO  - ps7_post_config is completed. 
+15:13:03.025 INFO  - PS Initialization is complete. 
+15:13:11.744 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:13:15.037 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:13:16.538 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+15:13:32.517 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:15:07.841 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:15:17.858 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:16:29.825 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:18:47.419 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:19:04.810 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:19:08.085 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:19:08.185 INFO  - PS initialization will be done as it is not done before. 
+15:19:08.186 INFO  - Running PS initialization.... 
+15:19:08.308 INFO  - ps7_init is completed. 
+15:19:08.408 INFO  - ps7_post_config is completed. 
+15:19:08.411 INFO  - PS Initialization is complete. 
+15:19:57.754 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:20:11.969 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:20:18.063 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:20:18.163 INFO  - PS initialization will be done as it is not done before. 
+15:20:18.163 INFO  - Running PS initialization.... 
+15:20:18.287 INFO  - ps7_init is completed. 
+15:20:18.387 INFO  - ps7_post_config is completed. 
+15:20:18.487 INFO  - PS Initialization is complete. 
+15:22:31.385 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:27:55.709 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:33:01.645 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+14:33:01.657 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+14:34:34.597 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/system.xml. 
+14:35:54.919 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:35:59.612 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:35:59.712 INFO  - PS initialization will be done as it is not done before. 
+14:35:59.713 INFO  - Running PS initialization.... 
+14:35:59.844 INFO  - ps7_init is completed. 
+14:35:59.944 INFO  - ps7_post_config is completed. 
+14:36:00.044 INFO  - PS Initialization is complete. 
+14:39:54.688 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:39:59.088 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:40:00.083 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+14:40:16.132 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+14:40:20.422 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:40:22.122 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+14:40:34.340 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:40:42.119 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/system.xml. 
+14:42:52.398 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use 
+14:42:54.749 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:42:54.849 INFO  - PS initialization will be done as it is not done before. 
+14:42:54.850 INFO  - Running PS initialization.... 
+14:42:54.976 INFO  - ps7_init is completed. 
+14:42:55.076 INFO  - ps7_post_config is completed. 
+14:42:55.176 INFO  - PS Initialization is complete. 
+15:04:42.319 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+15:04:51.954 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:04:52.055 INFO  - PS initialization will be done as it is not done before. 
+15:04:52.056 INFO  - Running PS initialization.... 
+15:04:52.182 INFO  - ps7_init is completed. 
+15:04:52.282 INFO  - ps7_post_config is completed. 
+15:04:52.382 INFO  - PS Initialization is complete. 
+15:05:16.670 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:10:15.396 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:11:24.356 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:13:21.218 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:13:42.249 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:15:01.769 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:15:34.613 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:15:56.375 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:16:14.147 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:17:11.023 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:18:31.653 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:59:49.936 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:22:20.787 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/system.xml. 
+12:22:22.389 INFO  - The hardware specification for project '3IP_hw_platform' is different from /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/system.xml. 
+12:22:23.158 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/system.xml into /3IP_hw_platform/system.xml. 
+12:22:23.474 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/system.bit into /3IP_hw_platform/system.bit. 
+12:22:25.024 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/ps7_init.c into /3IP_hw_platform/ps7_init.c. 
+12:22:25.297 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/ps7_init.h into /3IP_hw_platform/ps7_init.h. 
+12:22:25.370 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/ps7_init.html into /3IP_hw_platform/ps7_init.html. 
+12:22:25.377 INFO  - Copied contents of /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/ps7_init.tcl into /3IP_hw_platform/ps7_init.tcl. 
+12:22:25.735 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:22:28.069 INFO  - Updating hardware inferred compiler options for software_prj. 
+12:22:28.079 INFO  - Clearing existing target manager status. 
+12:22:31.288 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+12:23:24.040 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+12:23:24.041 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+12:23:29.842 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:23:43.222 INFO  - Processing command line option -hwspec /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Export/hw/system.xml. 
+12:24:36.471 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+12:24:44.966 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:24:45.066 INFO  - PS initialization will be done as it is not done before. 
+12:24:45.067 INFO  - Running PS initialization.... 
+12:24:45.190 INFO  - ps7_init is completed. 
+12:24:45.290 INFO  - ps7_post_config is completed. 
+12:24:45.390 INFO  - PS Initialization is complete. 
+12:25:38.866 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+12:25:44.122 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:25:44.222 INFO  - PS initialization will be done as it is not done before. 
+12:25:44.223 INFO  - Running PS initialization.... 
+12:25:44.347 INFO  - ps7_init is completed. 
+12:25:44.447 INFO  - ps7_post_config is completed. 
+12:25:44.547 INFO  - PS Initialization is complete. 
+12:26:55.546 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+12:26:58.799 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:26:58.899 INFO  - PS initialization will be done as it is not done before. 
+12:26:58.900 INFO  - Running PS initialization.... 
+12:26:59.024 INFO  - ps7_init is completed. 
+12:26:59.124 INFO  - ps7_post_config is completed. 
+12:26:59.224 INFO  - PS Initialization is complete. 
+12:28:00.172 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:29:22.363 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:55:44.094 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+08:56:29.649 INFO  - Processor reset is completed for ps7_cortexa9_0 
+08:56:29.749 INFO  - PS initialization will be done as it is not done before. 
+08:56:29.750 INFO  - Running PS initialization.... 
+08:56:29.874 INFO  - ps7_init is completed. 
+08:56:29.974 INFO  - ps7_post_config is completed. 
+08:56:30.074 INFO  - PS Initialization is complete. 
+08:57:48.581 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:20:26.228 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:20:32.828 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:20:32.928 INFO  - PS initialization will be done as it is not done before. 
+16:20:32.929 INFO  - Running PS initialization.... 
+16:20:33.143 INFO  - ps7_init is completed. 
+16:20:33.243 INFO  - ps7_post_config is completed. 
+16:20:33.343 INFO  - PS Initialization is complete. 
+16:23:35.908 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+16:23:38.669 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:23:38.769 INFO  - PS initialization will be done as it is not done before. 
+16:23:38.769 INFO  - Running PS initialization.... 
+16:23:38.974 INFO  - ps7_init is completed. 
+16:23:39.074 INFO  - ps7_post_config is completed. 
+16:23:39.174 INFO  - PS Initialization is complete. 
+16:24:00.229 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+16:24:00.234 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:00:45.260 INFO  - FPGA configured successfully with bitstream "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/3IP_hw_platform/system.bit" 
+17:00:49.617 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:00:49.717 INFO  - PS initialization will be done as it is not done before. 
+17:00:49.718 INFO  - Running PS initialization.... 
+17:00:49.887 INFO  - ps7_init is completed. 
+17:00:49.987 INFO  - ps7_post_config is completed. 
+17:00:50.088 INFO  - PS Initialization is complete. 
+17:03:51.978 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+17:03:51.984 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree:rootNode
+    xmlns:tree="http://www.eclipse.org/emf/example/dom/Tree" label="root">
+  <tree:childNode label="text">text</tree:childNode>
+  <tree:childNode label="comment"><!--comment--></tree:childNode>
+  <tree:childNode label="cdata"><![CDATA[<cdata>]]></tree:childNode>
+</tree:rootNode>

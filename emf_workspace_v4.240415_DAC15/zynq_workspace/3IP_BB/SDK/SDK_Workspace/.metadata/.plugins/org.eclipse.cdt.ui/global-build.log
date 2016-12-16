@@ -1,0 +1,414 @@
+16:19:38 **** Incremental Build of configuration Debug for project software_prj ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I/home/ga46sam/zync_work/Performances/opencv_install -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+cc1: error: /home/ga46sam/zync_work/Performances/opencv_install: Permission denied
+make: *** [src/main.o] Error 1
+16:20:05 **** Clean-only build of configuration Debug for project software_prj ****
+make clean 
+rm -rf  ./src/AXI_Exerciser.o ./src/AXI_monitor.o ./src/axi_interrupt.o ./src/cf_hdmi.o ./src/hw_config.o ./src/img_filters.o ./src/main.o ./src/sw_functions.o ./src/transmitter.o  ./inc/xgray_scale.o ./inc/ximage_filter.o ./inc/xsobel_filter.o  ./src/AXI_Exerciser.d ./src/AXI_monitor.d ./src/axi_interrupt.d ./src/cf_hdmi.d ./src/hw_config.d ./src/img_filters.d ./src/main.d ./src/sw_functions.d ./src/transmitter.d  ./inc/xgray_scale.d ./inc/ximage_filter.d ./inc/xsobel_filter.d  software_prj.elf.size  software_prj.elf
+ 
+16:20:05 **** Auto Build of configuration Debug for project software_prj ****
+make all 
+Building file: ../src/AXI_Exerciser.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/AXI_Exerciser.d" -MT"src/AXI_Exerciser.d" -o "src/AXI_Exerciser.o" "../src/AXI_Exerciser.c"
+../src/AXI_Exerciser.c: In function 'AXI_Exerciser_clear':
+../src/AXI_Exerciser.c:128:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+../src/AXI_Exerciser.c: In function 'mem_clean':
+../src/AXI_Exerciser.c:164:3: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+Finished building: ../src/AXI_Exerciser.c
+ 
+Building file: ../src/AXI_monitor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/AXI_monitor.d" -MT"src/AXI_monitor.d" -o "src/AXI_monitor.o" "../src/AXI_monitor.c"
+../src/AXI_monitor.c: In function 'AXI_monitor_config':
+../src/AXI_monitor.c:18:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/AXI_monitor.c:18:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/AXI_monitor.c:19:1: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+../src/AXI_monitor.c: In function 'PerfResult':
+../src/AXI_monitor.c:55:6: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/AXI_monitor.c:56:3: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+../src/AXI_monitor.c:72:1: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+Finished building: ../src/AXI_monitor.c
+../src/AXI_monitor.c:52:5: warning: unused variable 'test' [-Wunused-variable]
+../src/AXI_monitor.c: In function 'AVRGPerfResult':
+../src/AXI_monitor.c:116:7: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+ 
+Building file: ../src/axi_interrupt.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_interrupt.d" -MT"src/axi_interrupt.d" -o "src/axi_interrupt.o" "../src/axi_interrupt.c"
+../src/AXI_monitor.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/axi_interrupt.c
+ 
+Building file: ../src/cf_hdmi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cf_hdmi.d" -MT"src/cf_hdmi.d" -o "src/cf_hdmi.o" "../src/cf_hdmi.c"
+Finished building: ../src/cf_hdmi.c
+ 
+Building file: ../src/hw_config.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/hw_config.d" -MT"src/hw_config.d" -o "src/hw_config.o" "../src/hw_config.c"
+Finished building: ../src/hw_config.c
+ 
+Building file: ../src/img_filters.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/img_filters.d" -MT"src/img_filters.d" -o "src/img_filters.o" "../src/img_filters.c"
+Finished building: ../src/img_filters.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:37:12: warning: 'Ex_config' initialized and declared 'extern' [enabled by default]
+../src/main.c:40:22: warning: 'HDMI_VIEW_ADDR' initialized and declared 'extern' [enabled by default]
+../src/main.c:49:28: warning: variable 'test' declared 'inline' [enabled by default]
+../src/main.c: In function 'main':
+../src/main.c:266:2: warning: implicit declaration of function 'AXI_monitor_config' [-Wimplicit-function-declaration]
+../src/main.c:349:7: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c:265:6: warning: unused variable 'CPUprocCLK' [-Wunused-variable]
+../src/main.c:263:6: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:49:28: warning: 'test' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/sw_functions.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sw_functions.d" -MT"src/sw_functions.d" -o "src/sw_functions.o" "../src/sw_functions.c"
+../src/sw_functions.c: In function 'ConvToGray':
+../src/sw_functions.c:28:16: warning: unused variable 'VH_offset' [-Wunused-variable]
+Finished building: ../src/sw_functions.c
+ 
+Building file: ../src/transmitter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/transmitter.d" -MT"src/transmitter.d" -o "src/transmitter.o" "../src/transmitter.c"
+Finished building: ../src/transmitter.c
+ 
+Building file: ../inc/xgray_scale.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/xgray_scale.d" -MT"inc/xgray_scale.d" -o "inc/xgray_scale.o" "../inc/xgray_scale.c"
+Finished building: ../inc/xgray_scale.c
+ 
+Building file: ../inc/ximage_filter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/ximage_filter.d" -MT"inc/ximage_filter.d" -o "inc/ximage_filter.o" "../inc/ximage_filter.c"
+Finished building: ../inc/ximage_filter.c
+ 
+Building file: ../inc/xsobel_filter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/xsobel_filter.d" -MT"inc/xsobel_filter.d" -o "inc/xsobel_filter.o" "../inc/xsobel_filter.c"
+Finished building: ../inc/xsobel_filter.c
+ 
+Building target: software_prj.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/lib" -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/standalone_bsp_0/ps7_cortexa9_0/lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software_prj.elf"  ./src/AXI_Exerciser.o ./src/AXI_monitor.o ./src/axi_interrupt.o ./src/cf_hdmi.o ./src/hw_config.o ./src/img_filters.o ./src/main.o ./src/sw_functions.o ./src/transmitter.o  ./inc/xgray_scale.o ./inc/ximage_filter.o ./inc/xsobel_filter.o   -lHDMI_ZedBoardLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software_prj.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software_prj.elf  |tee "software_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156232	   3072	  34556	 193860	  2f544	software_prj.elf
+Finished building: software_prj.elf.size
+ 
+16:20:09 **** Clean-only build of configuration Debug for project software_prj ****
+make clean 
+rm -rf  ./src/AXI_Exerciser.o ./src/AXI_monitor.o ./src/axi_interrupt.o ./src/cf_hdmi.o ./src/hw_config.o ./src/img_filters.o ./src/main.o ./src/sw_functions.o ./src/transmitter.o  ./inc/xgray_scale.o ./inc/ximage_filter.o ./inc/xsobel_filter.o  ./src/AXI_Exerciser.d ./src/AXI_monitor.d ./src/axi_interrupt.d ./src/cf_hdmi.d ./src/hw_config.d ./src/img_filters.d ./src/main.d ./src/sw_functions.d ./src/transmitter.d  ./inc/xgray_scale.d ./inc/ximage_filter.d ./inc/xsobel_filter.d  software_prj.elf.size  software_prj.elf
+ 
+16:20:09 **** Auto Build of configuration Debug for project software_prj ****
+make all 
+Building file: ../src/AXI_Exerciser.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/AXI_Exerciser.d" -MT"src/AXI_Exerciser.d" -o "src/AXI_Exerciser.o" "../src/AXI_Exerciser.c"
+../src/AXI_Exerciser.c: In function 'AXI_Exerciser_clear':
+../src/AXI_Exerciser.c:128:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+../src/AXI_Exerciser.c: In function 'mem_clean':
+../src/AXI_Exerciser.c:164:3: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+Finished building: ../src/AXI_Exerciser.c
+ 
+Building file: ../src/AXI_monitor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/AXI_monitor.d" -MT"src/AXI_monitor.d" -o "src/AXI_monitor.o" "../src/AXI_monitor.c"
+../src/AXI_monitor.c: In function 'AXI_monitor_config':
+../src/AXI_monitor.c:18:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/AXI_monitor.c:18:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+Finished building: ../src/AXI_monitor.c
+../src/AXI_monitor.c:19:1: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+../src/AXI_monitor.c: In function 'PerfResult':
+../src/AXI_monitor.c:55:6: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/AXI_monitor.c:56:3: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+ 
+Building file: ../src/axi_interrupt.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_interrupt.d" -MT"src/axi_interrupt.d" -o "src/axi_interrupt.o" "../src/axi_interrupt.c"
+../src/AXI_monitor.c:72:1: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/AXI_monitor.c:52:5: warning: unused variable 'test' [-Wunused-variable]
+../src/AXI_monitor.c: In function 'AVRGPerfResult':
+../src/AXI_monitor.c:116:7: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/AXI_monitor.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/axi_interrupt.c
+ 
+Building file: ../src/cf_hdmi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cf_hdmi.d" -MT"src/cf_hdmi.d" -o "src/cf_hdmi.o" "../src/cf_hdmi.c"
+Finished building: ../src/cf_hdmi.c
+ 
+Building file: ../src/hw_config.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/hw_config.d" -MT"src/hw_config.d" -o "src/hw_config.o" "../src/hw_config.c"
+Finished building: ../src/hw_config.c
+ 
+Building file: ../src/img_filters.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/img_filters.d" -MT"src/img_filters.d" -o "src/img_filters.o" "../src/img_filters.c"
+Finished building: ../src/img_filters.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:37:12: warning: 'Ex_config' initialized and declared 'extern' [enabled by default]
+../src/main.c:40:22: warning: 'HDMI_VIEW_ADDR' initialized and declared 'extern' [enabled by default]
+../src/main.c:49:28: warning: variable 'test' declared 'inline' [enabled by default]
+../src/main.c: In function 'main':
+../src/main.c:266:2: warning: implicit declaration of function 'AXI_monitor_config' [-Wimplicit-function-declaration]
+../src/main.c:349:7: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c:265:6: warning: unused variable 'CPUprocCLK' [-Wunused-variable]
+../src/main.c:263:6: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:49:28: warning: 'test' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/sw_functions.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sw_functions.d" -MT"src/sw_functions.d" -o "src/sw_functions.o" "../src/sw_functions.c"
+../src/sw_functions.c: In function 'ConvToGray':
+../src/sw_functions.c:28:16: warning: unused variable 'VH_offset' [-Wunused-variable]
+Finished building: ../src/sw_functions.c
+ 
+Building file: ../src/transmitter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/transmitter.d" -MT"src/transmitter.d" -o "src/transmitter.o" "../src/transmitter.c"
+Finished building: ../src/transmitter.c
+ 
+Building file: ../inc/xgray_scale.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/xgray_scale.d" -MT"inc/xgray_scale.d" -o "inc/xgray_scale.o" "../inc/xgray_scale.c"
+Finished building: ../inc/xgray_scale.c
+ 
+Building file: ../inc/ximage_filter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/ximage_filter.d" -MT"inc/ximage_filter.d" -o "inc/ximage_filter.o" "../inc/ximage_filter.c"
+Finished building: ../inc/ximage_filter.c
+ 
+Building file: ../inc/xsobel_filter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/xsobel_filter.d" -MT"inc/xsobel_filter.d" -o "inc/xsobel_filter.o" "../inc/xsobel_filter.c"
+Finished building: ../inc/xsobel_filter.c
+ 
+Building target: software_prj.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/lib" -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/standalone_bsp_0/ps7_cortexa9_0/lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software_prj.elf"  ./src/AXI_Exerciser.o ./src/AXI_monitor.o ./src/axi_interrupt.o ./src/cf_hdmi.o ./src/hw_config.o ./src/img_filters.o ./src/main.o ./src/sw_functions.o ./src/transmitter.o  ./inc/xgray_scale.o ./inc/ximage_filter.o ./inc/xsobel_filter.o   -lHDMI_ZedBoardLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software_prj.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software_prj.elf  |tee "software_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156232	   3072	  34556	 193860	  2f544	software_prj.elf
+Finished building: software_prj.elf.size
+ 
+16:20:31 **** Incremental Build of configuration Debug for project software_prj ****
+make all 
+make: Nothing to be done for `all'.
+16:21:14 **** Auto Build of configuration Debug for project software_prj ****
+make all 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:37:12: warning: 'Ex_config' initialized and declared 'extern' [enabled by default]
+../src/main.c:40:22: warning: 'HDMI_VIEW_ADDR' initialized and declared 'extern' [enabled by default]
+../src/main.c:49:28: warning: variable 'test' declared 'inline' [enabled by default]
+../src/main.c: In function 'main':
+../src/main.c:266:2: warning: implicit declaration of function 'AXI_monitor_config' [-Wimplicit-function-declaration]
+../src/main.c:349:7: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c:265:6: warning: unused variable 'CPUprocCLK' [-Wunused-variable]
+../src/main.c:263:6: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:49:28: warning: 'test' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: software_prj.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/lib" -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/standalone_bsp_0/ps7_cortexa9_0/lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software_prj.elf"  ./src/AXI_Exerciser.o ./src/AXI_monitor.o ./src/axi_interrupt.o ./src/cf_hdmi.o ./src/hw_config.o ./src/img_filters.o ./src/main.o ./src/sw_functions.o ./src/transmitter.o  ./inc/xgray_scale.o ./inc/ximage_filter.o ./inc/xsobel_filter.o   -lHDMI_ZedBoardLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software_prj.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software_prj.elf  |tee "software_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156232	   3072	  34556	 193860	  2f544	software_prj.elf
+Finished building: software_prj.elf.size
+ 
+16:22:26 **** Clean-only build of configuration Debug for project software_prj ****
+make clean 
+rm -rf  ./src/AXI_Exerciser.o ./src/AXI_monitor.o ./src/axi_interrupt.o ./src/cf_hdmi.o ./src/hw_config.o ./src/img_filters.o ./src/main.o ./src/sw_functions.o ./src/transmitter.o  ./inc/xgray_scale.o ./inc/ximage_filter.o ./inc/xsobel_filter.o  ./src/AXI_Exerciser.d ./src/AXI_monitor.d ./src/axi_interrupt.d ./src/cf_hdmi.d ./src/hw_config.d ./src/img_filters.d ./src/main.d ./src/sw_functions.d ./src/transmitter.d  ./inc/xgray_scale.d ./inc/ximage_filter.d ./inc/xsobel_filter.d  software_prj.elf.size  software_prj.elf
+ 
+16:22:26 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+16:22:28 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../3IP_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../3IP_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling standalone
+Compiling axidma
+Compiling iic
+Compiling axipmon
+Compiling axivdma
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling iicps
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling xadcps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+16:22:59 **** Build of configuration Debug for project software_prj ****
+make all 
+Building file: ../src/AXI_Exerciser.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/AXI_Exerciser.d" -MT"src/AXI_Exerciser.d" -o "src/AXI_Exerciser.o" "../src/AXI_Exerciser.c"
+../src/AXI_Exerciser.c: In function 'AXI_Exerciser_clear':
+../src/AXI_Exerciser.c:128:6: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+../src/AXI_Exerciser.c: In function 'mem_clean':
+../src/AXI_Exerciser.c:164:3: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+Finished building: ../src/AXI_Exerciser.c
+ 
+Building file: ../src/AXI_monitor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/AXI_monitor.d" -MT"src/AXI_monitor.d" -o "src/AXI_monitor.o" "../src/AXI_monitor.c"
+../src/AXI_monitor.c: In function 'AXI_monitor_config':
+../src/AXI_monitor.c:18:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/AXI_monitor.c:18:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/AXI_monitor.c:19:1: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+Finished building: ../src/AXI_monitor.c
+../src/AXI_monitor.c: In function 'PerfResult':
+ 
+../src/AXI_monitor.c:55:6: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+Building file: ../src/axi_interrupt.c
+../src/AXI_monitor.c:56:3: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+Invoking: ARM gcc compiler
+../src/AXI_monitor.c:72:1: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_interrupt.d" -MT"src/axi_interrupt.d" -o "src/axi_interrupt.o" "../src/axi_interrupt.c"
+../src/AXI_monitor.c:52:5: warning: unused variable 'test' [-Wunused-variable]
+../src/AXI_monitor.c: In function 'AVRGPerfResult':
+../src/AXI_monitor.c:116:7: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/AXI_monitor.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/axi_interrupt.c
+ 
+Building file: ../src/cf_hdmi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cf_hdmi.d" -MT"src/cf_hdmi.d" -o "src/cf_hdmi.o" "../src/cf_hdmi.c"
+Finished building: ../src/cf_hdmi.c
+ 
+Building file: ../src/hw_config.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/hw_config.d" -MT"src/hw_config.d" -o "src/hw_config.o" "../src/hw_config.c"
+Finished building: ../src/hw_config.c
+ 
+Building file: ../src/img_filters.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/img_filters.d" -MT"src/img_filters.d" -o "src/img_filters.o" "../src/img_filters.c"
+Finished building: ../src/img_filters.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:37:12: warning: 'Ex_config' initialized and declared 'extern' [enabled by default]
+../src/main.c:40:22: warning: 'HDMI_VIEW_ADDR' initialized and declared 'extern' [enabled by default]
+../src/main.c:49:28: warning: variable 'test' declared 'inline' [enabled by default]
+../src/main.c: In function 'main':
+../src/main.c:266:2: warning: implicit declaration of function 'AXI_monitor_config' [-Wimplicit-function-declaration]
+../src/main.c:349:7: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c:265:6: warning: unused variable 'CPUprocCLK' [-Wunused-variable]
+../src/main.c:263:6: warning: unused variable 'i' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:49:28: warning: 'test' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/sw_functions.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/sw_functions.d" -MT"src/sw_functions.d" -o "src/sw_functions.o" "../src/sw_functions.c"
+../src/sw_functions.c: In function 'ConvToGray':
+../src/sw_functions.c:28:16: warning: unused variable 'VH_offset' [-Wunused-variable]
+Finished building: ../src/sw_functions.c
+ 
+Building file: ../src/transmitter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/transmitter.d" -MT"src/transmitter.d" -o "src/transmitter.o" "../src/transmitter.c"
+Finished building: ../src/transmitter.c
+ 
+Building file: ../inc/xgray_scale.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/xgray_scale.d" -MT"inc/xgray_scale.d" -o "inc/xgray_scale.o" "../inc/xgray_scale.c"
+Finished building: ../inc/xgray_scale.c
+ 
+Building file: ../inc/ximage_filter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/ximage_filter.d" -MT"inc/ximage_filter.d" -o "inc/ximage_filter.o" "../inc/ximage_filter.c"
+Finished building: ../inc/ximage_filter.c
+ 
+Building file: ../inc/xsobel_filter.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/inc" -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"inc/xsobel_filter.d" -MT"inc/xsobel_filter.d" -o "inc/xsobel_filter.o" "../inc/xsobel_filter.c"
+Finished building: ../inc/xsobel_filter.c
+ 
+Building target: software_prj.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/software_prj/lib" -L"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/SDK/SDK_Workspace/standalone_bsp_0/ps7_cortexa9_0/lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "software_prj.elf"  ./src/AXI_Exerciser.o ./src/AXI_monitor.o ./src/axi_interrupt.o ./src/cf_hdmi.o ./src/hw_config.o ./src/img_filters.o ./src/main.o ./src/sw_functions.o ./src/transmitter.o  ./inc/xgray_scale.o ./inc/ximage_filter.o ./inc/xsobel_filter.o   -lHDMI_ZedBoardLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: software_prj.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size software_prj.elf  |tee "software_prj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156232	   3072	  34556	 193860	  2f544	software_prj.elf
+Finished building: software_prj.elf.size
+ 
+16:23:26 **** Auto Build of configuration Debug for project software_prj ****
+make all 
+make: Nothing to be done for `all'.
+16:23:37 **** Incremental Build of configuration Debug for project software_prj ****
+make all 
+make: Nothing to be done for `all'.
+17:00:47 **** Incremental Build of configuration Debug for project software_prj ****
+make all 
+make: Nothing to be done for `all'.

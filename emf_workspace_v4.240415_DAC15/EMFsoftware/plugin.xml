@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated software -->
+      <package
+            uri="http://www.w3schools.com"
+            class="com.w3schools.W3schoolsPackage"
+            genModel="model/software.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated software -->
+      <parser
+            type="w3schools"
+            class="com.w3schools.util.W3schoolsResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

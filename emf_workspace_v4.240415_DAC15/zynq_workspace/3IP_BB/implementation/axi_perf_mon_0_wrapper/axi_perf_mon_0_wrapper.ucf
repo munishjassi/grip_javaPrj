@@ -1,0 +1,4 @@
+NET "CORE_ACLK" TNM_NET = FFS "CORE_ACLK_axi_perf_mon_0";
+NET "S_AXI_ACLK" TNM_NET = FFS "S_AXI_ACLK_axi_perf_mon_0";
+TIMESPEC "TS_AXI_CORE_FP_axi_perf_mon_0" = FROM "S_AXI_ACLK_axi_perf_mon_0" TO "CORE_ACLK_axi_perf_mon_0" TIG;
+TIMESPEC "TS_CORE_AXI_FP_axi_perf_mon_0" = FROM "CORE_ACLK_axi_perf_mon_0" TO "S_AXI_ACLK_axi_perf_mon_0" TIG;

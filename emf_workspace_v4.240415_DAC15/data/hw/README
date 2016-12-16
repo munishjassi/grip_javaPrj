@@ -1,0 +1,170 @@
+arch0 -- library
+			<spirit:instanceName>DMA2_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc2_0_0</spirit:instanceName>
+			<spirit:instanceName>CPU_0</spirit:instanceName>
+			<spirit:instanceName>DMA_0</spirit:instanceName>
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>MEM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc1_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc2_0</spirit:instanceName>
+	
+arch1 -- library
+			<spirit:instanceName>DMA2_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc2_0_0</spirit:instanceName>
+			<spirit:instanceName>wishbone_bus_1</spirit:instanceName>
+			<spirit:instanceName>CPU_0</spirit:instanceName>
+			<spirit:instanceName>DMA_0</spirit:instanceName>
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>MEM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc1_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc2_0</spirit:instanceName>
+
+arch2_CPU4 -- library
+			<spirit:instanceName>DMA2_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc2_0_0</spirit:instanceName>
+			<spirit:instanceName>CPU4_0</spirit:instanceName>
+			<spirit:instanceName>DMA_0</spirit:instanceName>
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>MEM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc1_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc2_0</spirit:instanceName>
+
+arch3_arm  -- 	library_arm.v1
+			<spirit:instanceName>axi_i2s_adi_0</spirit:instanceName>
+			<spirit:instanceName>axi_dma_i2s</spirit:instanceName>
+			<spirit:instanceName>axi_vdma_0</spirit:instanceName>
+			<spirit:instanceName>axi_hdmi_tx_16b_0</spirit:instanceName>
+			<spirit:instanceName>axi_dma_spd</spirit:instanceName>
+			<spirit:instanceName>axi_spdif_tx</spirit:instanceName>
+			<spirit:instanceName>axi_iic_0</spirit:instanceName>
+			<spirit:instanceName>axi_1</spirit:instanceName>
+			<spirit:instanceName>axi_0</spirit:instanceName>
+			<spirit:instanceName>axi_2</spirit:instanceName>
+			<spirit:instanceName>ps7_system_0</spirit:instanceName>
+			<spirit:instanceName>util_vector_logic</spirit:instanceName>
+			<spirit:instanceName>camera_interface_0</spirit:instanceName>
+			<spirit:instanceName>axi_clkgen</spirit:instanceName>
+			<spirit:instanceName>clkgen_0</spirit:instanceName>
+
+arch4_arm  -- library_arm.v2
+			<spirit:instanceName>axi_i2s_adi_0</spirit:instanceName>
+			<spirit:instanceName>axi_dma_i2s</spirit:instanceName>
+			<spirit:instanceName>axi_vdma_0</spirit:instanceName>
+			<spirit:instanceName>axi_hdmi_tx_16b_0</spirit:instanceName>
+			<spirit:instanceName>axi_dma_spd</spirit:instanceName>
+			<spirit:instanceName>axi_spdif_tx</spirit:instanceName>
+			<spirit:instanceName>axi_iic_0</spirit:instanceName>
+			<spirit:instanceName>axi_interconnect_1</spirit:instanceName>
+			<spirit:instanceName>axi_interconnect_0</spirit:instanceName>
+			<spirit:instanceName>axi_interconnect_2</spirit:instanceName>
+			<spirit:instanceName>processing_system7_0</spirit:instanceName>
+			<spirit:instanceName>util_vector_logic_0</spirit:instanceName>
+			<spirit:instanceName>camera_interface_0</spirit:instanceName>
+			<spirit:instanceName>axi_clkgen_0</spirit:instanceName>
+			<spirit:instanceName>clock_generator_0</spirit:instanceName>
+
+
+
+archn1  -- Output new architecture
+      <spirit:instanceName>axi_i2s_adi_0</spirit:instanceName>
+      <spirit:instanceName>axi_dma_i2s</spirit:instanceName>
+      <spirit:instanceName>axi_vdma_0</spirit:instanceName>
+      <spirit:instanceName>axi_hdmi_tx_16b_0</spirit:instanceName>
+      <spirit:instanceName>axi_dma_spd</spirit:instanceName>
+      <spirit:instanceName>axi_spdif_tx</spirit:instanceName>
+      <spirit:instanceName>axi_iic_0</spirit:instanceName>
+      <spirit:instanceName>axi_1</spirit:instanceName>
+      <spirit:instanceName>axi_0</spirit:instanceName>
+      <spirit:instanceName>axi_2</spirit:instanceName>
+      <spirit:instanceName>ps7_system_0</spirit:instanceName>
+      <spirit:instanceName>util_vector_logic</spirit:instanceName>
+      <spirit:instanceName>camera_interface_0</spirit:instanceName>
+      <spirit:instanceName>axi_clkgen</spirit:instanceName>
+      <spirit:instanceName>clkgen_0</spirit:instanceName>
+      <spirit:instanceName>gray_scale_top_0</spirit:instanceName>
+      <spirit:instanceName>axi_vdma_0_0</spirit:instanceName>
+      <spirit:instanceName>axi_3</spirit:instanceName>
+
+==============================
+
+library -- Sample library with CPU, CPU4 entities
+
+library_arm
+	= v1
+		- ARM based library, CPU-HP/GP ports
+	= v2
+		- ZedBoard based ARM library
+
+==============================
+
+
+pat0  -- library
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>CPU_0</spirit:instanceName>
+
+pat1_CPU4  -- library
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>CPU4_0</spirit:instanceName>
+
+pat2_arm -- library_arm.v1
+			<spirit:instanceName>axi_0</spirit:instanceName>
+			<spirit:instanceName>axi_1</spirit:instanceName>
+			<spirit:instanceName>ps7_system_0</spirit:instanceName>
+
+pat3_arm  -- library_arm.v2
+			<spirit:instanceName>axi_interconnect_1</spirit:instanceName>
+			<spirit:instanceName>axi_interconnect_0</spirit:instanceName>
+			<spirit:instanceName>processing_system7_0</spirit:instanceName>
+
+
+newpat0  -- library
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc1_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>CPU_0</spirit:instanceName>
+
+
+newpat1	 -- library
+			<spirit:instanceName>HW_acc2_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>wishbone_bus_1</spirit:instanceName>
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>DMA2_0</spirit:instanceName>
+			<spirit:instanceName>CPU_0</spirit:instanceName>
+		
+newpat2_CPU4  -- library
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>CPU4_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc1_0</spirit:instanceName>
+
+newpat3_wb1  -- library
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:instanceName>wishbone_bus_1</spirit:instanceName>
+			<spirit:instanceName>ColorHW_0</spirit:instanceName>
+			<spirit:instanceName>VDMA_0</spirit:instanceName>
+			<spirit:instanceName>CPU4_0</spirit:instanceName>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:instanceName>HW_acc1_0</spirit:instanceName>
+
+newpat4_arm  -- library_arm.v1
+			<spirit:instanceName>gray_scale_top_0</spirit:instanceName>
+			<spirit:instanceName>axi_vdma_0</spirit:instanceName>
+			<spirit:instanceName>axi_3</spirit:instanceName>
+			<spirit:instanceName>axi_0</spirit:instanceName>
+			<spirit:instanceName>axi_1</spirit:instanceName>
+			<spirit:instanceName>ps7_system_0</spirit:instanceName>
+
+newpat5_arm  -- library_arm.v2
+			<spirit:instanceName>axi_vdma_1</spirit:instanceName>
+			<spirit:instanceName>gray_scale_top_0</spirit:instanceName>
+			<spirit:instanceName>axi_interconnect_1</spirit:instanceName>
+			<spirit:instanceName>axi_interconnect_0</spirit:instanceName>
+			<spirit:instanceName>axi_interconnect_3</spirit:instanceName>
+			<spirit:instanceName>processing_system7_0</spirit:instanceName>
+

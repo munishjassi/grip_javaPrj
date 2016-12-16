@@ -1,0 +1,6 @@
+arch0:
+	- basic VP system.
+	- camera_interface, hdmi if
+	- axi_interconnect_0, axi_interconnect_1, axi_interconnect_2 
+
+

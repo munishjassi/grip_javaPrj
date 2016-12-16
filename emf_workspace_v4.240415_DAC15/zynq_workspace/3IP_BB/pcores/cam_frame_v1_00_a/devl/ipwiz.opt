@@ -1,0 +1,10 @@
+-batch 
+-create cam_frame 
+-ver 1.00.a 
+-dir "/nfs/TUEIEDAprojects/SystemDesign/work/zynq/umair-razzaq/MyDesigns/cf_adv7511_cam/cf_adv7511_zed" 
+-lang vhdl 
+-bus axi4lite s 
+-rst 
+-reg 1 
+-xps 
+-driver 

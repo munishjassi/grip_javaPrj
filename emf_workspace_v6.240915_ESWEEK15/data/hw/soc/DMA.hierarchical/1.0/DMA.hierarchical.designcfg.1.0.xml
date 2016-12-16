@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Kactus2 - Open source IP-Xact toolset -->
+<!-- http://sourceforge.net/projects/kactus2/ -->
+<!-- Date: 02.10.2012 -->
+<!-- Time: 17:42:37 -->
+<spirit:designConfiguration xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>TUM</spirit:vendor>
+	<spirit:library>soc</spirit:library>
+	<spirit:name>DMA.hierarchical.designcfg</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:designRef spirit:vendor="TUM" spirit:library="soc" spirit:name="DMA.hierarchical.design" spirit:version="1.0"/>
+</spirit:designConfiguration>

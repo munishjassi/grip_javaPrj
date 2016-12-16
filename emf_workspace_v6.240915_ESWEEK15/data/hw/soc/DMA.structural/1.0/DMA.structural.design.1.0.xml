@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Kactus2 - Open source IP-Xact toolset -->
+<!-- http://sourceforge.net/projects/kactus2/ -->
+<!-- Date: 02.10.2012 -->
+<!-- Time: 17:45:47 -->
+<spirit:design xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>TUM</spirit:vendor>
+	<spirit:library>soc</spirit:library>
+	<spirit:name>DMA.structural.design</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:vendorExtensions>
+		<kactus2:columnLayout>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119"/>
+			<kactus2:column name="Buses" contentType="1" allowedItems="12" minWidth="259" width="259"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="259" width="259"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119"/>
+		</kactus2:columnLayout>
+		<kactus2:routes/>
+		<kactus2:adHocVisibilities/>
+	</spirit:vendorExtensions>
+</spirit:design>

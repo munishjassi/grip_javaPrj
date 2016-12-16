@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus212:53:15 18.06.2014-->
+<spirit:component xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>ARM</spirit:vendor>
+	<spirit:library>bus</spirit:library>
+	<spirit:name>AXILITEBUS</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:busInterfaces>
+		<spirit:busInterface>
+			<spirit:name>axil_m0</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredMaster/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_m1</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredMaster/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s0</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s1</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s10</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s11</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s2</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s3</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s4</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s5</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s6</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s7</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s8</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>axil_s9</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:mirroredSlave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+	</spirit:busInterfaces>
+	<spirit:model>
+		<spirit:views>
+			<spirit:view>
+				<spirit:name>flat</spirit:name>
+				<spirit:envIdentifier>::</spirit:envIdentifier>
+			</spirit:view>
+			<spirit:view>
+				<spirit:name>structural</spirit:name>
+				<spirit:envIdentifier></spirit:envIdentifier>
+				<spirit:hierarchyRef spirit:vendor="ARM" spirit:library="bus" spirit:name="AXILITEBUS.designcfg" spirit:version="1.0"/>
+			</spirit:view>
+		</spirit:views>
+	</spirit:model>
+	<spirit:vendorExtensions>
+		<kactus2:extensions>
+			<kactus2:kts_attributes>
+				<kactus2:kts_productHier>Global</kactus2:kts_productHier>
+				<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+				<kactus2:kts_firmness>Template</kactus2:kts_firmness>
+			</kactus2:kts_attributes>
+		</kactus2:extensions>
+	</spirit:vendorExtensions>
+</spirit:component>

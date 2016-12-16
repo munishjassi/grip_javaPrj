@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus202:12:48 24.04.2014-->
+<spirit:component xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>ARM</spirit:vendor>
+	<spirit:library>ip</spirit:library>
+	<spirit:name>axi_clkgen_0</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:busInterfaces>
+		<spirit:busInterface>
+			<spirit:name>S_AXI</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:slave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+	</spirit:busInterfaces>
+	<spirit:model>
+		<spirit:views>
+			<spirit:view>
+				<spirit:name>rtl</spirit:name>
+				<spirit:envIdentifier>::</spirit:envIdentifier>
+			</spirit:view>
+			<spirit:view>
+				<spirit:name>structural</spirit:name>
+				<spirit:envIdentifier></spirit:envIdentifier>
+				<spirit:hierarchyRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_clkgen.designcfg" spirit:version="1.0"/>
+			</spirit:view>
+		</spirit:views>
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>ref_clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+	</spirit:model>
+<spirit:parameters>
+	<spirit:parameter>
+		<spirit:name>INSTANCE</spirit:name>
+		<spirit:value>axi_clkgen_0</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>HW_VER</spirit:name>
+		<spirit:value>1.00.a</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>C_BASEADDR</spirit:name>
+		<spirit:value>0x79000000</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>C_HIGHADDR</spirit:name>
+		<spirit:value>0x7900ffff</spirit:value>
+	</spirit:parameter>
+</spirit:parameters>
+
+
+	<spirit:vendorExtensions>
+		<kactus2:extensions>
+			<kactus2:kts_attributes>
+				<kactus2:kts_productHier>IP</kactus2:kts_productHier>
+				<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+				<kactus2:kts_firmness>Template</kactus2:kts_firmness>
+			</kactus2:kts_attributes>
+		</kactus2:extensions>
+	</spirit:vendorExtensions>
+</spirit:component>

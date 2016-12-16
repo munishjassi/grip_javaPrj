@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus214:39:11 22.04.2014-->
+<spirit:design xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>TUM</spirit:vendor>
+	<spirit:library>soc</spirit:library>
+	<spirit:name>System.hierarchical.design</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:componentInstances>
+		<spirit:componentInstance>
+			<spirit:instanceName>DMA2_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="DMA2" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="60"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="dma_m1">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="dma_m2">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="dma_s1">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>HW_acc2_0_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="HW_acc2" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="180"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="HW2_s">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>wishbone_bus_1</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="wishbone_bus_1" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="270"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="m1_wb">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m2_wb">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m3_wb">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m4_wb">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m5_wb">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m6_wb">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m7_wb">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m8_wb">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s1_wb">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s2_wb">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s3_wb">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s4_wb">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s5_wb">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s6_wb">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s7_wb">
+						<kactus2:position x="-80" y="250"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s8_wb">
+						<kactus2:position x="80" y="250"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>CPU_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="CPU" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="570"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="cpu_m">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="CPUtempPort" x="80" y="40"/>
+				</kactus2:adHocVisibilities>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>DMA_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="DMA" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="660"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="dma_m">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="wishbone_bus" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="750"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="m1_wb">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m2_wb">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m3_wb">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m4_wb">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m5_wb">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m6_wb">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m7_wb">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="m8_wb">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s1_wb">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s2_wb">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s3_wb">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s4_wb">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s5_wb">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s6_wb">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s7_wb">
+						<kactus2:position x="-80" y="250"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="s8_wb">
+						<kactus2:position x="80" y="250"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>MEM_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="MEM" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="1050"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="mem_s">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>HW_acc1_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="HW_acc1" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="1140"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="HW_s">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="HAtempPort" x="80" y="40"/>
+				</kactus2:adHocVisibilities>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>CAM_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="CAM" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="1230"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="cam_s">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>HW_acc2_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="TUM" spirit:library="soc" spirit:name="HW_acc2" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="510" y="1320"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="HW2_s">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+	</spirit:componentInstances>
+	<spirit:interconnections>
+		<spirit:interconnection>
+			<spirit:name>DMA2_0_dma_m2__To__wishbone_bus_0_s5_wb</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="DMA2_0" spirit:busRef="dma_m2"/>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="s5_wb"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>DMA2_0_dma_m1__To__wishbone_bus_1_m1_wb</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="DMA2_0" spirit:busRef="dma_m1"/>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_1" spirit:busRef="m1_wb"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>wishbone_bus_1_s2_wb__To__HW_acc2_0_0_HW2_s</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_1" spirit:busRef="s2_wb"/>
+			<spirit:activeInterface spirit:componentRef="HW_acc2_0_0" spirit:busRef="HW2_s"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>CPU_0_cpu_m__To__wishbone_bus_0_m1_wb</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="CPU_0" spirit:busRef="cpu_m"/>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="m1_wb"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>DMA_0_dma_m__To__wishbone_bus_0_m2_wb</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="DMA_0" spirit:busRef="dma_m"/>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="m2_wb"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>wishbone_bus_0_s1_wb__To__HW_acc1_0_HW_s</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="s1_wb"/>
+			<spirit:activeInterface spirit:componentRef="HW_acc1_0" spirit:busRef="HW_s"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>wishbone_bus_0_s5_wb__To__DMA2_0_dma_s1</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="s5_wb"/>
+			<spirit:activeInterface spirit:componentRef="DMA2_0" spirit:busRef="dma_s1"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>wishbone_bus_0_s4_wb__To__HW_acc2_0_HW2_s</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="s4_wb"/>
+			<spirit:activeInterface spirit:componentRef="HW_acc2_0" spirit:busRef="HW2_s"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>wishbone_bus_0_s3_wb__To__CAM_0_cam_s</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="s3_wb"/>
+			<spirit:activeInterface spirit:componentRef="CAM_0" spirit:busRef="cam_s"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>wishbone_bus_0_s2_wb__To__MEM_0_mem_s</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="wishbone_bus_0" spirit:busRef="s2_wb"/>
+			<spirit:activeInterface spirit:componentRef="MEM_0" spirit:busRef="mem_s"/>
+		</spirit:interconnection>
+	</spirit:interconnections>
+	<spirit:adHocConnections>
+		<spirit:adHocConnection>
+			<spirit:name>HW_acc1_0_tempPortHA_to_CPU_0_tempPort</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="HW_acc1_0" spirit:portRef="HAtempPort" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="CPU_0" spirit:portRef="CPUtempPort" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>MUNISH</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="HW_acc1_0" spirit:portRef="MUNI" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="CPU_0" spirit:portRef="MUNNNI" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+	</spirit:adHocConnections>
+	<spirit:vendorExtensions>
+		<kactus2:columnLayout>
+			<kactus2:column name="IO" contentType="0" allowedItems="1"/>
+			<kactus2:column name="Buses" contentType="1" allowedItems="12"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="DMA2_0_dma_m2__To__wishbone_bus_0_s5_wb" kactus2:offPage="false">
+				<kactus2:position x="590" y="100"/>
+				<kactus2:position x="640" y="100"/>
+				<kactus2:position x="640" y="980"/>
+				<kactus2:position x="420" y="980"/>
+				<kactus2:position x="420" y="970"/>
+				<kactus2:position x="430" y="970"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="DMA2_0_dma_m1__To__wishbone_bus_1_m1_wb" kactus2:offPage="false">
+				<kactus2:position x="430" y="100"/>
+				<kactus2:position x="420" y="100"/>
+				<kactus2:position x="420" y="310"/>
+				<kactus2:position x="430" y="310"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="wishbone_bus_1_s2_wb__To__HW_acc2_0_0_HW2_s" kactus2:offPage="false">
+				<kactus2:position x="590" y="430"/>
+				<kactus2:position x="600" y="430"/>
+				<kactus2:position x="600" y="210"/>
+				<kactus2:position x="420" y="210"/>
+				<kactus2:position x="420" y="220"/>
+				<kactus2:position x="430" y="220"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="CPU_0_cpu_m__To__wishbone_bus_0_m1_wb" kactus2:offPage="false">
+				<kactus2:position x="430" y="610"/>
+				<kactus2:position x="420" y="610"/>
+				<kactus2:position x="420" y="790"/>
+				<kactus2:position x="430" y="790"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="DMA_0_dma_m__To__wishbone_bus_0_m2_wb" kactus2:offPage="false">
+				<kactus2:position x="430" y="700"/>
+				<kactus2:position x="420" y="700"/>
+				<kactus2:position x="420" y="800"/>
+				<kactus2:position x="600" y="800"/>
+				<kactus2:position x="600" y="790"/>
+				<kactus2:position x="590" y="790"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="wishbone_bus_0_s1_wb__To__HW_acc1_0_HW_s" kactus2:offPage="false">
+				<kactus2:position x="430" y="910"/>
+				<kactus2:position x="420" y="910"/>
+				<kactus2:position x="420" y="1180"/>
+				<kactus2:position x="430" y="1180"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="wishbone_bus_0_s5_wb__To__DMA2_0_dma_s1" kactus2:offPage="false">
+				<kactus2:position x="430" y="970"/>
+				<kactus2:position x="420" y="970"/>
+				<kactus2:position x="420" y="130"/>
+				<kactus2:position x="430" y="130"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="wishbone_bus_0_s4_wb__To__HW_acc2_0_HW2_s" kactus2:offPage="false">
+				<kactus2:position x="590" y="940"/>
+				<kactus2:position x="600" y="940"/>
+				<kactus2:position x="600" y="1370"/>
+				<kactus2:position x="420" y="1370"/>
+				<kactus2:position x="420" y="1360"/>
+				<kactus2:position x="430" y="1360"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="wishbone_bus_0_s3_wb__To__CAM_0_cam_s" kactus2:offPage="false">
+				<kactus2:position x="430" y="940"/>
+				<kactus2:position x="420" y="940"/>
+				<kactus2:position x="420" y="1270"/>
+				<kactus2:position x="430" y="1270"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="wishbone_bus_0_s2_wb__To__MEM_0_mem_s" kactus2:offPage="false">
+				<kactus2:position x="590" y="910"/>
+				<kactus2:position x="600" y="910"/>
+				<kactus2:position x="600" y="1100"/>
+				<kactus2:position x="420" y="1100"/>
+				<kactus2:position x="420" y="1090"/>
+				<kactus2:position x="430" y="1090"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="HW_acc1_0_tempPortHA_to_CPU_0_tempPort" kactus2:offPage="false">
+				<kactus2:position x="590" y="1180"/>
+				<kactus2:position x="600" y="1180"/>
+				<kactus2:position x="600" y="610"/>
+				<kactus2:position x="590" y="610"/>
+			</kactus2:route>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities/>
+	</spirit:vendorExtensions>
+</spirit:design>

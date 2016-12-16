@@ -1,0 +1,77 @@
+!SESSION 2014-05-15 11:05:56.368 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.sdk.ide
+Command-line arguments:  -product org.eclipse.sdk.ide -data /home/admin/Development/java_workspace/emf_workspace/../runtime-EclipseApplication -dev file:/home/admin/Development/java_workspace/emf_workspace/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.equinox.app 0 0 2014-05-15 11:06:01.468
+!MESSAGE Product org.eclipse.sdk.ide could not be found.
+
+!ENTRY org.eclipse.osgi 2 0 2014-05-15 11:06:01.742
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.743
+!MESSAGE Bundle reference:file:/home/admin/Development/java_workspace/emf_workspace/space exploration.edit/ was not resolved.
+!SUBENTRY 2 space_exploration.edit 2 0 2014-05-15 11:06:01.744
+!MESSAGE Missing required bundle org.eclipse.emf.edit_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.745
+!MESSAGE Bundle reference:file:/home/admin/Development/java_workspace/emf_workspace/space exploration.editor/ was not resolved.
+!SUBENTRY 2 space_exploration.editor 2 0 2014-05-15 11:06:01.746
+!MESSAGE Missing required bundle org.eclipse.emf.edit.ui_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2014-05-15 11:06:01.749
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.750
+!MESSAGE Bundle space_exploration.edit_1.0.0.qualifier [1490] was not resolved.
+!SUBENTRY 2 space_exploration.edit 2 0 2014-05-15 11:06:01.751
+!MESSAGE Missing required bundle org.eclipse.emf.edit_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.751
+!MESSAGE Bundle space_exploration.editor_1.0.0.qualifier [1491] was not resolved.
+!SUBENTRY 2 space_exploration.editor 2 0 2014-05-15 11:06:01.752
+!MESSAGE Missing required bundle space_exploration.edit_0.0.0.
+!SUBENTRY 2 space_exploration.editor 2 0 2014-05-15 11:06:01.753
+!MESSAGE Missing required bundle org.eclipse.emf.edit.ui_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2014-05-15 11:06:01.883
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.883
+!MESSAGE Bundle reference:file:/home/admin/Development/java_workspace/emf_workspace/space exploration.edit/ was not resolved.
+!SUBENTRY 2 space_exploration.edit 2 0 2014-05-15 11:06:01.884
+!MESSAGE Missing required bundle org.eclipse.emf.edit_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.884
+!MESSAGE Bundle reference:file:/home/admin/Development/java_workspace/emf_workspace/space exploration.editor/ was not resolved.
+!SUBENTRY 2 space_exploration.editor 2 0 2014-05-15 11:06:01.884
+!MESSAGE Missing required bundle org.eclipse.emf.edit.ui_0.0.0.
+
+!ENTRY org.eclipse.osgi 2 0 2014-05-15 11:06:01.886
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.891
+!MESSAGE Bundle space_exploration.edit_1.0.0.qualifier [1490] was not resolved.
+!SUBENTRY 2 space_exploration.edit 2 0 2014-05-15 11:06:01.891
+!MESSAGE Missing required bundle org.eclipse.emf.edit_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-05-15 11:06:01.891
+!MESSAGE Bundle space_exploration.editor_1.0.0.qualifier [1491] was not resolved.
+!SUBENTRY 2 space_exploration.editor 2 0 2014-05-15 11:06:01.891
+!MESSAGE Missing required bundle space_exploration.edit_0.0.0.
+!SUBENTRY 2 space_exploration.editor 2 0 2014-05-15 11:06:01.892
+!MESSAGE Missing required bundle org.eclipse.emf.edit.ui_0.0.0.
+
+!ENTRY org.eclipse.osgi 4 0 2014-05-15 11:06:01.892
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: No application id has been found.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:242)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:622)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)

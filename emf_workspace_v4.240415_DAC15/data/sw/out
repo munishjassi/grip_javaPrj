@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3schools.com" xsi:schemaLocation="http://www.w3schools.com software1.xsd">
+  <specifications>
+    <applicationname> redlinefollower </applicationname>
+    <cpucycles>2000</cpucycles>
+    <buscycles>3000</buscycles>
+  </specifications>
+  <submodules>
+    <submodule>
+      <modulename> Task1 </modulename>
+      <specifications>
+        <mapping> cpu </mapping>
+        <mode> computed </mode>
+      </specifications>
+      <hwmappings>
+        <hwmapping>
+          <mappingname> cpu </mappingname>
+          <performance>
+            <cpucycles>1000</cpucycles>
+            <buscycles>2000</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+      </hwmappings>
+    </submodule>
+    <submodule>
+      <modulename>Task2</modulename>
+      <specifications>
+        <mapping>hwacc1</mapping>
+        <mode> computed </mode>
+      </specifications>
+      <hwmappings>
+        <hwmapping>
+          <mappingname>cpu</mappingname>
+          <performance>
+            <cpucycles>0</cpucycles>
+            <buscycles>0</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+        <hwmapping>
+          <mappingname>hwacc1</mappingname>
+          <performance>
+            <cpucycles>1000</cpucycles>
+            <buscycles>1000</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+      </hwmappings>
+    </submodule>
+    <submodule>
+      <modulename> Task3 </modulename>
+      <specifications>
+        <mapping> cpu </mapping>
+        <mode> computed </mode>
+      </specifications>
+      <hwmappings>
+        <hwmapping>
+          <mappingname> cpu </mappingname>
+          <performance>
+            <cpucycles>0</cpucycles>
+            <buscycles>0</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+      </hwmappings>
+    </submodule>
+    <submodule>
+      <modulename> Task4 </modulename>
+      <specifications>
+        <mapping> cpu </mapping>
+        <mode> computed </mode>
+      </specifications>
+      <hwmappings>
+        <hwmapping>
+          <mappingname> cpu </mappingname>
+          <performance>
+            <cpucycles>0</cpucycles>
+            <buscycles>0</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+      </hwmappings>
+    </submodule>
+    <submodule>
+      <modulename> Task5 </modulename>
+      <specifications>
+        <mapping> cpu </mapping>
+        <mode> computed </mode>
+      </specifications>
+      <hwmappings>
+        <hwmapping>
+          <mappingname> cpu </mappingname>
+          <performance>
+            <cpucycles>0</cpucycles>
+            <buscycles>0</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+      </hwmappings>
+    </submodule>
+    <submodule>
+      <modulename> Task5 </modulename>
+      <specifications>
+        <mapping> cpu </mapping>
+        <mode> computed </mode>
+      </specifications>
+      <hwmappings>
+        <hwmapping>
+          <mappingname> cpu </mappingname>
+          <performance>
+            <cpucycles>0</cpucycles>
+            <buscycles>0</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+      </hwmappings>
+    </submodule>
+    <submodule>
+      <modulename> Task6 </modulename>
+      <specifications>
+        <mapping> cpu </mapping>
+        <mode> computed </mode>
+      </specifications>
+      <hwmappings>
+        <hwmapping>
+          <mappingname> cpu </mappingname>
+          <performance>
+            <cpucycles>0</cpucycles>
+            <buscycles>0</buscycles>
+          </performance>
+          <description>
+            <cdescription> cpp </cdescription>
+          </description>
+        </hwmapping>
+      </hwmappings>
+    </submodule>
+    <loop>
+      <specifications>
+        <loopname> Loop2 </loopname>
+        <number> 100000 </number>
+        <startsubmodule> Task3 </startsubmodule>
+      </specifications>
+    </loop>
+    <loop>
+      <specifications>
+        <loopname> Loop1 </loopname>
+        <number> 0 </number>
+        <startsubmodule> Task2 </startsubmodule>
+      </specifications>
+    </loop>
+  </submodules>
+</application>

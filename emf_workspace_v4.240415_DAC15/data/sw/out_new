@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ASCII"?>
+<w3schools:application_._type xmlns:w3schools="http://www.w3schools.com">
+  <w3schools:specifications>
+    <w3schools:applicationname> redlinefollower </w3schools:applicationname>
+    <w3schools:cpucycles>2000</w3schools:cpucycles>
+    <w3schools:buscycles>3000</w3schools:buscycles>
+  </w3schools:specifications>
+  <w3schools:submodules>
+    <w3schools:submodule>
+      <w3schools:modulename> Task1 </w3schools:modulename>
+      <w3schools:specifications>
+        <w3schools:mapping> cpu </w3schools:mapping>
+        <w3schools:mode> computed </w3schools:mode>
+      </w3schools:specifications>
+      <w3schools:hwmappings>
+        <w3schools:hwmapping>
+          <w3schools:mappingname> cpu </w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>1000</w3schools:cpucycles>
+            <w3schools:buscycles>2000</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+      </w3schools:hwmappings>
+    </w3schools:submodule>
+    <w3schools:submodule>
+      <w3schools:modulename>Task2</w3schools:modulename>
+      <w3schools:specifications>
+        <w3schools:mapping>hwacc1</w3schools:mapping>
+        <w3schools:mode> computed </w3schools:mode>
+      </w3schools:specifications>
+      <w3schools:hwmappings>
+        <w3schools:hwmapping>
+          <w3schools:mappingname>cpu</w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>0</w3schools:cpucycles>
+            <w3schools:buscycles>0</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+        <w3schools:hwmapping>
+          <w3schools:mappingname>hwacc1</w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>1000</w3schools:cpucycles>
+            <w3schools:buscycles>1000</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+      </w3schools:hwmappings>
+    </w3schools:submodule>
+    <w3schools:submodule>
+      <w3schools:modulename> Task3 </w3schools:modulename>
+      <w3schools:specifications>
+        <w3schools:mapping> cpu </w3schools:mapping>
+        <w3schools:mode> computed </w3schools:mode>
+      </w3schools:specifications>
+      <w3schools:hwmappings>
+        <w3schools:hwmapping>
+          <w3schools:mappingname> cpu </w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>0</w3schools:cpucycles>
+            <w3schools:buscycles>0</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+      </w3schools:hwmappings>
+    </w3schools:submodule>
+    <w3schools:submodule>
+      <w3schools:modulename> Task4 </w3schools:modulename>
+      <w3schools:specifications>
+        <w3schools:mapping> cpu </w3schools:mapping>
+        <w3schools:mode> computed </w3schools:mode>
+      </w3schools:specifications>
+      <w3schools:hwmappings>
+        <w3schools:hwmapping>
+          <w3schools:mappingname> cpu </w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>0</w3schools:cpucycles>
+            <w3schools:buscycles>0</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+      </w3schools:hwmappings>
+    </w3schools:submodule>
+    <w3schools:submodule>
+      <w3schools:modulename> Task5 </w3schools:modulename>
+      <w3schools:specifications>
+        <w3schools:mapping> cpu </w3schools:mapping>
+        <w3schools:mode> computed </w3schools:mode>
+      </w3schools:specifications>
+      <w3schools:hwmappings>
+        <w3schools:hwmapping>
+          <w3schools:mappingname> cpu </w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>0</w3schools:cpucycles>
+            <w3schools:buscycles>0</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+      </w3schools:hwmappings>
+    </w3schools:submodule>
+    <w3schools:submodule>
+      <w3schools:modulename> Task5 </w3schools:modulename>
+      <w3schools:specifications>
+        <w3schools:mapping> cpu </w3schools:mapping>
+        <w3schools:mode> computed </w3schools:mode>
+      </w3schools:specifications>
+      <w3schools:hwmappings>
+        <w3schools:hwmapping>
+          <w3schools:mappingname> cpu </w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>0</w3schools:cpucycles>
+            <w3schools:buscycles>0</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+      </w3schools:hwmappings>
+    </w3schools:submodule>
+    <w3schools:submodule>
+      <w3schools:modulename> Task6 </w3schools:modulename>
+      <w3schools:specifications>
+        <w3schools:mapping> cpu </w3schools:mapping>
+        <w3schools:mode> computed </w3schools:mode>
+      </w3schools:specifications>
+      <w3schools:hwmappings>
+        <w3schools:hwmapping>
+          <w3schools:mappingname> cpu </w3schools:mappingname>
+          <w3schools:performance>
+            <w3schools:cpucycles>0</w3schools:cpucycles>
+            <w3schools:buscycles>0</w3schools:buscycles>
+          </w3schools:performance>
+          <w3schools:description>
+            <w3schools:cdescription> cpp </w3schools:cdescription>
+          </w3schools:description>
+        </w3schools:hwmapping>
+      </w3schools:hwmappings>
+    </w3schools:submodule>
+    <w3schools:loop>
+      <w3schools:specifications>
+        <w3schools:loopname> Loop2 </w3schools:loopname>
+        <w3schools:number> 100000 </w3schools:number>
+        <w3schools:startsubmodule> Task3 </w3schools:startsubmodule>
+      </w3schools:specifications>
+    </w3schools:loop>
+    <w3schools:loop>
+      <w3schools:specifications>
+        <w3schools:loopname> Loop1 </w3schools:loopname>
+        <w3schools:number> 0 </w3schools:number>
+        <w3schools:startsubmodule> Task2 </w3schools:startsubmodule>
+      </w3schools:specifications>
+    </w3schools:loop>
+  </w3schools:submodules>
+</w3schools:application_._type>

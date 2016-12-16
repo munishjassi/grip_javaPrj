@@ -1,0 +1,780 @@
+package generativeGrammar.designAbstractionGraph.impl;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.AdHocConnectionType;
+import org.spiritconsortium.xml.schema.spirit.spirit.AdHocConnectionsType;
+import org.spiritconsortium.xml.schema.spirit.spirit.ComponentInstanceType;
+import org.spiritconsortium.xml.schema.spirit.spirit.ComponentInstancesType;
+import org.spiritconsortium.xml.schema.spirit.spirit.ComponentType;
+import org.spiritconsortium.xml.schema.spirit.spirit.DesignType;
+import org.spiritconsortium.xml.schema.spirit.spirit.DocumentRoot;
+import org.spiritconsortium.xml.schema.spirit.spirit.InterconnectionType;
+import org.spiritconsortium.xml.schema.spirit.spirit.InterconnectionsType;
+import org.spiritconsortium.xml.schema.spirit.spirit.Interface;
+import org.spiritconsortium.xml.schema.spirit.spirit.LibraryRefType;
+import org.spiritconsortium.xml.schema.spirit.spirit.ModelType;
+import org.spiritconsortium.xml.schema.spirit.spirit.NameValuePairType;
+import org.spiritconsortium.xml.schema.spirit.spirit.ParametersType1;
+import org.spiritconsortium.xml.schema.spirit.spirit.PortType;
+import org.spiritconsortium.xml.schema.spirit.spirit.PortsType;
+import org.spiritconsortium.xml.schema.spirit.spirit.PortsType1;
+import org.spiritconsortium.xml.schema.spirit.spirit.ValueType2;
+import org.spiritconsortium.xml.schema.spirit.spirit._1Factory;
+import org.spiritconsortium.xml.schema.spirit.spirit._1Package;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.ComponentTypeImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.DesignTypeImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.InterconnectionTypeImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.NameValuePairTypeImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.ParametersType1Impl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.PortTypeImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.PortsType1Impl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.PortsTypeImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.impl.ValueType2Impl;
+import org.spiritconsortium.xml.schema.spirit.spirit.util._1ResourceFactoryImpl;
+
+import com.rits.cloning.Cloner;
+
+import generativeGrammar.designAbstractionGraph.CompAbstraction;
+import generativeGrammar.designAbstractionGraph.DesignAbstraction;
+import generativeGrammar.designAbstractionGraph.GlobalVars;
+import generativeGrammar.designAbstractionGraph.LibCompAbstraction;
+import generativeGrammar.utils.ConnectedPort;
+import generativeGrammar.utils.GenerativRulePair;
+import generativeGrammar.utils.Parameter;
+import generativeGrammar.utils.PortCompPair;
+
+public class DesignGeneration {
+
+	// Note: seedDesign and rule are assumed as STATIC input linked to
+	// GlobalVars
+	// seedDesign is locally deep cloned.
+	// Returns new design
+	//
+	
+	
+	public DesignAbstraction GenerateNewDesign(DesignAbstraction seedDesign, GenerativRulePair rule) {
+
+		System.out.println("Design Generation: STARTING GENERATION OF NEW DESIGN BY USING GERERATIVE RULES....");
+		Cloner cloner = new Cloner();
+		DesignAbstraction finalDesign = cloner.deepClone(seedDesign);
+
+		DesignAbstraction rulePat = rule.getGenerativPattern();
+		DesignAbstraction replacementPat = rule.getReplacementPattern();
+		List<CompAbstraction> toRemoveComps = new ArrayList<CompAbstraction>();
+		//List<CompAbstraction> toAddComps = new ArrayList<CompAbstraction>();
+		
+		if (!seedDesign.MatchPattern(rulePat)) {
+			System.out.printf("Design Generation: Given rule-pattern was NOT FOUND in the Seed Design. \n");
+			return null;
+		} else {
+			System.out.printf("Design Generation: Given rule-pattern was FOUND in the Seed Design. \n");
+		}
+		
+		// Compare startPat and replacementPat
+		this.PrintDesignSummary(rulePat);
+		this.PrintDesignSummary(replacementPat);
+		// Reducing the "rule" to the reduced form
+		GenerativRulePair reducedRule = this.ReduceRule(rule);
+
+		// Compare startPat and replacementPat for "reducedRule"
+		this.PrintDesignSummary(reducedRule.getGenerativPattern());
+		this.PrintDesignSummary(reducedRule.getReplacementPattern());
+		
+		System.out.println("Design Generation: BEFORE APPLYING RULE...");
+		this.PrintDesignSummary(finalDesign);
+		
+		// Removing undesired components from final design, defined by GenerativRule
+		for (Iterator<CompAbstraction> i = reducedRule.getGenerativPattern().getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			if (!object.getIS_BUS()) {
+				toRemoveComps.add(object);
+				//finalDesign = this.RemoveComponent(finalDesign, object);
+				finalDesign = this.RechangeConnections(finalDesign, object);
+				System.out.println("Design Generation: Rechanged connections for Component from Final Design : " + object.getInstanceName());
+			}
+		}
+		
+		
+		// Adding required Buses to the final design, defined by GenerativRule
+		for (Iterator<CompAbstraction> i = reducedRule.getReplacementPattern().getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			if (object.getIS_BUS()) {
+				boolean busExist = false;
+				//toAddComps.add(object);
+				for (Iterator<CompAbstraction> j = reducedRule.getGenerativPattern().getDesComponents().iterator(); j.hasNext();) {
+					CompAbstraction obj = (CompAbstraction) j.next();
+					if (obj.getInstanceName() == object.getInstanceName()) {
+						busExist = true;
+					}
+				}			
+				
+				if (!busExist) {
+					int rm = object.getPortToRefComponentPair().size();
+					for (int r = rm-1; r >=0 ; r--) {
+						object.getPortToRefComponentPair().remove(r);
+					}
+					finalDesign = this.AddBusComponent(finalDesign, object);
+					System.out.println("Design Generation: ADDED Bus Component to Final Design : " + object.getInstanceName());
+				}
+			}
+		}
+
+		// Adding required Peripheral components to the final design, defined by GenerativRule
+		for (Iterator<CompAbstraction> i = reducedRule.getReplacementPattern().getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			if (!object.getIS_BUS()) {
+				//toAddComps.add(object);
+				System.out.println("Design Generation: Starting: Adding Peri Component to Final Design : " + object.getInstanceName());
+				finalDesign = this.AddComponent(finalDesign, object);
+				System.out.println("Design Generation: Finished: ADDED Peri Component to Final Design : " + object.getInstanceName());
+			}
+		}
+		
+		System.out.println("Design Generation: AFTER APPLYING RULE...");
+		this.PrintDesignSummary(finalDesign);
+
+
+		return finalDesign;
+		
+	} // End Method GenerateNewDesign(DesignAbstraction seedDesign,
+		// GenerativRulePair rule)
+
+
+	
+	public void GenerateIPXACT (String startDesignFile, String finalDesign, DesignAbstraction newDesAbs) throws IOException {
+		
+		System.out.println();
+		System.out.println("Calling Function: DesignGeneration.GenerateDesIPXACT(String designFile)");
+
+		ResourceSet resourceSet = new ResourceSetImpl();
+		// Register the appropriate resource factory to handle all file
+		// extensions.
+		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
+				.put(Resource.Factory.Registry.DEFAULT_EXTENSION, new _1ResourceFactoryImpl());
+
+		// Register the package to ensure it is available during loading.
+		resourceSet.getPackageRegistry().put(_1Package.eNS_URI, _1Package.eINSTANCE);
+		URI uri = URI.createFileURI(startDesignFile);
+		Resource resource = resourceSet.getResource(uri, true);
+		System.out.println("LOADED " + uri);
+		DocumentRoot designRoot = (DocumentRoot) resource.getContents().get(0);
+		DesignType rootNode = designRoot.getDesign();
+		DesignType newNode = new DesignTypeImpl();
+		
+		System.out.println("Start Design Parsing...");
+
+		
+		ComponentInstancesType components = rootNode.getComponentInstances();
+		List<ComponentInstanceType> componentsList = components.getComponentInstance();
+
+		List<String> componentsListString = new ArrayList<String>();
+		List<String> interconnectionsListString = new ArrayList<String>();
+		
+		List<CompAbstraction> newDesAbsComponents = newDesAbs.getDesComponents();
+		
+		for (Iterator<ComponentInstanceType> j = componentsList.iterator(); j.hasNext();) {
+			ComponentInstanceType object = (ComponentInstanceType) j.next();
+			componentsListString.add(object.getInstanceName());
+		}
+		
+		_1Package spiritPackage = _1Package.eINSTANCE;
+		_1Factory spiritFactory = spiritPackage.get_1Factory();
+	    ComponentInstanceType newComponentChild = spiritFactory.createComponentInstanceType();
+	    LibraryRefType newLibRefType = spiritFactory.createLibraryRefType();
+	    Cloner cloner = new Cloner();
+	
+		boolean instanceExist = false;
+		
+		for (Iterator<CompAbstraction> j = newDesAbsComponents.iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			this.GenerateCompIPXACT(finalDesign, object);
+			
+			instanceExist = false;
+			for (Iterator<ComponentInstanceType> i = components.getComponentInstance().iterator(); i.hasNext();) {
+				ComponentInstanceType obj = (ComponentInstanceType) i.next();
+				if (obj.getInstanceName().equals(object.getInstanceName())) {
+					componentsList.add(obj);
+					instanceExist = true;
+				}
+			}
+			if (!instanceExist) {
+					ComponentInstanceType newComponent = cloner.deepClone(newComponentChild);
+					newComponent.setInstanceName(object.getInstanceName());
+					for (Iterator<LibCompAbstraction> i = GlobalVars.LIBRARY.iterator(); i.hasNext();) {
+						LibCompAbstraction obj = (LibCompAbstraction) i.next();
+						if (object.getLibAbsRef().getInstanceName().equals(obj.getInstanceName())) {
+							LibraryRefType newLibRef = cloner.deepClone(newLibRefType);
+							newLibRef.setLibrary(obj.getLibrary());
+							newLibRef.setName(obj.getInstanceName());
+							newLibRef.setVendor(obj.getVendor());
+							newLibRef.setVersion(obj.getVersion());
+							newComponent.setComponentRef(newLibRef);
+						}
+					}
+					newComponent.setDisplayName("");
+					newComponent.setDescription("");
+					componentsList.add(newComponent);
+			}
+		}
+		
+		
+		InterconnectionsType interconnections =  spiritFactory.createInterconnectionsType();//new InterconnectionTypeImpl();//rootNode.getInterconnections();
+		List<InterconnectionType> interconnectionsList = interconnections.getInterconnection();
+		
+		for (Iterator<InterconnectionType> j = interconnectionsList.iterator(); j.hasNext();) {
+			InterconnectionType object = (InterconnectionType) j.next();
+			interconnectionsListString.add(object.getName());
+		}
+		
+		
+		// Creating interconnections tag for IPXACT
+		for (Iterator<CompAbstraction> i = newDesAbs.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction Object = (CompAbstraction) i.next();
+			List<PortCompPair> connections = Object.getPortToRefComponentPair();
+			List<ConnectedPort> masters = Object.getMasterPorts();
+			List<ConnectedPort> mirSlaves = Object.getMirSlavePorts();
+			String name = "";
+
+			if (masters.size() > 0) {
+				
+				for (Iterator<ConnectedPort> j = masters.iterator(); j.hasNext();) {
+
+					InterconnectionType newInterconnectionType = spiritFactory.createInterconnectionType();
+					Interface newActiveInterfaceType = spiritFactory.createInterface();
+					InterconnectionType newInterconnection = cloner.deepClone(newInterconnectionType);
+					
+					ConnectedPort Obj = (ConnectedPort) j.next();
+					Interface newActiveInterface1 = cloner.deepClone(newActiveInterfaceType);
+					Interface newActiveInterface2 = cloner.deepClone(newActiveInterfaceType);
+					for (Iterator<PortCompPair> k = connections.iterator(); k.hasNext();) {
+						PortCompPair O = (PortCompPair) k.next();
+						if (Obj.getPort().equals(O.getPort())) {
+							newActiveInterface1.setBusRef(Obj.getPort());
+							newActiveInterface1.setComponentRef(Object.getInstanceName());
+							newActiveInterface2.setComponentRef(O.getRefComp().getInstanceName());
+							for (Iterator<PortCompPair> l = O.getRefComp().getPortToRefComponentPair().iterator(); l.hasNext();) {
+								PortCompPair OO = (PortCompPair) l.next();
+								if (OO.getRefComp().getInstanceName().equals(Object.getInstanceName())) {
+									newActiveInterface2.setBusRef(OO.getPort());
+								}
+							}
+							newInterconnection.getActiveInterface().add(newActiveInterface1);
+							newInterconnection.getActiveInterface().add(newActiveInterface2);
+							newInterconnection.setDescription("");
+							newInterconnection.setDisplayName("");
+							name = newActiveInterface1.getComponentRef();
+							name += "_";
+							name += newActiveInterface1.getBusRef();
+							name += "_";
+							name += "_To_";
+							name += "_";
+							name += newActiveInterface2.getComponentRef();
+							name += "_";
+							name += newActiveInterface2.getBusRef();
+							newInterconnection.setName(name);
+						}
+					}
+					interconnectionsList.add(newInterconnection);
+				}
+			}
+			
+
+			if (mirSlaves.size() > 0) {
+				//InterconnectionType newInterconnection = cloner.deepClone(newInterconnectionType);
+				for (Iterator<ConnectedPort> j = mirSlaves.iterator(); j.hasNext();) {
+
+					InterconnectionType newInterconnectionType = spiritFactory.createInterconnectionType();
+					Interface newActiveInterfaceType = spiritFactory.createInterface();
+					InterconnectionType newInterconnection = cloner.deepClone(newInterconnectionType);
+					
+					ConnectedPort Obj = (ConnectedPort) j.next();
+					for (Iterator<PortCompPair> k = connections.iterator(); k.hasNext();) {
+						PortCompPair O = (PortCompPair) k.next();
+						if (Obj.getPort().equals(O.getPort())) {
+							Interface newActiveInterface1 = cloner.deepClone(newActiveInterfaceType);
+							Interface newActiveInterface2 = cloner.deepClone(newActiveInterfaceType);
+							newActiveInterface1.setBusRef(Obj.getPort());
+							newActiveInterface1.setComponentRef(Object.getInstanceName());
+							newActiveInterface2.setComponentRef(O.getRefComp().getInstanceName());
+							int ii = 0;
+							for (Iterator<PortCompPair> l = O.getRefComp().getPortToRefComponentPair().iterator(); l.hasNext();) {
+								ii++;
+								PortCompPair OO = (PortCompPair) l.next();
+								System.out.println(ii + " " + OO.getPort() + " " + OO.getRefComp().getInstanceName());
+								if (OO.getRefComp().getInstanceName().equals(Object.getInstanceName())) {
+									newActiveInterface2.setBusRef(OO.getPort());
+								}
+							}
+							newInterconnection.getActiveInterface().add(newActiveInterface1);
+							newInterconnection.getActiveInterface().add(newActiveInterface2);
+							newInterconnection.setDescription("");
+							newInterconnection.setDisplayName("");
+							name = newActiveInterface1.getComponentRef();
+							name += "_";
+							name += newActiveInterface1.getBusRef();
+							name += "_";
+							name += "_To_";
+							name += "_";
+							name += newActiveInterface2.getComponentRef();
+							name += "_";
+							name += newActiveInterface2.getBusRef();
+							newInterconnection.setName(name);
+							interconnectionsList.add(newInterconnection);
+						}
+					}
+				}
+			}
+		} // interconnections tag ends here
+		
+//		AdHocConnectionsType adhocConnectionsType = spiritFactory.createAdHocConnectionsType();
+//		AdHocConnectionsType adhocConnections = cloner.deepClone(adhocConnectionsType);
+//		
+//
+//		AdHocConnectionType adhocConnectionType = spiritFactory.createAdHocConnectionType();
+//		AdHocConnectionType adhocConnection = cloner.deepClone(adhocConnectionType);
+//		
+//		List<AdHocConnectionType> adhocs = rootNode.getAdHocConnections().getAdHocConnection();
+//
+//		System.out.print("ADHOC" + rootNode.getAdHocConnections().toString());
+//		InterconnectionType newInterconnectionType = spiritFactory.createInterconnectionType();
+//		Interface newActiveInterfaceType = spiritFactory.createInterface();
+//		InterconnectionType newInterconnection = cloner.deepClone(newInterconnectionType);
+
+
+//		ComponentInstancesType components = rootNode.getComponentInstances();
+//		List<ComponentInstanceType> componentsList = components.getComponentInstance();
+		
+		AdHocConnectionsType adhocConnections = rootNode.getAdHocConnections();
+		List<AdHocConnectionType> adhoc = rootNode.getAdHocConnections().getAdHocConnection();
+		adhocConnections.getAdHocConnection().add(adhoc.get(0));
+		
+		// Creating vendorExtensions tag for IPXACT
+		System.out.print("ADHOC" + rootNode.getAdHocConnections().getAdHocConnection().get(0).toString());
+		
+		newNode.setVendor(rootNode.getVendor());
+		newNode.setLibrary(rootNode.getLibrary());
+		newNode.setName(rootNode.getName());
+		newNode.setVersion(rootNode.getVersion());
+		newNode.setComponentInstances(components);
+		newNode.setInterconnections(interconnections);
+		newNode.setAdHocConnections(adhocConnections);
+		
+		File file = new File(startDesignFile);
+		String name = finalDesign + "/" + file.getName() + ".new.xml";
+		
+		System.out.println("CHECK" + name);
+		Resource resource2 = resourceSet.createResource(URI.createFileURI(name));
+		resource2.getContents().add(newNode);
+		resource2.save(null);
+		
+	}
+ 
+	public void GenerateCompIPXACT(String compDirectory, CompAbstraction comp) throws IOException {
+		
+		ComponentType newNode = new ComponentTypeImpl();
+		newNode.setVendor(comp.getLibAbsRef().getVendor());
+		newNode.setLibrary(comp.getLibAbsRef().getLibrary());
+		newNode.setName(comp.getInstanceName());
+		newNode.setVersion(comp.getLibAbsRef().getVersion());
+		
+		List<Parameter> absParameters = comp.getParameters();
+		List<ConnectedPort> absPins = comp.getAllPins();
+		
+
+		_1Package spiritPackage = _1Package.eINSTANCE;
+		_1Factory spiritFactory = spiritPackage.get_1Factory();
+		NameValuePairTypeImpl para = new NameValuePairTypeImpl();
+		ValueType2 val = new ValueType2Impl();
+		ParametersType1 pp = spiritFactory.createParametersType1();			
+		ModelType model = spiritFactory.createModelType();
+		PortsType1 ports = new PortsType1Impl();
+		PortType port = new PortTypeImpl();
+		model.setPorts(ports);
+		newNode.setModel(model);
+		Cloner cloner = new Cloner();
+		
+		for (Iterator<Parameter> i = absParameters.iterator(); i.hasNext();) {
+			Parameter obj = i.next();
+			
+			NameValuePairTypeImpl para1 = cloner.deepClone(para);
+			ValueType2 val1 = cloner.deepClone(val);
+			
+			//System.out.println(obj.getParameter() + " || " + obj.getValue());
+			val1.setValue(obj.getValue());
+			para1.setName(obj.getParameter());
+			para1.setValue(val1);
+			pp.getParameter().add(para1);
+			newNode.setParameters(pp);
+		}
+		
+		for (Iterator<ConnectedPort> i = absPins.iterator(); i.hasNext();) {
+			ConnectedPort obj = i.next();
+
+			PortType port1 = cloner.deepClone(port);
+			port1.setName(obj.getPort());
+			ports.getPort().add(port1);
+		}
+
+		String outfile = compDirectory + "/" + newNode.getName() + ".xml";
+		ResourceSet resourceSet = new ResourceSetImpl();
+		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
+		.put(Resource.Factory.Registry.DEFAULT_EXTENSION, new _1ResourceFactoryImpl());
+
+		// Register the package to ensure it is available during loading.
+		resourceSet.getPackageRegistry().put(_1Package.eNS_URI, _1Package.eINSTANCE);
+
+		System.out.println(outfile);
+		Resource resource2 = resourceSet.createResource(URI.createFileURI(outfile));
+		resource2.getContents().add(newNode);
+		resource2.save(null);			
+	}
+	
+	
+	public DesignAbstraction AddBusComponent(DesignAbstraction inDesign, CompAbstraction bus) {
+
+		Cloner cloner = new Cloner();
+		DesignAbstraction outDesign = cloner.deepClone(inDesign);
+		outDesign.addDesComponent(bus);
+	
+		return outDesign;
+	}
+
+	
+	public DesignAbstraction AddComponent(DesignAbstraction inDesign, CompAbstraction comp) {
+
+		Cloner cloner = new Cloner();
+		DesignAbstraction outDesign = cloner.deepClone(inDesign);
+		
+		List<String> desComps = new ArrayList<String>();
+		boolean connectedBus = false;
+		String connectedPort = "";
+		boolean isMaster = false;
+		CompAbstraction bus = new CompAbstractionImpl();
+		//CompAbstraction pbus = new CompAbstractionImpl();
+		//CompAbstraction sbus = new CompAbstractionImpl();
+		
+		int cnt = 0;
+		int chkCnt1 = 0;
+		int pbusCnt = 0;
+		int sbusCnt = 0;
+		// Prepare List of all the components in the inDesign and get the index of Buses.
+		for (Iterator<CompAbstraction> j = outDesign.getDesComponents().iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (object.getIS_BUS()) {
+				//bus = object;
+				//chkCnt1 = cnt;
+				if (object.getInstanceName().equals(GlobalVars.BUS_INSTANCES.get(0))){
+					pbusCnt = cnt;
+					//pbus = object;
+				} else {
+					sbusCnt = cnt;
+					//sbus = object;
+				}
+			}
+			desComps.add(object.getInstanceName());
+			++cnt;
+		}
+
+		// Uniquifying the instance name of new "comp" to be added
+		String name = comp.getInstanceName();
+		String nname  = comp.getInstanceName();
+		int suff = 0;
+		while (desComps.contains(nname)) {
+			nname = name.concat("_" + suff);
+			suff++;
+		}
+		comp.setInstanceName(nname);
+		
+		
+		// Cache the port connection to Bus for "comp" to be added.
+		// Check if the "comp" needs to be connected to System bus.
+		List<PortCompPair> unconnectedports = cloner.deepClone(comp.getPortToRefComponentPair());
+			
+		int rounds = unconnectedports.size();
+		
+
+		for (int rnd = 0 ; rnd < rounds ; rnd ++) {
+			
+			cnt = 0;
+			int chkCnt2 = 0;
+			boolean busisprimary = false;
+			
+			/*
+			for (Iterator<PortCompPair> j = comp.getPortToRefComponentPair().iterator(); j.hasNext();) {
+				PortCompPair object = (PortCompPair) j.next();
+				if (object.getRefComp().getIS_BUS()) {
+					connectedBus = true;
+					connectedPort = object.getPort();
+					if (object.getRefComp().getInstanceName().equals(GlobalVars.BUS_INSTANCES.get(0))) {
+						busisprimary = true;
+					}
+					chkCnt2 = cnt;
+				}
+				++cnt;
+			}*/
+	
+			for (Iterator<PortCompPair> j = unconnectedports.iterator(); j.hasNext();) {
+				PortCompPair object = (PortCompPair) j.next();
+				
+				if (object.getRefComp().getIS_BUS()) {
+					connectedBus = true;
+					connectedPort = object.getPort();
+					busisprimary = false;
+					if (object.getRefComp().getInstanceName().equals(GlobalVars.BUS_INSTANCES.get(0))) {
+						busisprimary = true;
+					}
+					chkCnt2 = cnt;
+				}
+				++cnt;
+			}
+			
+			isMaster = false;
+			// Checks for Type of component - Master or Slave.
+			for (Iterator<ConnectedPort> i = comp.getMasterPorts().iterator(); i.hasNext();) {
+				ConnectedPort object = (ConnectedPort) i.next();
+				if (object.getPort().equals(connectedPort)) {
+					isMaster = true;
+				}
+			}
+			//if (comp.getMasterPorts().contains(connectedPort)) { isMaster = true ;}
+	
+			
+			// If "comp" needs connection to System bus.
+			// Correct PortToRefComponentPair list for "comp" and "outDesign" bus-component.
+			if (connectedBus) {
+				if (busisprimary) {
+					bus = outDesign.getDesComponents().get(pbusCnt);
+					chkCnt1 = pbusCnt;
+				} else {
+					bus = outDesign.getDesComponents().get(sbusCnt);
+					chkCnt1 = sbusCnt;
+				}
+				
+				//System.out.println(unconnectedports.size() + "P: "+ pbusCnt + "S: " + sbusCnt);
+				comp.getPortToRefComponentPair().remove(chkCnt2);
+				unconnectedports.remove(unconnectedports.size()-1);
+					
+				if (isMaster) {
+					List<String> freeports = bus.getUnconnectedPorts("mirMaster");
+					if (freeports.size() == 0) {
+						System.err.println("Error: No unconnected MirMaster port was found on Bus.");
+					} else {
+						PortCompPair cpair = new PortCompPair(connectedPort, freeports.get(0), 
+																outDesign.getDesComponents().get(chkCnt1));
+						PortCompPair bpair = new PortCompPair(freeports.get(0), connectedPort, comp );
+						comp.addPortToRefComponentPair(cpair);
+						outDesign.getDesComponents().get(chkCnt1).getPortToRefComponentPair().add(bpair);
+					}
+				} else {
+					List<String> freeports = bus.getUnconnectedPorts("mirSlave");
+					if (freeports.size() == 0) {
+						System.err.println("Error: No unconnected MirSlave port was found on Bus.");
+					} else {
+						PortCompPair cpair = new PortCompPair(connectedPort, freeports.get(0), outDesign.getDesComponents().get(chkCnt1));
+						PortCompPair bpair = new PortCompPair(freeports.get(0), connectedPort, comp );
+						comp.addPortToRefComponentPair(cpair);
+						outDesign.getDesComponents().get(chkCnt1).addPortToRefComponentPair(bpair);
+					}
+				}
+			}
+		}
+		
+		outDesign.addDesComponent(comp);
+		
+		return outDesign;
+	}
+
+	// Assumes "rule" is static variable input
+	public GenerativRulePair ReduceRule(GenerativRulePair rule) {
+
+		this.FindCommonComponents(rule.getGenerativPattern(), rule.getReplacementPattern());
+		
+		Cloner cloner = new Cloner();
+		DesignAbstraction nrulePat = cloner.deepClone(rule.getGenerativPattern());
+		DesignAbstraction nreplacePat = cloner.deepClone(rule.getReplacementPattern());
+
+		List<CompAbstraction> commonComps = new ArrayList<CompAbstraction>();
+		for (Iterator<CompAbstraction> j = rule.getGenerativPattern().getDesComponents().iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (object.isMapped()) {
+				commonComps.add(object);
+			}
+		}
+
+		for (Iterator<CompAbstraction> j = commonComps.iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (!object.getIS_BUS()) {
+				nrulePat = this.RemoveComponent(nrulePat, object);
+				nreplacePat = this.RemoveComponent(nreplacePat, object);
+			}
+		}
+
+		nrulePat = this.CleanPortConnections(nrulePat);
+		nreplacePat = this.CleanPortConnections(nreplacePat);
+		GenerativRulePair nrule = new GenerativRulePair(nrulePat, nreplacePat);
+		return nrule;
+	}
+
+	public DesignAbstraction CleanPortConnections(DesignAbstraction design) {
+		
+		System.out.println("Design Generation: Starting Port Cleaning for design...");
+		Cloner cloner = new Cloner();
+		DesignAbstraction ndesign = cloner.deepClone(design);
+		
+		int cnt = 0;
+		int chkCnt = 0;
+		boolean cleanPort = false;
+		int maxConns = design.getDesComponents().size();
+		List<String> desComps = new ArrayList<String>();
+		
+		for (Iterator<CompAbstraction> i = ndesign.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			desComps.add(object.getInstanceName());
+			if (maxConns< object.getPortToRefComponentPair().size()) maxConns = object.getPortToRefComponentPair().size();
+		}
+		
+		System.out.println("Design Generation: Remaining design components: " + desComps);
+		
+		for (int n = 0; n < maxConns; n++) {
+			for (Iterator<CompAbstraction> i = ndesign.getDesComponents().iterator(); i.hasNext();) {
+				CompAbstraction object = (CompAbstraction) i.next();
+				cnt = 0;
+				for (Iterator<PortCompPair> j = object.getPortToRefComponentPair().iterator(); j.hasNext();) {
+					PortCompPair obj = (PortCompPair) j.next();
+				//	System.out.println(desComps + " "  + obj.getRefComp().getInstanceName() + " "  + object.getInstanceName());
+					if (!desComps.contains(obj.getRefComp().getInstanceName())) {
+						chkCnt = cnt; 
+						cleanPort = true;
+					//	System.out.println("INSIDE  " + desComps + " "  + obj.getRefComp().getInstanceName() + " "  + object.getInstanceName());
+					}
+					++cnt;
+				}
+				if (cleanPort == true) {
+					System.out.println("Design Generation: Cleaning Port Connection: Instance-Port: " + object.getInstanceName() + " - " + object.getPortToRefComponentPair().get(chkCnt).getPort());
+					object.getPortToRefComponentPair().remove(chkCnt);
+					//object.setPortConnections();
+				}
+				cleanPort = false;
+			}
+		}
+		System.out.println("Design Generation: Port Cleaning for design Completed.");
+		return ndesign;
+	}
+
+	public DesignAbstraction RemoveComponent(DesignAbstraction inputDesign, CompAbstraction comp) {
+
+		Cloner cloner = new Cloner();
+		DesignAbstraction outputDesign = cloner.deepClone(inputDesign);
+
+		int cnt = 0;
+		int chkCnt = 0;
+		//List<CompAbstraction> connectedComps = new ArrayList<CompAbstraction>();
+
+		for (Iterator<CompAbstraction> j = outputDesign.getDesComponents().iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (object.getLibAbsRef().getInstanceName().equals(comp.getLibAbsRef().getInstanceName())) {
+				chkCnt = cnt;
+			}
+			++cnt;
+		}
+
+		System.out.println("Design Generation: REMOVING Component " + outputDesign.getDesComponents().get(chkCnt).getInstanceName()
+				+ " from Design. ");
+		comp.setParameters(outputDesign.getDesComponents().get(chkCnt).getParameters());
+		comp.setAllPins(outputDesign.getDesComponents().get(chkCnt).getAllPins());
+		outputDesign.getDesComponents().remove(chkCnt);
+		
+		/*
+		for (Iterator<PortCompPair> i = outputDesign.getDesComponents().get(chkCnt).getPortToRefComponentPair().iterator(); i.hasNext();) {
+			PortCompPair object = (PortCompPair) i.next();
+			connectedComps.add(object.getRefComp());
+		}
+
+		for (Iterator<CompAbstraction> i = connectedComps.iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			cnt = 0;
+			for (Iterator<CompAbstraction> j = outputDesign.getDesComponents().iterator(); j.hasNext();) {
+				CompAbstraction obj = (CompAbstraction) j.next();
+				if (obj.getLibAbsRef().getInstanceName().equals(object.getLibAbsRef().getInstanceName())) {
+					chkCnt = cnt;
+				}
+				++cnt;
+			}
+		}
+*/
+		
+		return outputDesign;
+
+	}
+
+	public void RechangeConnections(DesignAbstraction inputDesign, CompAbstraction comp) {
+		
+		List<ConnectedPort> busconnections = comp.getAllPorts();
+		List<ConnectedPort> mbusconnections = comp.getMasterPorts();
+		List<ConnectedPort> sbusconnections = comp.getSlavePorts();
+		List<PortCompPair> portRefs = comp.getPortToRefComponentPair();
+		for (Iterator<CompAbstraction> j = inputDesign.getDesComponents().iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (object.getLibAbsRef().getInstanceName().equals(comp.getLibAbsRef().getInstanceName())) {
+				object.setPortToRefComponentPair(portRefs);
+			}
+			
+		}
+		
+	}
+	public void PrintDesignSummary(DesignAbstraction ades) {
+
+		System.out.println("Design Generation: Summary for the Design: Components-");
+		for (Iterator<CompAbstraction> i = ades.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			System.out.println("\n	" + object.getInstanceName());
+			for (Iterator<PortCompPair> j = object.getPortToRefComponentPair().iterator(); j.hasNext();) {
+				PortCompPair obj = (PortCompPair) j.next();
+				System.out.println("		" + obj.getPort() + "	" + obj.getRefComp().getInstanceName());
+			}
+			System.out.println("Parameters: ");
+			for (Iterator<Parameter> j = object.getParameters().iterator(); j.hasNext();) {
+				Parameter obj = (Parameter) j.next();
+				System.out.println("		" + obj.getParameter() + ": " + obj.getValue());
+			}
+		}
+	}
+
+	// Assumes ades and bdes are static objects which comes from
+	// GlobalVars.GENERATIV_RULES
+	public void FindCommonComponents(DesignAbstraction ades, DesignAbstraction bdes) {
+
+		ades.ResetMapped();
+		bdes.ResetMapped();
+
+		for (Iterator<CompAbstraction> i = ades.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			for (Iterator<CompAbstraction> j = bdes.getDesComponents().iterator(); j.hasNext();) {
+				CompAbstraction obj = (CompAbstraction) j.next();
+				if (!obj.isMapped()) {
+					if (!obj.getIS_BUS()) {
+						if (object.IsEquivalent(obj)) {
+							System.out.println("Design Generation: Equivalent Component found for Generative Rule: " + object.getInstanceName()
+									+ "==" + obj.getInstanceName());
+							obj.setMapped(true);
+							object.setMapped(true);
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+} // Class Design Generation Ends
+

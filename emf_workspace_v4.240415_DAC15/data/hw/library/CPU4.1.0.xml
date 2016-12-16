@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus217:59:31 12.06.2014-->
+<spirit:component xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>TUM</spirit:vendor>
+	<spirit:library>soc</spirit:library>
+	<spirit:name>CPU4</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:busInterfaces>
+		<spirit:busInterface>
+			<spirit:name>hp_m0</spirit:name>
+			<spirit:busType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc.absDef" spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>hp_m1</spirit:name>
+			<spirit:busType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc.absDef" spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>hp_m2</spirit:name>
+			<spirit:busType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc.absDef" spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>hp_m3</spirit:name>
+			<spirit:busType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="TUM" spirit:library="ip" spirit:name="wb_soc.absDef" spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>gp_m0</spirit:name>
+			<spirit:busType spirit:vendor="TUM" spirit:library="ip" spirit:name="axis_soc" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="TUM" spirit:library="ip" spirit:name="axis_soc.absDef" spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+		<spirit:busInterface>
+			<spirit:name>gp_m1</spirit:name>
+			<spirit:busType spirit:vendor="TUM" spirit:library="ip" spirit:name="axis_soc" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="TUM" spirit:library="ip" spirit:name="axis_soc.absDef" spirit:version="1.0"/>
+			<spirit:master/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+	</spirit:busInterfaces>
+	<spirit:model>
+		<spirit:views>
+			<spirit:view>
+				<spirit:name>flat</spirit:name>
+				<spirit:envIdentifier>::</spirit:envIdentifier>
+			</spirit:view>
+			<spirit:view>
+				<spirit:name>structural</spirit:name>
+				<spirit:envIdentifier></spirit:envIdentifier>
+				<spirit:hierarchyRef spirit:vendor="TUM" spirit:library="soc" spirit:name="CPU4.designcfg" spirit:version="1.0"/>
+			</spirit:view>
+		</spirit:views>
+	</spirit:model>
+	<spirit:vendorExtensions>
+		<kactus2:extensions>
+			<kactus2:kts_attributes>
+				<kactus2:kts_productHier>Global</kactus2:kts_productHier>
+				<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+				<kactus2:kts_firmness>Template</kactus2:kts_firmness>
+			</kactus2:kts_attributes>
+		</kactus2:extensions>
+	</spirit:vendorExtensions>
+</spirit:component>

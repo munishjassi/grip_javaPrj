@@ -1,0 +1,18 @@
+##############################################################################
+## Filename:          /nfs/TUEIEDAprojects/SystemDesign/work/zynq/umair-razzaq/MyDesigns/cf_adv7511_cam/cf_adv7511_zed/pcores/test_mem_v1_00_a/data/test_mem_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Aug 22 10:56:06 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_slave_burst_v1_00_a  all 
+lib test_mem_v1_00_a ov7670_registers vhdl
+lib test_mem_v1_00_a i2c_sender vhdl
+lib test_mem_v1_00_a ov7670_controller vhdl
+lib test_mem_v1_00_a clocking vhdl
+lib test_mem_v1_00_a debounce vhdl
+lib test_mem_v1_00_a flag_crossing vhdl
+lib test_mem_v1_00_a ov7670_capture vhdl
+lib test_mem_v1_00_a ov7670cam_if vhdl
+lib test_mem_v1_00_a user_logic vhdl
+lib test_mem_v1_00_a test_mem vhdl

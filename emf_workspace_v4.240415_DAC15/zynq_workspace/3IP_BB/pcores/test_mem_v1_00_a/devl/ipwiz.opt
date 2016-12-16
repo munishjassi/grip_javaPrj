@@ -1,0 +1,10 @@
+-batch 
+-create test_mem 
+-ver 1.00.a 
+-dir "/nfs/TUEIEDAprojects/SystemDesign/work/zynq/umair-razzaq/MyDesigns/cf_adv7511_cam/cf_adv7511_zed" 
+-lang vhdl 
+-bus axi4 s 
+-burst s 32 
+-arn 2 
+-xps 
+-driver 

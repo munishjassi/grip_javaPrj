@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus218:45:42 12.06.2014-->
+<spirit:component xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>TUM</spirit:vendor>
+	<spirit:library>soc</spirit:library>
+	<spirit:name>pat4</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:model>
+		<spirit:views>
+			<spirit:view>
+				<spirit:name>rtl</spirit:name>
+				<spirit:envIdentifier>::</spirit:envIdentifier>
+			</spirit:view>
+			<spirit:view>
+				<spirit:name>hierarchical</spirit:name>
+				<spirit:envIdentifier>::</spirit:envIdentifier>
+				<spirit:hierarchyRef spirit:vendor="TUM" spirit:library="soc" spirit:name="pat4.hierarchical.designcfg" spirit:version="1.0"/>
+			</spirit:view>
+		</spirit:views>
+	</spirit:model>
+	<spirit:vendorExtensions>
+		<kactus2:extensions>
+			<kactus2:kts_attributes>
+				<kactus2:kts_productHier>SoC</kactus2:kts_productHier>
+				<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+				<kactus2:kts_firmness>Template</kactus2:kts_firmness>
+			</kactus2:kts_attributes>
+		</kactus2:extensions>
+	</spirit:vendorExtensions>
+</spirit:component>

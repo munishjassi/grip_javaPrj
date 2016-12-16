@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/space exploration.tests/src/org/spiritconsortium/xml/schema/spirit/spirit/tests/_MyEMFEdit.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.spiritconsortium.xml.schema.spirit.spirit.tests._MyEMFEdit"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="space exploration.tests"/>
+</launchConfiguration>

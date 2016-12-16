@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spirit:componentType xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5">
+  <spirit:vendor>ARM</spirit:vendor>
+  <spirit:library>ip</spirit:library>
+  <spirit:name>camera_interface_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:ports/>
+  </spirit:model>
+</spirit:componentType>

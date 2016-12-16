@@ -1,0 +1,72 @@
+package generativeGrammer.designAbstractionGraph.impl;
+
+import java.util.Map.Entry;
+
+import generativeGrammar.designAbstractionGraph.BusAbstraction;
+
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.ComponentType;
+import org.spiritconsortium.xml.schema.spirit.spirit.Interface;
+
+public class BusAbstractionImpl extends EObjectImpl implements BusAbstraction {
+	
+	protected EList mirMasterPorts;
+	
+	protected EList mirSlavePorts;
+	
+	protected EList allPorts;
+	
+	protected String instanceName;
+	
+	protected ComponentType refComponent;
+	
+	EList<Entry<String,String>> portTORefComponentPair; 
+	
+	@Override
+	public void setInstanceName(String name) {
+		instanceName = name;		
+	}
+
+
+	@Override
+	public void addMirMasterPort(Interface port) {
+		mirMasterPorts.add(port);
+	}
+
+	@Override
+	public void addMirSlavePort(Interface port) {
+		mirSlavePorts.add(port);
+	}
+
+	@Override
+	public EList getMirMasterPorts() {
+		return mirMasterPorts;
+	}
+
+	@Override
+	public EList getMirSlavePorts() {
+		return mirSlavePorts;
+	}
+
+	@Override
+	public EList getAllPorts() {
+		allPorts = mirMasterPorts;
+		allPorts.addAll(mirSlavePorts);
+		// TODO Auto-generated method stub
+		return allPorts;
+	}
+
+	@Override
+	public String getInstanceName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void removeConnection(String portName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

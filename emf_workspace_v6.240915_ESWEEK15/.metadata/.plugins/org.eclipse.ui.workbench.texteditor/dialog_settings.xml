@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="426" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="789" key="DIALOG_X_ORIGIN"/>
+		<item value="748" key="DIALOG_HEIGHT"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="genGr" key="selection"/>
+		<list key="findhistory">
+			<item value="genGr"/>
+			<item value="getLeft"/>
+			<item value="setLeft"/>
+			<item value="left"/>
+			<item value="genDesign"/>
+			<item value="HERE"/>
+			<item value="allDesigns"/>
+			<item value="ERROR: RULE APPLICATION FAILED"/>
+		</list>
+		<list key="replacehistory">
+			<item value="portToRefComponentPair"/>
+			<item value="data/hw"/>
+			<item value="../data/sw"/>
+			<item value=""/>
+			<item value="DesignSummary"/>
+			<item value="comp"/>
+			<item value="List"/>
+			<item value="CompAbstraction"/>
+		</list>
+	</section>
+</section>

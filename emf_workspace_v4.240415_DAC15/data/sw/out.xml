@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<application
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com software1.xsd">
+	<specifications>
+		<applicationName> redlinefollower </applicationName>
+	</specifications>
+
+	<submodules>
+		<submodule>
+			<moduleName> Task1 </moduleName>
+			<specifications>
+				<mapping> cpu </mapping>
+				<mode> computed </mode>
+			</specifications>
+			<hwmappings>
+				<hwmapping>
+					<mappingname> cpu </mappingname>
+					<performance>
+						<CPUcycles> 0 </CPUcycles>
+						<BUScycles> 0 </BUScycles>
+					</performance>
+					<description>
+						<Cdescription> cpp </Cdescription>
+					</description>
+				</hwmapping>
+			</hwmappings>
+		</submodule>
+		<loop>
+			<specifications>
+				<loopName> Loop2 </loopName>
+				<number> 100000 </number>
+				<startSubmodule> Task3 </startSubmodule>
+			</specifications>
+		</loop>
+	</submodules>
+</application>

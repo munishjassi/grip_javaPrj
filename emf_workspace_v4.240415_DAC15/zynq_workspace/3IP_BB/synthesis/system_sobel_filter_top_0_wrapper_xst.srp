@@ -1,0 +1,2714 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_sobel_filter_top_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/" "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/cf_lib/edk/pcores/" "/nfs/tools/xilinx/ise/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/nfs/tools/xilinx/ise/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_sobel_filter_top_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_sobel_filter_top_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_buff_A_M_0.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_buff_A_M_0_ram>.
+Parsing module <sobel_filter_buff_A_M_0>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_buff_A_M_2.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_buff_A_M_2_ram>.
+Parsing module <sobel_filter_buff_A_M_2>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_mul_8ns_5ns_13_3.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_mul_8ns_5ns_13_3_MAC3S_0>.
+Parsing module <sobel_filter_mul_8ns_5ns_13_3>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_ap_rst_if.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_ap_rst_if>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_CONTROL_BUS_if.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_CONTROL_BUS_if>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_INPUT_STREAM_if.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_INPUT_STREAM_if>.
+Parsing module <sobel_filter_INPUT_STREAM_fifo>.
+Parsing module <sobel_filter_INPUT_STREAM_reg_slice>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_OUTPUT_STREAM_if.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_OUTPUT_STREAM_if>.
+Parsing module <sobel_filter_OUTPUT_STREAM_fifo>.
+Parsing module <sobel_filter_OUTPUT_STREAM_reg_slice>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_top.v" into library sobel_filter_top_v1_01_a
+Parsing module <sobel_filter_top>.
+Analyzing Verilog file "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/hdl/system_sobel_filter_top_0_wrapper.v" into library work
+Parsing module <system_sobel_filter_top_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <system_sobel_filter_top_0_wrapper>.
+
+Elaborating module <sobel_filter_top(C_S_AXI_CONTROL_BUS_ADDR_WIDTH=5,C_S_AXI_CONTROL_BUS_DATA_WIDTH=32)>.
+
+Elaborating module <sobel_filter>.
+
+Elaborating module <sobel_filter_buff_A_M_0(DataWidth=8,AddressRange=1920,AddressWidth=11)>.
+
+Elaborating module <sobel_filter_buff_A_M_0_ram>.
+
+Elaborating module <sobel_filter_buff_A_M_2(DataWidth=8,AddressRange=1920,AddressWidth=11)>.
+
+Elaborating module <sobel_filter_buff_A_M_2_ram>.
+
+Elaborating module <sobel_filter_mul_8ns_5ns_13_3(ID=1,NUM_STAGE=3,din0_WIDTH=8,din1_WIDTH=5,dout_WIDTH=13)>.
+
+Elaborating module <sobel_filter_mul_8ns_5ns_13_3_MAC3S_0>.
+
+Elaborating module <sobel_filter_mul_8ns_5ns_13_3(ID=2,NUM_STAGE=3,din0_WIDTH=8,din1_WIDTH=5,dout_WIDTH=13)>.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 1119: Result of 64-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 1972: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 1989: Result of 64-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 1990: Result of 64-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 1992: Result of 64-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 1995: Result of 64-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 1996: Result of 64-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 2008: Result of 13-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v" Line 2011: Result of 13-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <sobel_filter_CONTROL_BUS_if(C_ADDR_WIDTH=5,C_DATA_WIDTH=32)>.
+
+Elaborating module <sobel_filter_INPUT_STREAM_if>.
+
+Elaborating module <sobel_filter_INPUT_STREAM_reg_slice(N=39)>.
+
+Elaborating module <sobel_filter_INPUT_STREAM_fifo(DATA_BITS=32,DEPTH_BITS=4)>.
+
+Elaborating module <sobel_filter_INPUT_STREAM_fifo(DATA_BITS=4,DEPTH_BITS=4)>.
+
+Elaborating module <sobel_filter_INPUT_STREAM_fifo(DATA_BITS=1,DEPTH_BITS=4)>.
+
+Elaborating module <sobel_filter_OUTPUT_STREAM_if>.
+
+Elaborating module <sobel_filter_OUTPUT_STREAM_reg_slice(N=39)>.
+
+Elaborating module <sobel_filter_OUTPUT_STREAM_fifo(DATA_BITS=32,DEPTH_BITS=4)>.
+
+Elaborating module <sobel_filter_OUTPUT_STREAM_fifo(DATA_BITS=4,DEPTH_BITS=4)>.
+
+Elaborating module <sobel_filter_OUTPUT_STREAM_fifo(DATA_BITS=1,DEPTH_BITS=4)>.
+
+Elaborating module <sobel_filter_ap_rst_if(RESET_ACTIVE_LOW=1)>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_sobel_filter_top_0_wrapper>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/hdl/system_sobel_filter_top_0_wrapper.v".
+    Summary:
+	no macro.
+Unit <system_sobel_filter_top_0_wrapper> synthesized.
+
+Synthesizing Unit <sobel_filter_top>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_top.v".
+        C_S_AXI_CONTROL_BUS_ADDR_WIDTH = 5
+        C_S_AXI_CONTROL_BUS_DATA_WIDTH = 32
+        RESET_ACTIVE_LOW = 1
+    Summary:
+	no macro.
+Unit <sobel_filter_top> synthesized.
+
+Synthesizing Unit <sobel_filter>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter.v".
+        ap_const_logic_1 = 1'b1
+        ap_const_logic_0 = 1'b0
+        ap_ST_st1_fsm_0 = 2'b00
+        ap_ST_st2_fsm_1 = 2'b01
+        ap_ST_st3_fsm_2 = 2'b10
+        ap_ST_pp0_stg0_fsm_3 = 2'b11
+        ap_const_lv1_0 = 1'b0
+        ap_const_lv31_0 = 31'b0000000000000000000000000000000
+        ap_const_lv4_F = 4'b1111
+        ap_const_lv1_1 = 1'b1
+        ap_const_lv32_1 = 32'b00000000000000000000000000000001
+        ap_const_lv32_0 = 32'b00000000000000000000000000000000
+        ap_const_lv32_FFFFFFFF = 32'b11111111111111111111111111111111
+        ap_const_lv31_1 = 31'b0000000000000000000000000000001
+        ap_const_lv32_1E = 32'b00000000000000000000000000011110
+        ap_const_lv30_1 = 30'b000000000000000000000000000001
+        ap_const_lv32_8 = 32'b00000000000000000000000000001000
+        ap_const_lv32_F = 32'b00000000000000000000000000001111
+        ap_const_lv32_10 = 32'b00000000000000000000000000010000
+        ap_const_lv32_17 = 32'b00000000000000000000000000010111
+        ap_const_lv13_19 = 13'b0000000011001
+        ap_const_lv6_0 = 6'b000000
+        ap_const_lv7_0 = 7'b0000000
+        ap_const_lv9_80 = 9'b010000000
+        ap_const_lv8_10 = 8'b00010000
+        ap_const_lv32_A = 32'b00000000000000000000000000001010
+        ap_const_lv8_0 = 8'b00000000
+        ap_const_lv8_37 = 8'b00110111
+        ap_const_lv8_9B = 8'b10011011
+        ap_const_lv8_FF = 8'b11111111
+        ap_true = 1'b1
+WARNING:Xst:647 - Input <inter_pix_data_V_dout<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inter_pix_strb_V_dout> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inter_pix_user_V_dout> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inter_pix_last_V_dout> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <inter_pix_tdest_V_dout> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it0>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it1>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it10>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it3>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it5>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it6>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it7>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it8>.
+    Found 1-bit register for signal <ap_reg_ppiten_pp0_it9>.
+    Found 31-bit register for signal <ap_reg_ppstg_col_1_reg_361_pp0_it1>.
+    Found 31-bit register for signal <ap_reg_ppstg_col_1_reg_361_pp0_it2>.
+    Found 31-bit register for signal <ap_reg_ppstg_col_1_reg_361_pp0_it3>.
+    Found 31-bit register for signal <ap_reg_ppstg_col_1_reg_361_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it1>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it3>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it5>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it6>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it7>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it8>.
+    Found 1-bit register for signal <ap_reg_ppstg_exitcond_reg_1327_pp0_it9>.
+    Found 1-bit register for signal <ap_reg_ppstg_icmp7_reg_1473_pp0_it6>.
+    Found 8-bit register for signal <ap_reg_ppstg_new_pix_G_V_reg_1378_pp0_it2>.
+    Found 8-bit register for signal <ap_reg_ppstg_new_pix_R_V_reg_1385_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it1>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it3>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it5>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it6>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it7>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it8>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond1_reg_1369_pp0_it9>.
+    Found 1-bit register for signal <ap_reg_ppstg_or_cond_reg_1501_pp0_it8>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it1>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it3>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it5>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it6>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it7>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it8>.
+    Found 1-bit register for signal <ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it9>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_14_reg_1359_pp0_it1>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_14_reg_1359_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_14_reg_1359_pp0_it3>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_14_reg_1359_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_20_reg_1363_pp0_it1>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_20_reg_1363_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_20_reg_1363_pp0_it3>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_20_reg_1363_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_20_reg_1363_pp0_it5>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_20_reg_1363_pp0_it6>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_20_reg_1363_pp0_it7>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_23_reg_1525_pp0_it9>.
+    Found 8-bit register for signal <ap_reg_ppstg_tmp_i2_reg_1507_pp0_it8>.
+    Found 8-bit register for signal <ap_reg_ppstg_tmp_i2_reg_1507_pp0_it9>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_s_reg_1336_pp0_it1>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_s_reg_1336_pp0_it2>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_s_reg_1336_pp0_it3>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_s_reg_1336_pp0_it4>.
+    Found 1-bit register for signal <ap_reg_ppstg_tmp_s_reg_1336_pp0_it5>.
+    Found 11-bit register for signal <ap_reg_ppstg_x_weight_2_reg_1463_pp0_it5>.
+    Found 10-bit register for signal <ap_reg_ppstg_y_weight_reg_1458_pp0_it5>.
+    Found 11-bit register for signal <buff_A_M_1_addr_reg_1348>.
+    Found 8-bit register for signal <buff_C_M_0_1_2_reg_1412>.
+    Found 8-bit register for signal <buff_C_M_0_1_fu_180>.
+    Found 8-bit register for signal <buff_C_M_0_2_4_reg_1438>.
+    Found 8-bit register for signal <buff_C_M_0_2_fu_184>.
+    Found 8-bit register for signal <buff_C_M_1_1_1_reg_1418>.
+    Found 8-bit register for signal <buff_C_M_1_1_fu_192>.
+    Found 8-bit register for signal <buff_C_M_1_2_3_reg_1433>.
+    Found 8-bit register for signal <buff_C_M_1_2_fu_196>.
+    Found 8-bit register for signal <buff_C_M_2_1_fu_188>.
+    Found 8-bit register for signal <buff_C_M_2_2_fu_176>.
+    Found 31-bit register for signal <col_1_reg_361>.
+    Found 31-bit register for signal <col_reg_1331>.
+    Found 1-bit register for signal <exitcond_reg_1327>.
+    Found 1-bit register for signal <icmp7_reg_1473>.
+    Found 1-bit register for signal <icmp_reg_1305>.
+    Found 8-bit register for signal <new_pix_G_V_reg_1378>.
+    Found 8-bit register for signal <new_pix_R_V_reg_1385>.
+    Found 1-bit register for signal <or_cond1_reg_1369>.
+    Found 1-bit register for signal <or_cond_reg_1501>.
+    Found 1-bit register for signal <output_pixel_last_V_reg_1373>.
+    Found 31-bit register for signal <row_1_reg_1300>.
+    Found 31-bit register for signal <row_reg_350>.
+    Found 1-bit register for signal <sel_tmp17_demorgan_reg_1530>.
+    Found 1-bit register for signal <sel_tmp8_reg_1541>.
+    Found 1-bit register for signal <sel_tmp9_demorgan_reg_1514>.
+    Found 31-bit register for signal <smax2_reg_1277>.
+    Found 31-bit register for signal <smax_reg_1282>.
+    Found 8-bit register for signal <temp_fu_160>.
+    Found 8-bit register for signal <temp_load_reg_1397>.
+    Found 8-bit register for signal <grp_fu_586_p00<7:0>>.
+    Found 8-bit register for signal <tempx_G_V_fu_168>.
+    Found 8-bit register for signal <tempx_R_V_fu_172>.
+    Found 1-bit register for signal <tmp1_reg_1267>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<12>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<11>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<10>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<9>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<8>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<7>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<6>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<5>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<4>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<3>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<2>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<1>>.
+    Found 1-bit register for signal <tmp30_cast_reg_1428<0>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<12>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<11>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<10>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<9>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<8>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<7>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<6>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<5>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<4>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<3>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<2>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<1>>.
+    Found 1-bit register for signal <tmp34_cast_reg_1453<0>>.
+    Found 1-bit register for signal <tmp4_reg_1272>.
+    Found 1-bit register for signal <tmp9_reg_1448<15>>.
+    Found 1-bit register for signal <tmp9_reg_1448<14>>.
+    Found 1-bit register for signal <tmp9_reg_1448<13>>.
+    Found 1-bit register for signal <tmp9_reg_1448<12>>.
+    Found 1-bit register for signal <tmp9_reg_1448<11>>.
+    Found 1-bit register for signal <tmp9_reg_1448<10>>.
+    Found 1-bit register for signal <tmp9_reg_1448<9>>.
+    Found 1-bit register for signal <tmp9_reg_1448<8>>.
+    Found 1-bit register for signal <tmp9_reg_1448<7>>.
+    Found 1-bit register for signal <tmp9_reg_1448<6>>.
+    Found 1-bit register for signal <tmp9_reg_1448<5>>.
+    Found 1-bit register for signal <tmp9_reg_1448<4>>.
+    Found 1-bit register for signal <tmp9_reg_1448<3>>.
+    Found 1-bit register for signal <tmp9_reg_1448<2>>.
+    Found 1-bit register for signal <tmp9_reg_1448<1>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<10>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<9>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<8>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<7>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<6>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<5>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<4>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<3>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<2>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<1>>.
+    Found 1-bit register for signal <tmp_12_reg_1343<0>>.
+    Found 1-bit register for signal <tmp_13_reg_1316>.
+    Found 1-bit register for signal <tmp_14_reg_1359>.
+    Found 32-bit register for signal <tmp_17_reg_1287>.
+    Found 1-bit register for signal <tmp_18_reg_1321>.
+    Found 32-bit register for signal <tmp_19_reg_1292>.
+    Found 1-bit register for signal <tmp_20_reg_1363>.
+    Found 31-bit register for signal <tmp_21_reg_1257>.
+    Found 31-bit register for signal <tmp_22_reg_1262>.
+    Found 1-bit register for signal <tmp_23_reg_1525>.
+    Found 1-bit register for signal <tmp_24_reg_1536>.
+    Found 8-bit register for signal <tmp_31_reg_1479>.
+    Found 8-bit register for signal <tmp_32_reg_1485>.
+    Found 1-bit register for signal <tmp_33_reg_1491>.
+    Found 1-bit register for signal <tmp_34_reg_1496>.
+    Found 8-bit register for signal <tmp_7_i1_reg_1468>.
+    Found 8-bit register for signal <tmp_7_i_reg_1443>.
+    Found 1-bit register for signal <tmp_8_i_reg_1519>.
+    Found 1-bit register for signal <tmp_9_reg_1311>.
+    Found 8-bit register for signal <tmp_i2_reg_1507>.
+    Found 1-bit register for signal <tmp_reg_1423<15>>.
+    Found 1-bit register for signal <tmp_reg_1423<14>>.
+    Found 1-bit register for signal <tmp_reg_1423<13>>.
+    Found 1-bit register for signal <tmp_reg_1423<12>>.
+    Found 1-bit register for signal <tmp_reg_1423<11>>.
+    Found 1-bit register for signal <tmp_reg_1423<10>>.
+    Found 1-bit register for signal <tmp_reg_1423<9>>.
+    Found 1-bit register for signal <tmp_reg_1423<8>>.
+    Found 1-bit register for signal <tmp_reg_1423<7>>.
+    Found 1-bit register for signal <tmp_reg_1423<6>>.
+    Found 1-bit register for signal <tmp_reg_1423<5>>.
+    Found 1-bit register for signal <tmp_reg_1423<4>>.
+    Found 1-bit register for signal <tmp_reg_1423<3>>.
+    Found 1-bit register for signal <tmp_reg_1423<2>>.
+    Found 1-bit register for signal <tmp_reg_1423<1>>.
+    Found 1-bit register for signal <tmp_s_reg_1336>.
+    Found 11-bit register for signal <x_weight_2_reg_1463>.
+    Found 10-bit register for signal <y_weight_reg_1458>.
+    Found 2-bit register for signal <ap_CS_fsm>.
+    Found finite state machine <FSM_0> for signal <ap_CS_fsm>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 4                                              |
+    | Clock              | ap_clk (rising_edge)                           |
+    | Reset              | ap_rst (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <x_weight_fu_813_p2> created at line 2119.
+    Found 8-bit adder for signal <buff_A_M_0_d1> created at line 1991.
+    Found 31-bit adder for signal <col_fu_484_p2> created at line 2002.
+    Found 31-bit adder for signal <row_1_fu_437_p2> created at line 2045.
+    Found 9-bit adder for signal <tmp10_fu_775_p2> created at line 2061.
+    Found 13-bit adder for signal <tmp34_cast_fu_791_p1<12:0>> created at line 2062.
+    Found 9-bit adder for signal <tmp12_fu_823_p2> created at line 2063.
+    Found 32-bit adder for signal <tmp2_fu_374_p2> created at line 2065.
+    Found 32-bit adder for signal <tmp3_fu_384_p2> created at line 2071.
+    Found 16-bit adder for signal <tmp5_fu_634_p2> created at line 2073.
+    Found 9-bit adder for signal <tmp6_fu_646_p2> created at line 2074.
+    Found 13-bit adder for signal <tmp30_cast_fu_662_p1<12:0>> created at line 2075.
+    Found 16-bit adder for signal <tmp8_fu_763_p2> created at line 2076.
+    Found 16-bit adder for signal <tmp9_fu_769_p2> created at line 2077.
+    Found 32-bit adder for signal <tmp_17_fu_418_p2> created at line 2083.
+    Found 32-bit adder for signal <tmp_19_fu_423_p2> created at line 2085.
+    Found 16-bit adder for signal <tmp_5_i1_fu_893_p2> created at line 2104.
+    Found 16-bit adder for signal <tmp_5_i_fu_697_p2> created at line 2105.
+    Found 16-bit adder for signal <tmp_fu_640_p2> created at line 2110.
+    Found 8-bit adder for signal <tmp_i2_fu_1056_p2> created at line 2111.
+    Found 8-bit adder for signal <y_2_fu_929_p2> created at line 2120.
+    Found 10-bit adder for signal <y_weight_fu_833_p2> created at line 2126.
+    Found 11-bit subtractor for signal <_n1231> created at line 2118.
+    Found 11-bit adder for signal <x_weight_4_fu_981_p2> created at line 2118.
+    Found 11-bit adder for signal <_n1233> created at line 2124.
+    Found 11-bit adder for signal <_n1234> created at line 2124.
+    Found 11-bit subtractor for signal <y_weight_3_fu_991_p2> created at line 2124.
+    Found 8-bit subtractor for signal <neg7_i_cast_fu_1045_p2> created at line 366.
+    Found 11-bit subtractor for signal <_n1237> created at line 234.
+    Found 11-bit adder for signal <x_weight_2_fu_868_p2> created at line 234.
+    Found 8-bit subtractor for signal <neg_i_cast_fu_1034_p2> created at line 365.
+    Found 31-bit comparator equal for signal <exitcond3_fu_432_p2> created at line 2006
+    Found 31-bit comparator equal for signal <exitcond_fu_479_p2> created at line 2007
+    Found 30-bit comparator greater for signal <icmp7_fu_917_p2> created at line 2014
+    Found 30-bit comparator greater for signal <icmp_fu_453_p2> created at line 2015
+    Found 32-bit comparator equal for signal <output_pixel_last_V_fu_522_p2> created at line 2026
+    Found 32-bit comparator greater for signal <tmp1_fu_394_p2> created at line 2064
+    Found 32-bit comparator greater for signal <tmp4_fu_400_p2> created at line 2072
+    Found 32-bit comparator greater for signal <tmp_13_fu_465_p2> created at line 2079
+    Found 32-bit comparator greater for signal <tmp_18_fu_470_p2> created at line 2084
+    Found 32-bit comparator greater for signal <tmp_20_fu_506_p2> created at line 2086
+    Found 8-bit comparator greater for signal <tmp_8_i_fu_1066_p2> created at line 2108
+    Found 8-bit comparator greater for signal <tmp_i_fu_1107_p2> created at line 2112
+    Found 32-bit comparator greater for signal <tmp_s_fu_490_p2> created at line 2113
+    WARNING:Xst:2404 -  FFs/Latches <tmp_reg_1423<0><31:31>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    WARNING:Xst:2404 -  FFs/Latches <tmp30_cast_reg_1428<15><0:0>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    WARNING:Xst:2404 -  FFs/Latches <tmp30_cast_reg_1428<14><15:15>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    WARNING:Xst:2404 -  FFs/Latches <tmp30_cast_reg_1428<13><14:14>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    WARNING:Xst:2404 -  FFs/Latches <tmp9_reg_1448<0><13:13>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    WARNING:Xst:2404 -  FFs/Latches <tmp34_cast_reg_1453<15><0:0>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    WARNING:Xst:2404 -  FFs/Latches <tmp34_cast_reg_1453<14><15:15>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    WARNING:Xst:2404 -  FFs/Latches <tmp34_cast_reg_1453<13><14:14>> (without init value) have a constant value of 0 in block <sobel_filter>.
+    Summary:
+	inferred  31 Adder/Subtractor(s).
+	inferred 843 D-type flip-flop(s).
+	inferred  13 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sobel_filter> synthesized.
+
+Synthesizing Unit <sobel_filter_buff_A_M_0>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_buff_A_M_0.v".
+        DataWidth = 8
+        AddressRange = 1920
+        AddressWidth = 11
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <sobel_filter_buff_A_M_0> synthesized.
+
+Synthesizing Unit <sobel_filter_buff_A_M_0_ram>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_buff_A_M_0.v".
+        DWIDTH = 8
+        AWIDTH = 11
+        MEM_SIZE = 1920
+    Set property "ram_style = block" for signal <ram>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <ram>, simulation mismatch.
+    Found 1920x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <q0>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sobel_filter_buff_A_M_0_ram> synthesized.
+
+Synthesizing Unit <sobel_filter_buff_A_M_2>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_buff_A_M_2.v".
+        DataWidth = 8
+        AddressRange = 1920
+        AddressWidth = 11
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <sobel_filter_buff_A_M_2> synthesized.
+
+Synthesizing Unit <sobel_filter_buff_A_M_2_ram>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_buff_A_M_2.v".
+        DWIDTH = 8
+        AWIDTH = 11
+        MEM_SIZE = 1920
+    Set property "ram_style = block" for signal <ram>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <ram>, simulation mismatch.
+    Found 1920x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <q1>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <sobel_filter_buff_A_M_2_ram> synthesized.
+
+Synthesizing Unit <sobel_filter_mul_8ns_5ns_13_3_1>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_mul_8ns_5ns_13_3.v".
+        ID = 1
+        NUM_STAGE = 3
+        din0_WIDTH = 8
+        din1_WIDTH = 5
+        dout_WIDTH = 13
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <sobel_filter_mul_8ns_5ns_13_3_1> synthesized.
+
+Synthesizing Unit <sobel_filter_mul_8ns_5ns_13_3_MAC3S_0>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_mul_8ns_5ns_13_3.v".
+    Set property "KEEP = TRUE" for signal <a>.
+    Set property "KEEP = TRUE" for signal <b>.
+    Found 5-bit register for signal <b_reg>.
+    Found 13-bit register for signal <buff0>.
+    Found 8-bit register for signal <a_reg>.
+    Found 8x5-bit multiplier for signal <tmp_product> created at line 23.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal b may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  26 D-type flip-flop(s).
+Unit <sobel_filter_mul_8ns_5ns_13_3_MAC3S_0> synthesized.
+
+Synthesizing Unit <sobel_filter_mul_8ns_5ns_13_3_2>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_mul_8ns_5ns_13_3.v".
+        ID = 2
+        NUM_STAGE = 3
+        din0_WIDTH = 8
+        din1_WIDTH = 5
+        dout_WIDTH = 13
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <sobel_filter_mul_8ns_5ns_13_3_2> synthesized.
+
+Synthesizing Unit <sobel_filter_CONTROL_BUS_if>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_CONTROL_BUS_if.v".
+        C_ADDR_WIDTH = 5
+        C_DATA_WIDTH = 32
+    Found 5-bit register for signal <waddr>.
+    Found 2-bit register for signal <rstate>.
+    Found 32-bit register for signal <rdata>.
+    Found 1-bit register for signal <ap_start>.
+    Found 1-bit register for signal <ap_done>.
+    Found 1-bit register for signal <auto_restart>.
+    Found 1-bit register for signal <gie>.
+    Found 2-bit register for signal <ier>.
+    Found 1-bit register for signal <isr<0>>.
+    Found 1-bit register for signal <isr<1>>.
+    Found 32-bit register for signal <_rows>.
+    Found 32-bit register for signal <_cols>.
+    Found 2-bit register for signal <wstate>.
+    Found finite state machine <FSM_1> for signal <rstate>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | ACLK (rising_edge)                             |
+    | Reset              | ARESETN_INV_253_o (positive)                   |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <wstate>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | ACLK (rising_edge)                             |
+    | Reset              | ARESETN_INV_253_o (positive)                   |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit 8-to-1 multiplexer for signal <_n0174> created at line 209.
+    Summary:
+	inferred 109 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <sobel_filter_CONTROL_BUS_if> synthesized.
+
+Synthesizing Unit <sobel_filter_INPUT_STREAM_if>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_INPUT_STREAM_if.v".
+    Summary:
+	no macro.
+Unit <sobel_filter_INPUT_STREAM_if> synthesized.
+
+Synthesizing Unit <sobel_filter_INPUT_STREAM_reg_slice>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_INPUT_STREAM_if.v".
+        N = 39
+    Found 39-bit register for signal <data_p2>.
+    Found 1-bit register for signal <s_ready_t>.
+    Found 2-bit register for signal <state>.
+    Found 39-bit register for signal <data_p1>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset_INV_297_o (positive)                     |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 10                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  79 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sobel_filter_INPUT_STREAM_reg_slice> synthesized.
+
+Synthesizing Unit <sobel_filter_INPUT_STREAM_fifo_1>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_INPUT_STREAM_if.v".
+        DATA_BITS = 32
+        DEPTH_BITS = 4
+    Found 1-bit register for signal <empty>.
+    Found 4-bit register for signal <index>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <mem<0><31>>.
+    Found 1-bit register for signal <mem<0><30>>.
+    Found 1-bit register for signal <mem<0><29>>.
+    Found 1-bit register for signal <mem<0><28>>.
+    Found 1-bit register for signal <mem<0><27>>.
+    Found 1-bit register for signal <mem<0><26>>.
+    Found 1-bit register for signal <mem<0><25>>.
+    Found 1-bit register for signal <mem<0><24>>.
+    Found 1-bit register for signal <mem<0><23>>.
+    Found 1-bit register for signal <mem<0><22>>.
+    Found 1-bit register for signal <mem<0><21>>.
+    Found 1-bit register for signal <mem<0><20>>.
+    Found 1-bit register for signal <mem<0><19>>.
+    Found 1-bit register for signal <mem<0><18>>.
+    Found 1-bit register for signal <mem<0><17>>.
+    Found 1-bit register for signal <mem<0><16>>.
+    Found 1-bit register for signal <mem<0><15>>.
+    Found 1-bit register for signal <mem<0><14>>.
+    Found 1-bit register for signal <mem<0><13>>.
+    Found 1-bit register for signal <mem<0><12>>.
+    Found 1-bit register for signal <mem<0><11>>.
+    Found 1-bit register for signal <mem<0><10>>.
+    Found 1-bit register for signal <mem<0><9>>.
+    Found 1-bit register for signal <mem<0><8>>.
+    Found 1-bit register for signal <mem<0><7>>.
+    Found 1-bit register for signal <mem<0><6>>.
+    Found 1-bit register for signal <mem<0><5>>.
+    Found 1-bit register for signal <mem<0><4>>.
+    Found 1-bit register for signal <mem<0><3>>.
+    Found 1-bit register for signal <mem<0><2>>.
+    Found 1-bit register for signal <mem<0><1>>.
+    Found 1-bit register for signal <mem<0><0>>.
+    Found 1-bit register for signal <mem<1><31>>.
+    Found 1-bit register for signal <mem<1><30>>.
+    Found 1-bit register for signal <mem<1><29>>.
+    Found 1-bit register for signal <mem<1><28>>.
+    Found 1-bit register for signal <mem<1><27>>.
+    Found 1-bit register for signal <mem<1><26>>.
+    Found 1-bit register for signal <mem<1><25>>.
+    Found 1-bit register for signal <mem<1><24>>.
+    Found 1-bit register for signal <mem<1><23>>.
+    Found 1-bit register for signal <mem<1><22>>.
+    Found 1-bit register for signal <mem<1><21>>.
+    Found 1-bit register for signal <mem<1><20>>.
+    Found 1-bit register for signal <mem<1><19>>.
+    Found 1-bit register for signal <mem<1><18>>.
+    Found 1-bit register for signal <mem<1><17>>.
+    Found 1-bit register for signal <mem<1><16>>.
+    Found 1-bit register for signal <mem<1><15>>.
+    Found 1-bit register for signal <mem<1><14>>.
+    Found 1-bit register for signal <mem<1><13>>.
+    Found 1-bit register for signal <mem<1><12>>.
+    Found 1-bit register for signal <mem<1><11>>.
+    Found 1-bit register for signal <mem<1><10>>.
+    Found 1-bit register for signal <mem<1><9>>.
+    Found 1-bit register for signal <mem<1><8>>.
+    Found 1-bit register for signal <mem<1><7>>.
+    Found 1-bit register for signal <mem<1><6>>.
+    Found 1-bit register for signal <mem<1><5>>.
+    Found 1-bit register for signal <mem<1><4>>.
+    Found 1-bit register for signal <mem<1><3>>.
+    Found 1-bit register for signal <mem<1><2>>.
+    Found 1-bit register for signal <mem<1><1>>.
+    Found 1-bit register for signal <mem<1><0>>.
+    Found 1-bit register for signal <mem<2><31>>.
+    Found 1-bit register for signal <mem<2><30>>.
+    Found 1-bit register for signal <mem<2><29>>.
+    Found 1-bit register for signal <mem<2><28>>.
+    Found 1-bit register for signal <mem<2><27>>.
+    Found 1-bit register for signal <mem<2><26>>.
+    Found 1-bit register for signal <mem<2><25>>.
+    Found 1-bit register for signal <mem<2><24>>.
+    Found 1-bit register for signal <mem<2><23>>.
+    Found 1-bit register for signal <mem<2><22>>.
+    Found 1-bit register for signal <mem<2><21>>.
+    Found 1-bit register for signal <mem<2><20>>.
+    Found 1-bit register for signal <mem<2><19>>.
+    Found 1-bit register for signal <mem<2><18>>.
+    Found 1-bit register for signal <mem<2><17>>.
+    Found 1-bit register for signal <mem<2><16>>.
+    Found 1-bit register for signal <mem<2><15>>.
+    Found 1-bit register for signal <mem<2><14>>.
+    Found 1-bit register for signal <mem<2><13>>.
+    Found 1-bit register for signal <mem<2><12>>.
+    Found 1-bit register for signal <mem<2><11>>.
+    Found 1-bit register for signal <mem<2><10>>.
+    Found 1-bit register for signal <mem<2><9>>.
+    Found 1-bit register for signal <mem<2><8>>.
+    Found 1-bit register for signal <mem<2><7>>.
+    Found 1-bit register for signal <mem<2><6>>.
+    Found 1-bit register for signal <mem<2><5>>.
+    Found 1-bit register for signal <mem<2><4>>.
+    Found 1-bit register for signal <mem<2><3>>.
+    Found 1-bit register for signal <mem<2><2>>.
+    Found 1-bit register for signal <mem<2><1>>.
+    Found 1-bit register for signal <mem<2><0>>.
+    Found 1-bit register for signal <mem<3><31>>.
+    Found 1-bit register for signal <mem<3><30>>.
+    Found 1-bit register for signal <mem<3><29>>.
+    Found 1-bit register for signal <mem<3><28>>.
+    Found 1-bit register for signal <mem<3><27>>.
+    Found 1-bit register for signal <mem<3><26>>.
+    Found 1-bit register for signal <mem<3><25>>.
+    Found 1-bit register for signal <mem<3><24>>.
+    Found 1-bit register for signal <mem<3><23>>.
+    Found 1-bit register for signal <mem<3><22>>.
+    Found 1-bit register for signal <mem<3><21>>.
+    Found 1-bit register for signal <mem<3><20>>.
+    Found 1-bit register for signal <mem<3><19>>.
+    Found 1-bit register for signal <mem<3><18>>.
+    Found 1-bit register for signal <mem<3><17>>.
+    Found 1-bit register for signal <mem<3><16>>.
+    Found 1-bit register for signal <mem<3><15>>.
+    Found 1-bit register for signal <mem<3><14>>.
+    Found 1-bit register for signal <mem<3><13>>.
+    Found 1-bit register for signal <mem<3><12>>.
+    Found 1-bit register for signal <mem<3><11>>.
+    Found 1-bit register for signal <mem<3><10>>.
+    Found 1-bit register for signal <mem<3><9>>.
+    Found 1-bit register for signal <mem<3><8>>.
+    Found 1-bit register for signal <mem<3><7>>.
+    Found 1-bit register for signal <mem<3><6>>.
+    Found 1-bit register for signal <mem<3><5>>.
+    Found 1-bit register for signal <mem<3><4>>.
+    Found 1-bit register for signal <mem<3><3>>.
+    Found 1-bit register for signal <mem<3><2>>.
+    Found 1-bit register for signal <mem<3><1>>.
+    Found 1-bit register for signal <mem<3><0>>.
+    Found 1-bit register for signal <mem<4><31>>.
+    Found 1-bit register for signal <mem<4><30>>.
+    Found 1-bit register for signal <mem<4><29>>.
+    Found 1-bit register for signal <mem<4><28>>.
+    Found 1-bit register for signal <mem<4><27>>.
+    Found 1-bit register for signal <mem<4><26>>.
+    Found 1-bit register for signal <mem<4><25>>.
+    Found 1-bit register for signal <mem<4><24>>.
+    Found 1-bit register for signal <mem<4><23>>.
+    Found 1-bit register for signal <mem<4><22>>.
+    Found 1-bit register for signal <mem<4><21>>.
+    Found 1-bit register for signal <mem<4><20>>.
+    Found 1-bit register for signal <mem<4><19>>.
+    Found 1-bit register for signal <mem<4><18>>.
+    Found 1-bit register for signal <mem<4><17>>.
+    Found 1-bit register for signal <mem<4><16>>.
+    Found 1-bit register for signal <mem<4><15>>.
+    Found 1-bit register for signal <mem<4><14>>.
+    Found 1-bit register for signal <mem<4><13>>.
+    Found 1-bit register for signal <mem<4><12>>.
+    Found 1-bit register for signal <mem<4><11>>.
+    Found 1-bit register for signal <mem<4><10>>.
+    Found 1-bit register for signal <mem<4><9>>.
+    Found 1-bit register for signal <mem<4><8>>.
+    Found 1-bit register for signal <mem<4><7>>.
+    Found 1-bit register for signal <mem<4><6>>.
+    Found 1-bit register for signal <mem<4><5>>.
+    Found 1-bit register for signal <mem<4><4>>.
+    Found 1-bit register for signal <mem<4><3>>.
+    Found 1-bit register for signal <mem<4><2>>.
+    Found 1-bit register for signal <mem<4><1>>.
+    Found 1-bit register for signal <mem<4><0>>.
+    Found 1-bit register for signal <mem<5><31>>.
+    Found 1-bit register for signal <mem<5><30>>.
+    Found 1-bit register for signal <mem<5><29>>.
+    Found 1-bit register for signal <mem<5><28>>.
+    Found 1-bit register for signal <mem<5><27>>.
+    Found 1-bit register for signal <mem<5><26>>.
+    Found 1-bit register for signal <mem<5><25>>.
+    Found 1-bit register for signal <mem<5><24>>.
+    Found 1-bit register for signal <mem<5><23>>.
+    Found 1-bit register for signal <mem<5><22>>.
+    Found 1-bit register for signal <mem<5><21>>.
+    Found 1-bit register for signal <mem<5><20>>.
+    Found 1-bit register for signal <mem<5><19>>.
+    Found 1-bit register for signal <mem<5><18>>.
+    Found 1-bit register for signal <mem<5><17>>.
+    Found 1-bit register for signal <mem<5><16>>.
+    Found 1-bit register for signal <mem<5><15>>.
+    Found 1-bit register for signal <mem<5><14>>.
+    Found 1-bit register for signal <mem<5><13>>.
+    Found 1-bit register for signal <mem<5><12>>.
+    Found 1-bit register for signal <mem<5><11>>.
+    Found 1-bit register for signal <mem<5><10>>.
+    Found 1-bit register for signal <mem<5><9>>.
+    Found 1-bit register for signal <mem<5><8>>.
+    Found 1-bit register for signal <mem<5><7>>.
+    Found 1-bit register for signal <mem<5><6>>.
+    Found 1-bit register for signal <mem<5><5>>.
+    Found 1-bit register for signal <mem<5><4>>.
+    Found 1-bit register for signal <mem<5><3>>.
+    Found 1-bit register for signal <mem<5><2>>.
+    Found 1-bit register for signal <mem<5><1>>.
+    Found 1-bit register for signal <mem<5><0>>.
+    Found 1-bit register for signal <mem<6><31>>.
+    Found 1-bit register for signal <mem<6><30>>.
+    Found 1-bit register for signal <mem<6><29>>.
+    Found 1-bit register for signal <mem<6><28>>.
+    Found 1-bit register for signal <mem<6><27>>.
+    Found 1-bit register for signal <mem<6><26>>.
+    Found 1-bit register for signal <mem<6><25>>.
+    Found 1-bit register for signal <mem<6><24>>.
+    Found 1-bit register for signal <mem<6><23>>.
+    Found 1-bit register for signal <mem<6><22>>.
+    Found 1-bit register for signal <mem<6><21>>.
+    Found 1-bit register for signal <mem<6><20>>.
+    Found 1-bit register for signal <mem<6><19>>.
+    Found 1-bit register for signal <mem<6><18>>.
+    Found 1-bit register for signal <mem<6><17>>.
+    Found 1-bit register for signal <mem<6><16>>.
+    Found 1-bit register for signal <mem<6><15>>.
+    Found 1-bit register for signal <mem<6><14>>.
+    Found 1-bit register for signal <mem<6><13>>.
+    Found 1-bit register for signal <mem<6><12>>.
+    Found 1-bit register for signal <mem<6><11>>.
+    Found 1-bit register for signal <mem<6><10>>.
+    Found 1-bit register for signal <mem<6><9>>.
+    Found 1-bit register for signal <mem<6><8>>.
+    Found 1-bit register for signal <mem<6><7>>.
+    Found 1-bit register for signal <mem<6><6>>.
+    Found 1-bit register for signal <mem<6><5>>.
+    Found 1-bit register for signal <mem<6><4>>.
+    Found 1-bit register for signal <mem<6><3>>.
+    Found 1-bit register for signal <mem<6><2>>.
+    Found 1-bit register for signal <mem<6><1>>.
+    Found 1-bit register for signal <mem<6><0>>.
+    Found 1-bit register for signal <mem<7><31>>.
+    Found 1-bit register for signal <mem<7><30>>.
+    Found 1-bit register for signal <mem<7><29>>.
+    Found 1-bit register for signal <mem<7><28>>.
+    Found 1-bit register for signal <mem<7><27>>.
+    Found 1-bit register for signal <mem<7><26>>.
+    Found 1-bit register for signal <mem<7><25>>.
+    Found 1-bit register for signal <mem<7><24>>.
+    Found 1-bit register for signal <mem<7><23>>.
+    Found 1-bit register for signal <mem<7><22>>.
+    Found 1-bit register for signal <mem<7><21>>.
+    Found 1-bit register for signal <mem<7><20>>.
+    Found 1-bit register for signal <mem<7><19>>.
+    Found 1-bit register for signal <mem<7><18>>.
+    Found 1-bit register for signal <mem<7><17>>.
+    Found 1-bit register for signal <mem<7><16>>.
+    Found 1-bit register for signal <mem<7><15>>.
+    Found 1-bit register for signal <mem<7><14>>.
+    Found 1-bit register for signal <mem<7><13>>.
+    Found 1-bit register for signal <mem<7><12>>.
+    Found 1-bit register for signal <mem<7><11>>.
+    Found 1-bit register for signal <mem<7><10>>.
+    Found 1-bit register for signal <mem<7><9>>.
+    Found 1-bit register for signal <mem<7><8>>.
+    Found 1-bit register for signal <mem<7><7>>.
+    Found 1-bit register for signal <mem<7><6>>.
+    Found 1-bit register for signal <mem<7><5>>.
+    Found 1-bit register for signal <mem<7><4>>.
+    Found 1-bit register for signal <mem<7><3>>.
+    Found 1-bit register for signal <mem<7><2>>.
+    Found 1-bit register for signal <mem<7><1>>.
+    Found 1-bit register for signal <mem<7><0>>.
+    Found 1-bit register for signal <mem<8><31>>.
+    Found 1-bit register for signal <mem<8><30>>.
+    Found 1-bit register for signal <mem<8><29>>.
+    Found 1-bit register for signal <mem<8><28>>.
+    Found 1-bit register for signal <mem<8><27>>.
+    Found 1-bit register for signal <mem<8><26>>.
+    Found 1-bit register for signal <mem<8><25>>.
+    Found 1-bit register for signal <mem<8><24>>.
+    Found 1-bit register for signal <mem<8><23>>.
+    Found 1-bit register for signal <mem<8><22>>.
+    Found 1-bit register for signal <mem<8><21>>.
+    Found 1-bit register for signal <mem<8><20>>.
+    Found 1-bit register for signal <mem<8><19>>.
+    Found 1-bit register for signal <mem<8><18>>.
+    Found 1-bit register for signal <mem<8><17>>.
+    Found 1-bit register for signal <mem<8><16>>.
+    Found 1-bit register for signal <mem<8><15>>.
+    Found 1-bit register for signal <mem<8><14>>.
+    Found 1-bit register for signal <mem<8><13>>.
+    Found 1-bit register for signal <mem<8><12>>.
+    Found 1-bit register for signal <mem<8><11>>.
+    Found 1-bit register for signal <mem<8><10>>.
+    Found 1-bit register for signal <mem<8><9>>.
+    Found 1-bit register for signal <mem<8><8>>.
+    Found 1-bit register for signal <mem<8><7>>.
+    Found 1-bit register for signal <mem<8><6>>.
+    Found 1-bit register for signal <mem<8><5>>.
+    Found 1-bit register for signal <mem<8><4>>.
+    Found 1-bit register for signal <mem<8><3>>.
+    Found 1-bit register for signal <mem<8><2>>.
+    Found 1-bit register for signal <mem<8><1>>.
+    Found 1-bit register for signal <mem<8><0>>.
+    Found 1-bit register for signal <mem<9><31>>.
+    Found 1-bit register for signal <mem<9><30>>.
+    Found 1-bit register for signal <mem<9><29>>.
+    Found 1-bit register for signal <mem<9><28>>.
+    Found 1-bit register for signal <mem<9><27>>.
+    Found 1-bit register for signal <mem<9><26>>.
+    Found 1-bit register for signal <mem<9><25>>.
+    Found 1-bit register for signal <mem<9><24>>.
+    Found 1-bit register for signal <mem<9><23>>.
+    Found 1-bit register for signal <mem<9><22>>.
+    Found 1-bit register for signal <mem<9><21>>.
+    Found 1-bit register for signal <mem<9><20>>.
+    Found 1-bit register for signal <mem<9><19>>.
+    Found 1-bit register for signal <mem<9><18>>.
+    Found 1-bit register for signal <mem<9><17>>.
+    Found 1-bit register for signal <mem<9><16>>.
+    Found 1-bit register for signal <mem<9><15>>.
+    Found 1-bit register for signal <mem<9><14>>.
+    Found 1-bit register for signal <mem<9><13>>.
+    Found 1-bit register for signal <mem<9><12>>.
+    Found 1-bit register for signal <mem<9><11>>.
+    Found 1-bit register for signal <mem<9><10>>.
+    Found 1-bit register for signal <mem<9><9>>.
+    Found 1-bit register for signal <mem<9><8>>.
+    Found 1-bit register for signal <mem<9><7>>.
+    Found 1-bit register for signal <mem<9><6>>.
+    Found 1-bit register for signal <mem<9><5>>.
+    Found 1-bit register for signal <mem<9><4>>.
+    Found 1-bit register for signal <mem<9><3>>.
+    Found 1-bit register for signal <mem<9><2>>.
+    Found 1-bit register for signal <mem<9><1>>.
+    Found 1-bit register for signal <mem<9><0>>.
+    Found 1-bit register for signal <mem<10><31>>.
+    Found 1-bit register for signal <mem<10><30>>.
+    Found 1-bit register for signal <mem<10><29>>.
+    Found 1-bit register for signal <mem<10><28>>.
+    Found 1-bit register for signal <mem<10><27>>.
+    Found 1-bit register for signal <mem<10><26>>.
+    Found 1-bit register for signal <mem<10><25>>.
+    Found 1-bit register for signal <mem<10><24>>.
+    Found 1-bit register for signal <mem<10><23>>.
+    Found 1-bit register for signal <mem<10><22>>.
+    Found 1-bit register for signal <mem<10><21>>.
+    Found 1-bit register for signal <mem<10><20>>.
+    Found 1-bit register for signal <mem<10><19>>.
+    Found 1-bit register for signal <mem<10><18>>.
+    Found 1-bit register for signal <mem<10><17>>.
+    Found 1-bit register for signal <mem<10><16>>.
+    Found 1-bit register for signal <mem<10><15>>.
+    Found 1-bit register for signal <mem<10><14>>.
+    Found 1-bit register for signal <mem<10><13>>.
+    Found 1-bit register for signal <mem<10><12>>.
+    Found 1-bit register for signal <mem<10><11>>.
+    Found 1-bit register for signal <mem<10><10>>.
+    Found 1-bit register for signal <mem<10><9>>.
+    Found 1-bit register for signal <mem<10><8>>.
+    Found 1-bit register for signal <mem<10><7>>.
+    Found 1-bit register for signal <mem<10><6>>.
+    Found 1-bit register for signal <mem<10><5>>.
+    Found 1-bit register for signal <mem<10><4>>.
+    Found 1-bit register for signal <mem<10><3>>.
+    Found 1-bit register for signal <mem<10><2>>.
+    Found 1-bit register for signal <mem<10><1>>.
+    Found 1-bit register for signal <mem<10><0>>.
+    Found 1-bit register for signal <mem<11><31>>.
+    Found 1-bit register for signal <mem<11><30>>.
+    Found 1-bit register for signal <mem<11><29>>.
+    Found 1-bit register for signal <mem<11><28>>.
+    Found 1-bit register for signal <mem<11><27>>.
+    Found 1-bit register for signal <mem<11><26>>.
+    Found 1-bit register for signal <mem<11><25>>.
+    Found 1-bit register for signal <mem<11><24>>.
+    Found 1-bit register for signal <mem<11><23>>.
+    Found 1-bit register for signal <mem<11><22>>.
+    Found 1-bit register for signal <mem<11><21>>.
+    Found 1-bit register for signal <mem<11><20>>.
+    Found 1-bit register for signal <mem<11><19>>.
+    Found 1-bit register for signal <mem<11><18>>.
+    Found 1-bit register for signal <mem<11><17>>.
+    Found 1-bit register for signal <mem<11><16>>.
+    Found 1-bit register for signal <mem<11><15>>.
+    Found 1-bit register for signal <mem<11><14>>.
+    Found 1-bit register for signal <mem<11><13>>.
+    Found 1-bit register for signal <mem<11><12>>.
+    Found 1-bit register for signal <mem<11><11>>.
+    Found 1-bit register for signal <mem<11><10>>.
+    Found 1-bit register for signal <mem<11><9>>.
+    Found 1-bit register for signal <mem<11><8>>.
+    Found 1-bit register for signal <mem<11><7>>.
+    Found 1-bit register for signal <mem<11><6>>.
+    Found 1-bit register for signal <mem<11><5>>.
+    Found 1-bit register for signal <mem<11><4>>.
+    Found 1-bit register for signal <mem<11><3>>.
+    Found 1-bit register for signal <mem<11><2>>.
+    Found 1-bit register for signal <mem<11><1>>.
+    Found 1-bit register for signal <mem<11><0>>.
+    Found 1-bit register for signal <mem<12><31>>.
+    Found 1-bit register for signal <mem<12><30>>.
+    Found 1-bit register for signal <mem<12><29>>.
+    Found 1-bit register for signal <mem<12><28>>.
+    Found 1-bit register for signal <mem<12><27>>.
+    Found 1-bit register for signal <mem<12><26>>.
+    Found 1-bit register for signal <mem<12><25>>.
+    Found 1-bit register for signal <mem<12><24>>.
+    Found 1-bit register for signal <mem<12><23>>.
+    Found 1-bit register for signal <mem<12><22>>.
+    Found 1-bit register for signal <mem<12><21>>.
+    Found 1-bit register for signal <mem<12><20>>.
+    Found 1-bit register for signal <mem<12><19>>.
+    Found 1-bit register for signal <mem<12><18>>.
+    Found 1-bit register for signal <mem<12><17>>.
+    Found 1-bit register for signal <mem<12><16>>.
+    Found 1-bit register for signal <mem<12><15>>.
+    Found 1-bit register for signal <mem<12><14>>.
+    Found 1-bit register for signal <mem<12><13>>.
+    Found 1-bit register for signal <mem<12><12>>.
+    Found 1-bit register for signal <mem<12><11>>.
+    Found 1-bit register for signal <mem<12><10>>.
+    Found 1-bit register for signal <mem<12><9>>.
+    Found 1-bit register for signal <mem<12><8>>.
+    Found 1-bit register for signal <mem<12><7>>.
+    Found 1-bit register for signal <mem<12><6>>.
+    Found 1-bit register for signal <mem<12><5>>.
+    Found 1-bit register for signal <mem<12><4>>.
+    Found 1-bit register for signal <mem<12><3>>.
+    Found 1-bit register for signal <mem<12><2>>.
+    Found 1-bit register for signal <mem<12><1>>.
+    Found 1-bit register for signal <mem<12><0>>.
+    Found 1-bit register for signal <mem<13><31>>.
+    Found 1-bit register for signal <mem<13><30>>.
+    Found 1-bit register for signal <mem<13><29>>.
+    Found 1-bit register for signal <mem<13><28>>.
+    Found 1-bit register for signal <mem<13><27>>.
+    Found 1-bit register for signal <mem<13><26>>.
+    Found 1-bit register for signal <mem<13><25>>.
+    Found 1-bit register for signal <mem<13><24>>.
+    Found 1-bit register for signal <mem<13><23>>.
+    Found 1-bit register for signal <mem<13><22>>.
+    Found 1-bit register for signal <mem<13><21>>.
+    Found 1-bit register for signal <mem<13><20>>.
+    Found 1-bit register for signal <mem<13><19>>.
+    Found 1-bit register for signal <mem<13><18>>.
+    Found 1-bit register for signal <mem<13><17>>.
+    Found 1-bit register for signal <mem<13><16>>.
+    Found 1-bit register for signal <mem<13><15>>.
+    Found 1-bit register for signal <mem<13><14>>.
+    Found 1-bit register for signal <mem<13><13>>.
+    Found 1-bit register for signal <mem<13><12>>.
+    Found 1-bit register for signal <mem<13><11>>.
+    Found 1-bit register for signal <mem<13><10>>.
+    Found 1-bit register for signal <mem<13><9>>.
+    Found 1-bit register for signal <mem<13><8>>.
+    Found 1-bit register for signal <mem<13><7>>.
+    Found 1-bit register for signal <mem<13><6>>.
+    Found 1-bit register for signal <mem<13><5>>.
+    Found 1-bit register for signal <mem<13><4>>.
+    Found 1-bit register for signal <mem<13><3>>.
+    Found 1-bit register for signal <mem<13><2>>.
+    Found 1-bit register for signal <mem<13><1>>.
+    Found 1-bit register for signal <mem<13><0>>.
+    Found 1-bit register for signal <mem<14><31>>.
+    Found 1-bit register for signal <mem<14><30>>.
+    Found 1-bit register for signal <mem<14><29>>.
+    Found 1-bit register for signal <mem<14><28>>.
+    Found 1-bit register for signal <mem<14><27>>.
+    Found 1-bit register for signal <mem<14><26>>.
+    Found 1-bit register for signal <mem<14><25>>.
+    Found 1-bit register for signal <mem<14><24>>.
+    Found 1-bit register for signal <mem<14><23>>.
+    Found 1-bit register for signal <mem<14><22>>.
+    Found 1-bit register for signal <mem<14><21>>.
+    Found 1-bit register for signal <mem<14><20>>.
+    Found 1-bit register for signal <mem<14><19>>.
+    Found 1-bit register for signal <mem<14><18>>.
+    Found 1-bit register for signal <mem<14><17>>.
+    Found 1-bit register for signal <mem<14><16>>.
+    Found 1-bit register for signal <mem<14><15>>.
+    Found 1-bit register for signal <mem<14><14>>.
+    Found 1-bit register for signal <mem<14><13>>.
+    Found 1-bit register for signal <mem<14><12>>.
+    Found 1-bit register for signal <mem<14><11>>.
+    Found 1-bit register for signal <mem<14><10>>.
+    Found 1-bit register for signal <mem<14><9>>.
+    Found 1-bit register for signal <mem<14><8>>.
+    Found 1-bit register for signal <mem<14><7>>.
+    Found 1-bit register for signal <mem<14><6>>.
+    Found 1-bit register for signal <mem<14><5>>.
+    Found 1-bit register for signal <mem<14><4>>.
+    Found 1-bit register for signal <mem<14><3>>.
+    Found 1-bit register for signal <mem<14><2>>.
+    Found 1-bit register for signal <mem<14><1>>.
+    Found 1-bit register for signal <mem<14><0>>.
+    Found 1-bit register for signal <mem<15><31>>.
+    Found 1-bit register for signal <mem<15><30>>.
+    Found 1-bit register for signal <mem<15><29>>.
+    Found 1-bit register for signal <mem<15><28>>.
+    Found 1-bit register for signal <mem<15><27>>.
+    Found 1-bit register for signal <mem<15><26>>.
+    Found 1-bit register for signal <mem<15><25>>.
+    Found 1-bit register for signal <mem<15><24>>.
+    Found 1-bit register for signal <mem<15><23>>.
+    Found 1-bit register for signal <mem<15><22>>.
+    Found 1-bit register for signal <mem<15><21>>.
+    Found 1-bit register for signal <mem<15><20>>.
+    Found 1-bit register for signal <mem<15><19>>.
+    Found 1-bit register for signal <mem<15><18>>.
+    Found 1-bit register for signal <mem<15><17>>.
+    Found 1-bit register for signal <mem<15><16>>.
+    Found 1-bit register for signal <mem<15><15>>.
+    Found 1-bit register for signal <mem<15><14>>.
+    Found 1-bit register for signal <mem<15><13>>.
+    Found 1-bit register for signal <mem<15><12>>.
+    Found 1-bit register for signal <mem<15><11>>.
+    Found 1-bit register for signal <mem<15><10>>.
+    Found 1-bit register for signal <mem<15><9>>.
+    Found 1-bit register for signal <mem<15><8>>.
+    Found 1-bit register for signal <mem<15><7>>.
+    Found 1-bit register for signal <mem<15><6>>.
+    Found 1-bit register for signal <mem<15><5>>.
+    Found 1-bit register for signal <mem<15><4>>.
+    Found 1-bit register for signal <mem<15><3>>.
+    Found 1-bit register for signal <mem<15><2>>.
+    Found 1-bit register for signal <mem<15><1>>.
+    Found 1-bit register for signal <mem<15><0>>.
+    Found 4-bit subtractor for signal <index[3]_GND_15_o_sub_4_OUT> created at line 233.
+    Found 4-bit adder for signal <index[3]_GND_15_o_add_4_OUT> created at line 235.
+    Found 32-bit 16-to-1 multiplexer for signal <dout> created at line 206.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 518 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sobel_filter_INPUT_STREAM_fifo_1> synthesized.
+
+Synthesizing Unit <sobel_filter_INPUT_STREAM_fifo_2>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_INPUT_STREAM_if.v".
+        DATA_BITS = 4
+        DEPTH_BITS = 4
+    Found 1-bit register for signal <empty>.
+    Found 4-bit register for signal <index>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <mem<0><3>>.
+    Found 1-bit register for signal <mem<0><2>>.
+    Found 1-bit register for signal <mem<0><1>>.
+    Found 1-bit register for signal <mem<0><0>>.
+    Found 1-bit register for signal <mem<1><3>>.
+    Found 1-bit register for signal <mem<1><2>>.
+    Found 1-bit register for signal <mem<1><1>>.
+    Found 1-bit register for signal <mem<1><0>>.
+    Found 1-bit register for signal <mem<2><3>>.
+    Found 1-bit register for signal <mem<2><2>>.
+    Found 1-bit register for signal <mem<2><1>>.
+    Found 1-bit register for signal <mem<2><0>>.
+    Found 1-bit register for signal <mem<3><3>>.
+    Found 1-bit register for signal <mem<3><2>>.
+    Found 1-bit register for signal <mem<3><1>>.
+    Found 1-bit register for signal <mem<3><0>>.
+    Found 1-bit register for signal <mem<4><3>>.
+    Found 1-bit register for signal <mem<4><2>>.
+    Found 1-bit register for signal <mem<4><1>>.
+    Found 1-bit register for signal <mem<4><0>>.
+    Found 1-bit register for signal <mem<5><3>>.
+    Found 1-bit register for signal <mem<5><2>>.
+    Found 1-bit register for signal <mem<5><1>>.
+    Found 1-bit register for signal <mem<5><0>>.
+    Found 1-bit register for signal <mem<6><3>>.
+    Found 1-bit register for signal <mem<6><2>>.
+    Found 1-bit register for signal <mem<6><1>>.
+    Found 1-bit register for signal <mem<6><0>>.
+    Found 1-bit register for signal <mem<7><3>>.
+    Found 1-bit register for signal <mem<7><2>>.
+    Found 1-bit register for signal <mem<7><1>>.
+    Found 1-bit register for signal <mem<7><0>>.
+    Found 1-bit register for signal <mem<8><3>>.
+    Found 1-bit register for signal <mem<8><2>>.
+    Found 1-bit register for signal <mem<8><1>>.
+    Found 1-bit register for signal <mem<8><0>>.
+    Found 1-bit register for signal <mem<9><3>>.
+    Found 1-bit register for signal <mem<9><2>>.
+    Found 1-bit register for signal <mem<9><1>>.
+    Found 1-bit register for signal <mem<9><0>>.
+    Found 1-bit register for signal <mem<10><3>>.
+    Found 1-bit register for signal <mem<10><2>>.
+    Found 1-bit register for signal <mem<10><1>>.
+    Found 1-bit register for signal <mem<10><0>>.
+    Found 1-bit register for signal <mem<11><3>>.
+    Found 1-bit register for signal <mem<11><2>>.
+    Found 1-bit register for signal <mem<11><1>>.
+    Found 1-bit register for signal <mem<11><0>>.
+    Found 1-bit register for signal <mem<12><3>>.
+    Found 1-bit register for signal <mem<12><2>>.
+    Found 1-bit register for signal <mem<12><1>>.
+    Found 1-bit register for signal <mem<12><0>>.
+    Found 1-bit register for signal <mem<13><3>>.
+    Found 1-bit register for signal <mem<13><2>>.
+    Found 1-bit register for signal <mem<13><1>>.
+    Found 1-bit register for signal <mem<13><0>>.
+    Found 1-bit register for signal <mem<14><3>>.
+    Found 1-bit register for signal <mem<14><2>>.
+    Found 1-bit register for signal <mem<14><1>>.
+    Found 1-bit register for signal <mem<14><0>>.
+    Found 1-bit register for signal <mem<15><3>>.
+    Found 1-bit register for signal <mem<15><2>>.
+    Found 1-bit register for signal <mem<15><1>>.
+    Found 1-bit register for signal <mem<15><0>>.
+    Found 4-bit subtractor for signal <index[3]_GND_17_o_sub_4_OUT> created at line 233.
+    Found 4-bit adder for signal <index[3]_GND_17_o_add_4_OUT> created at line 235.
+    Found 4-bit 16-to-1 multiplexer for signal <dout> created at line 206.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  70 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sobel_filter_INPUT_STREAM_fifo_2> synthesized.
+
+Synthesizing Unit <sobel_filter_INPUT_STREAM_fifo_3>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_INPUT_STREAM_if.v".
+        DATA_BITS = 1
+        DEPTH_BITS = 4
+    Found 1-bit register for signal <empty>.
+    Found 4-bit register for signal <index>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <mem<0>>.
+    Found 1-bit register for signal <mem<1>>.
+    Found 1-bit register for signal <mem<2>>.
+    Found 1-bit register for signal <mem<3>>.
+    Found 1-bit register for signal <mem<4>>.
+    Found 1-bit register for signal <mem<5>>.
+    Found 1-bit register for signal <mem<6>>.
+    Found 1-bit register for signal <mem<7>>.
+    Found 1-bit register for signal <mem<8>>.
+    Found 1-bit register for signal <mem<9>>.
+    Found 1-bit register for signal <mem<10>>.
+    Found 1-bit register for signal <mem<11>>.
+    Found 1-bit register for signal <mem<12>>.
+    Found 1-bit register for signal <mem<13>>.
+    Found 1-bit register for signal <mem<14>>.
+    Found 1-bit register for signal <mem<15>>.
+    Found 4-bit subtractor for signal <index[3]_GND_19_o_sub_4_OUT> created at line 233.
+    Found 4-bit adder for signal <index[3]_GND_19_o_add_4_OUT> created at line 235.
+    Found 1-bit 16-to-1 multiplexer for signal <dout> created at line 206.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sobel_filter_INPUT_STREAM_fifo_3> synthesized.
+
+Synthesizing Unit <sobel_filter_OUTPUT_STREAM_if>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_OUTPUT_STREAM_if.v".
+    Summary:
+	no macro.
+Unit <sobel_filter_OUTPUT_STREAM_if> synthesized.
+
+Synthesizing Unit <sobel_filter_OUTPUT_STREAM_reg_slice>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_OUTPUT_STREAM_if.v".
+        N = 39
+    Found 39-bit register for signal <data_p2>.
+    Found 1-bit register for signal <s_ready_t>.
+    Found 2-bit register for signal <state>.
+    Found 39-bit register for signal <data_p1>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset_INV_395_o (positive)                     |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 10                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  79 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sobel_filter_OUTPUT_STREAM_reg_slice> synthesized.
+
+Synthesizing Unit <sobel_filter_OUTPUT_STREAM_fifo_1>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_OUTPUT_STREAM_if.v".
+        DATA_BITS = 32
+        DEPTH_BITS = 4
+    Found 1-bit register for signal <empty>.
+    Found 4-bit register for signal <index>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <mem<0><31>>.
+    Found 1-bit register for signal <mem<0><30>>.
+    Found 1-bit register for signal <mem<0><29>>.
+    Found 1-bit register for signal <mem<0><28>>.
+    Found 1-bit register for signal <mem<0><27>>.
+    Found 1-bit register for signal <mem<0><26>>.
+    Found 1-bit register for signal <mem<0><25>>.
+    Found 1-bit register for signal <mem<0><24>>.
+    Found 1-bit register for signal <mem<0><23>>.
+    Found 1-bit register for signal <mem<0><22>>.
+    Found 1-bit register for signal <mem<0><21>>.
+    Found 1-bit register for signal <mem<0><20>>.
+    Found 1-bit register for signal <mem<0><19>>.
+    Found 1-bit register for signal <mem<0><18>>.
+    Found 1-bit register for signal <mem<0><17>>.
+    Found 1-bit register for signal <mem<0><16>>.
+    Found 1-bit register for signal <mem<0><15>>.
+    Found 1-bit register for signal <mem<0><14>>.
+    Found 1-bit register for signal <mem<0><13>>.
+    Found 1-bit register for signal <mem<0><12>>.
+    Found 1-bit register for signal <mem<0><11>>.
+    Found 1-bit register for signal <mem<0><10>>.
+    Found 1-bit register for signal <mem<0><9>>.
+    Found 1-bit register for signal <mem<0><8>>.
+    Found 1-bit register for signal <mem<0><7>>.
+    Found 1-bit register for signal <mem<0><6>>.
+    Found 1-bit register for signal <mem<0><5>>.
+    Found 1-bit register for signal <mem<0><4>>.
+    Found 1-bit register for signal <mem<0><3>>.
+    Found 1-bit register for signal <mem<0><2>>.
+    Found 1-bit register for signal <mem<0><1>>.
+    Found 1-bit register for signal <mem<0><0>>.
+    Found 1-bit register for signal <mem<1><31>>.
+    Found 1-bit register for signal <mem<1><30>>.
+    Found 1-bit register for signal <mem<1><29>>.
+    Found 1-bit register for signal <mem<1><28>>.
+    Found 1-bit register for signal <mem<1><27>>.
+    Found 1-bit register for signal <mem<1><26>>.
+    Found 1-bit register for signal <mem<1><25>>.
+    Found 1-bit register for signal <mem<1><24>>.
+    Found 1-bit register for signal <mem<1><23>>.
+    Found 1-bit register for signal <mem<1><22>>.
+    Found 1-bit register for signal <mem<1><21>>.
+    Found 1-bit register for signal <mem<1><20>>.
+    Found 1-bit register for signal <mem<1><19>>.
+    Found 1-bit register for signal <mem<1><18>>.
+    Found 1-bit register for signal <mem<1><17>>.
+    Found 1-bit register for signal <mem<1><16>>.
+    Found 1-bit register for signal <mem<1><15>>.
+    Found 1-bit register for signal <mem<1><14>>.
+    Found 1-bit register for signal <mem<1><13>>.
+    Found 1-bit register for signal <mem<1><12>>.
+    Found 1-bit register for signal <mem<1><11>>.
+    Found 1-bit register for signal <mem<1><10>>.
+    Found 1-bit register for signal <mem<1><9>>.
+    Found 1-bit register for signal <mem<1><8>>.
+    Found 1-bit register for signal <mem<1><7>>.
+    Found 1-bit register for signal <mem<1><6>>.
+    Found 1-bit register for signal <mem<1><5>>.
+    Found 1-bit register for signal <mem<1><4>>.
+    Found 1-bit register for signal <mem<1><3>>.
+    Found 1-bit register for signal <mem<1><2>>.
+    Found 1-bit register for signal <mem<1><1>>.
+    Found 1-bit register for signal <mem<1><0>>.
+    Found 1-bit register for signal <mem<2><31>>.
+    Found 1-bit register for signal <mem<2><30>>.
+    Found 1-bit register for signal <mem<2><29>>.
+    Found 1-bit register for signal <mem<2><28>>.
+    Found 1-bit register for signal <mem<2><27>>.
+    Found 1-bit register for signal <mem<2><26>>.
+    Found 1-bit register for signal <mem<2><25>>.
+    Found 1-bit register for signal <mem<2><24>>.
+    Found 1-bit register for signal <mem<2><23>>.
+    Found 1-bit register for signal <mem<2><22>>.
+    Found 1-bit register for signal <mem<2><21>>.
+    Found 1-bit register for signal <mem<2><20>>.
+    Found 1-bit register for signal <mem<2><19>>.
+    Found 1-bit register for signal <mem<2><18>>.
+    Found 1-bit register for signal <mem<2><17>>.
+    Found 1-bit register for signal <mem<2><16>>.
+    Found 1-bit register for signal <mem<2><15>>.
+    Found 1-bit register for signal <mem<2><14>>.
+    Found 1-bit register for signal <mem<2><13>>.
+    Found 1-bit register for signal <mem<2><12>>.
+    Found 1-bit register for signal <mem<2><11>>.
+    Found 1-bit register for signal <mem<2><10>>.
+    Found 1-bit register for signal <mem<2><9>>.
+    Found 1-bit register for signal <mem<2><8>>.
+    Found 1-bit register for signal <mem<2><7>>.
+    Found 1-bit register for signal <mem<2><6>>.
+    Found 1-bit register for signal <mem<2><5>>.
+    Found 1-bit register for signal <mem<2><4>>.
+    Found 1-bit register for signal <mem<2><3>>.
+    Found 1-bit register for signal <mem<2><2>>.
+    Found 1-bit register for signal <mem<2><1>>.
+    Found 1-bit register for signal <mem<2><0>>.
+    Found 1-bit register for signal <mem<3><31>>.
+    Found 1-bit register for signal <mem<3><30>>.
+    Found 1-bit register for signal <mem<3><29>>.
+    Found 1-bit register for signal <mem<3><28>>.
+    Found 1-bit register for signal <mem<3><27>>.
+    Found 1-bit register for signal <mem<3><26>>.
+    Found 1-bit register for signal <mem<3><25>>.
+    Found 1-bit register for signal <mem<3><24>>.
+    Found 1-bit register for signal <mem<3><23>>.
+    Found 1-bit register for signal <mem<3><22>>.
+    Found 1-bit register for signal <mem<3><21>>.
+    Found 1-bit register for signal <mem<3><20>>.
+    Found 1-bit register for signal <mem<3><19>>.
+    Found 1-bit register for signal <mem<3><18>>.
+    Found 1-bit register for signal <mem<3><17>>.
+    Found 1-bit register for signal <mem<3><16>>.
+    Found 1-bit register for signal <mem<3><15>>.
+    Found 1-bit register for signal <mem<3><14>>.
+    Found 1-bit register for signal <mem<3><13>>.
+    Found 1-bit register for signal <mem<3><12>>.
+    Found 1-bit register for signal <mem<3><11>>.
+    Found 1-bit register for signal <mem<3><10>>.
+    Found 1-bit register for signal <mem<3><9>>.
+    Found 1-bit register for signal <mem<3><8>>.
+    Found 1-bit register for signal <mem<3><7>>.
+    Found 1-bit register for signal <mem<3><6>>.
+    Found 1-bit register for signal <mem<3><5>>.
+    Found 1-bit register for signal <mem<3><4>>.
+    Found 1-bit register for signal <mem<3><3>>.
+    Found 1-bit register for signal <mem<3><2>>.
+    Found 1-bit register for signal <mem<3><1>>.
+    Found 1-bit register for signal <mem<3><0>>.
+    Found 1-bit register for signal <mem<4><31>>.
+    Found 1-bit register for signal <mem<4><30>>.
+    Found 1-bit register for signal <mem<4><29>>.
+    Found 1-bit register for signal <mem<4><28>>.
+    Found 1-bit register for signal <mem<4><27>>.
+    Found 1-bit register for signal <mem<4><26>>.
+    Found 1-bit register for signal <mem<4><25>>.
+    Found 1-bit register for signal <mem<4><24>>.
+    Found 1-bit register for signal <mem<4><23>>.
+    Found 1-bit register for signal <mem<4><22>>.
+    Found 1-bit register for signal <mem<4><21>>.
+    Found 1-bit register for signal <mem<4><20>>.
+    Found 1-bit register for signal <mem<4><19>>.
+    Found 1-bit register for signal <mem<4><18>>.
+    Found 1-bit register for signal <mem<4><17>>.
+    Found 1-bit register for signal <mem<4><16>>.
+    Found 1-bit register for signal <mem<4><15>>.
+    Found 1-bit register for signal <mem<4><14>>.
+    Found 1-bit register for signal <mem<4><13>>.
+    Found 1-bit register for signal <mem<4><12>>.
+    Found 1-bit register for signal <mem<4><11>>.
+    Found 1-bit register for signal <mem<4><10>>.
+    Found 1-bit register for signal <mem<4><9>>.
+    Found 1-bit register for signal <mem<4><8>>.
+    Found 1-bit register for signal <mem<4><7>>.
+    Found 1-bit register for signal <mem<4><6>>.
+    Found 1-bit register for signal <mem<4><5>>.
+    Found 1-bit register for signal <mem<4><4>>.
+    Found 1-bit register for signal <mem<4><3>>.
+    Found 1-bit register for signal <mem<4><2>>.
+    Found 1-bit register for signal <mem<4><1>>.
+    Found 1-bit register for signal <mem<4><0>>.
+    Found 1-bit register for signal <mem<5><31>>.
+    Found 1-bit register for signal <mem<5><30>>.
+    Found 1-bit register for signal <mem<5><29>>.
+    Found 1-bit register for signal <mem<5><28>>.
+    Found 1-bit register for signal <mem<5><27>>.
+    Found 1-bit register for signal <mem<5><26>>.
+    Found 1-bit register for signal <mem<5><25>>.
+    Found 1-bit register for signal <mem<5><24>>.
+    Found 1-bit register for signal <mem<5><23>>.
+    Found 1-bit register for signal <mem<5><22>>.
+    Found 1-bit register for signal <mem<5><21>>.
+    Found 1-bit register for signal <mem<5><20>>.
+    Found 1-bit register for signal <mem<5><19>>.
+    Found 1-bit register for signal <mem<5><18>>.
+    Found 1-bit register for signal <mem<5><17>>.
+    Found 1-bit register for signal <mem<5><16>>.
+    Found 1-bit register for signal <mem<5><15>>.
+    Found 1-bit register for signal <mem<5><14>>.
+    Found 1-bit register for signal <mem<5><13>>.
+    Found 1-bit register for signal <mem<5><12>>.
+    Found 1-bit register for signal <mem<5><11>>.
+    Found 1-bit register for signal <mem<5><10>>.
+    Found 1-bit register for signal <mem<5><9>>.
+    Found 1-bit register for signal <mem<5><8>>.
+    Found 1-bit register for signal <mem<5><7>>.
+    Found 1-bit register for signal <mem<5><6>>.
+    Found 1-bit register for signal <mem<5><5>>.
+    Found 1-bit register for signal <mem<5><4>>.
+    Found 1-bit register for signal <mem<5><3>>.
+    Found 1-bit register for signal <mem<5><2>>.
+    Found 1-bit register for signal <mem<5><1>>.
+    Found 1-bit register for signal <mem<5><0>>.
+    Found 1-bit register for signal <mem<6><31>>.
+    Found 1-bit register for signal <mem<6><30>>.
+    Found 1-bit register for signal <mem<6><29>>.
+    Found 1-bit register for signal <mem<6><28>>.
+    Found 1-bit register for signal <mem<6><27>>.
+    Found 1-bit register for signal <mem<6><26>>.
+    Found 1-bit register for signal <mem<6><25>>.
+    Found 1-bit register for signal <mem<6><24>>.
+    Found 1-bit register for signal <mem<6><23>>.
+    Found 1-bit register for signal <mem<6><22>>.
+    Found 1-bit register for signal <mem<6><21>>.
+    Found 1-bit register for signal <mem<6><20>>.
+    Found 1-bit register for signal <mem<6><19>>.
+    Found 1-bit register for signal <mem<6><18>>.
+    Found 1-bit register for signal <mem<6><17>>.
+    Found 1-bit register for signal <mem<6><16>>.
+    Found 1-bit register for signal <mem<6><15>>.
+    Found 1-bit register for signal <mem<6><14>>.
+    Found 1-bit register for signal <mem<6><13>>.
+    Found 1-bit register for signal <mem<6><12>>.
+    Found 1-bit register for signal <mem<6><11>>.
+    Found 1-bit register for signal <mem<6><10>>.
+    Found 1-bit register for signal <mem<6><9>>.
+    Found 1-bit register for signal <mem<6><8>>.
+    Found 1-bit register for signal <mem<6><7>>.
+    Found 1-bit register for signal <mem<6><6>>.
+    Found 1-bit register for signal <mem<6><5>>.
+    Found 1-bit register for signal <mem<6><4>>.
+    Found 1-bit register for signal <mem<6><3>>.
+    Found 1-bit register for signal <mem<6><2>>.
+    Found 1-bit register for signal <mem<6><1>>.
+    Found 1-bit register for signal <mem<6><0>>.
+    Found 1-bit register for signal <mem<7><31>>.
+    Found 1-bit register for signal <mem<7><30>>.
+    Found 1-bit register for signal <mem<7><29>>.
+    Found 1-bit register for signal <mem<7><28>>.
+    Found 1-bit register for signal <mem<7><27>>.
+    Found 1-bit register for signal <mem<7><26>>.
+    Found 1-bit register for signal <mem<7><25>>.
+    Found 1-bit register for signal <mem<7><24>>.
+    Found 1-bit register for signal <mem<7><23>>.
+    Found 1-bit register for signal <mem<7><22>>.
+    Found 1-bit register for signal <mem<7><21>>.
+    Found 1-bit register for signal <mem<7><20>>.
+    Found 1-bit register for signal <mem<7><19>>.
+    Found 1-bit register for signal <mem<7><18>>.
+    Found 1-bit register for signal <mem<7><17>>.
+    Found 1-bit register for signal <mem<7><16>>.
+    Found 1-bit register for signal <mem<7><15>>.
+    Found 1-bit register for signal <mem<7><14>>.
+    Found 1-bit register for signal <mem<7><13>>.
+    Found 1-bit register for signal <mem<7><12>>.
+    Found 1-bit register for signal <mem<7><11>>.
+    Found 1-bit register for signal <mem<7><10>>.
+    Found 1-bit register for signal <mem<7><9>>.
+    Found 1-bit register for signal <mem<7><8>>.
+    Found 1-bit register for signal <mem<7><7>>.
+    Found 1-bit register for signal <mem<7><6>>.
+    Found 1-bit register for signal <mem<7><5>>.
+    Found 1-bit register for signal <mem<7><4>>.
+    Found 1-bit register for signal <mem<7><3>>.
+    Found 1-bit register for signal <mem<7><2>>.
+    Found 1-bit register for signal <mem<7><1>>.
+    Found 1-bit register for signal <mem<7><0>>.
+    Found 1-bit register for signal <mem<8><31>>.
+    Found 1-bit register for signal <mem<8><30>>.
+    Found 1-bit register for signal <mem<8><29>>.
+    Found 1-bit register for signal <mem<8><28>>.
+    Found 1-bit register for signal <mem<8><27>>.
+    Found 1-bit register for signal <mem<8><26>>.
+    Found 1-bit register for signal <mem<8><25>>.
+    Found 1-bit register for signal <mem<8><24>>.
+    Found 1-bit register for signal <mem<8><23>>.
+    Found 1-bit register for signal <mem<8><22>>.
+    Found 1-bit register for signal <mem<8><21>>.
+    Found 1-bit register for signal <mem<8><20>>.
+    Found 1-bit register for signal <mem<8><19>>.
+    Found 1-bit register for signal <mem<8><18>>.
+    Found 1-bit register for signal <mem<8><17>>.
+    Found 1-bit register for signal <mem<8><16>>.
+    Found 1-bit register for signal <mem<8><15>>.
+    Found 1-bit register for signal <mem<8><14>>.
+    Found 1-bit register for signal <mem<8><13>>.
+    Found 1-bit register for signal <mem<8><12>>.
+    Found 1-bit register for signal <mem<8><11>>.
+    Found 1-bit register for signal <mem<8><10>>.
+    Found 1-bit register for signal <mem<8><9>>.
+    Found 1-bit register for signal <mem<8><8>>.
+    Found 1-bit register for signal <mem<8><7>>.
+    Found 1-bit register for signal <mem<8><6>>.
+    Found 1-bit register for signal <mem<8><5>>.
+    Found 1-bit register for signal <mem<8><4>>.
+    Found 1-bit register for signal <mem<8><3>>.
+    Found 1-bit register for signal <mem<8><2>>.
+    Found 1-bit register for signal <mem<8><1>>.
+    Found 1-bit register for signal <mem<8><0>>.
+    Found 1-bit register for signal <mem<9><31>>.
+    Found 1-bit register for signal <mem<9><30>>.
+    Found 1-bit register for signal <mem<9><29>>.
+    Found 1-bit register for signal <mem<9><28>>.
+    Found 1-bit register for signal <mem<9><27>>.
+    Found 1-bit register for signal <mem<9><26>>.
+    Found 1-bit register for signal <mem<9><25>>.
+    Found 1-bit register for signal <mem<9><24>>.
+    Found 1-bit register for signal <mem<9><23>>.
+    Found 1-bit register for signal <mem<9><22>>.
+    Found 1-bit register for signal <mem<9><21>>.
+    Found 1-bit register for signal <mem<9><20>>.
+    Found 1-bit register for signal <mem<9><19>>.
+    Found 1-bit register for signal <mem<9><18>>.
+    Found 1-bit register for signal <mem<9><17>>.
+    Found 1-bit register for signal <mem<9><16>>.
+    Found 1-bit register for signal <mem<9><15>>.
+    Found 1-bit register for signal <mem<9><14>>.
+    Found 1-bit register for signal <mem<9><13>>.
+    Found 1-bit register for signal <mem<9><12>>.
+    Found 1-bit register for signal <mem<9><11>>.
+    Found 1-bit register for signal <mem<9><10>>.
+    Found 1-bit register for signal <mem<9><9>>.
+    Found 1-bit register for signal <mem<9><8>>.
+    Found 1-bit register for signal <mem<9><7>>.
+    Found 1-bit register for signal <mem<9><6>>.
+    Found 1-bit register for signal <mem<9><5>>.
+    Found 1-bit register for signal <mem<9><4>>.
+    Found 1-bit register for signal <mem<9><3>>.
+    Found 1-bit register for signal <mem<9><2>>.
+    Found 1-bit register for signal <mem<9><1>>.
+    Found 1-bit register for signal <mem<9><0>>.
+    Found 1-bit register for signal <mem<10><31>>.
+    Found 1-bit register for signal <mem<10><30>>.
+    Found 1-bit register for signal <mem<10><29>>.
+    Found 1-bit register for signal <mem<10><28>>.
+    Found 1-bit register for signal <mem<10><27>>.
+    Found 1-bit register for signal <mem<10><26>>.
+    Found 1-bit register for signal <mem<10><25>>.
+    Found 1-bit register for signal <mem<10><24>>.
+    Found 1-bit register for signal <mem<10><23>>.
+    Found 1-bit register for signal <mem<10><22>>.
+    Found 1-bit register for signal <mem<10><21>>.
+    Found 1-bit register for signal <mem<10><20>>.
+    Found 1-bit register for signal <mem<10><19>>.
+    Found 1-bit register for signal <mem<10><18>>.
+    Found 1-bit register for signal <mem<10><17>>.
+    Found 1-bit register for signal <mem<10><16>>.
+    Found 1-bit register for signal <mem<10><15>>.
+    Found 1-bit register for signal <mem<10><14>>.
+    Found 1-bit register for signal <mem<10><13>>.
+    Found 1-bit register for signal <mem<10><12>>.
+    Found 1-bit register for signal <mem<10><11>>.
+    Found 1-bit register for signal <mem<10><10>>.
+    Found 1-bit register for signal <mem<10><9>>.
+    Found 1-bit register for signal <mem<10><8>>.
+    Found 1-bit register for signal <mem<10><7>>.
+    Found 1-bit register for signal <mem<10><6>>.
+    Found 1-bit register for signal <mem<10><5>>.
+    Found 1-bit register for signal <mem<10><4>>.
+    Found 1-bit register for signal <mem<10><3>>.
+    Found 1-bit register for signal <mem<10><2>>.
+    Found 1-bit register for signal <mem<10><1>>.
+    Found 1-bit register for signal <mem<10><0>>.
+    Found 1-bit register for signal <mem<11><31>>.
+    Found 1-bit register for signal <mem<11><30>>.
+    Found 1-bit register for signal <mem<11><29>>.
+    Found 1-bit register for signal <mem<11><28>>.
+    Found 1-bit register for signal <mem<11><27>>.
+    Found 1-bit register for signal <mem<11><26>>.
+    Found 1-bit register for signal <mem<11><25>>.
+    Found 1-bit register for signal <mem<11><24>>.
+    Found 1-bit register for signal <mem<11><23>>.
+    Found 1-bit register for signal <mem<11><22>>.
+    Found 1-bit register for signal <mem<11><21>>.
+    Found 1-bit register for signal <mem<11><20>>.
+    Found 1-bit register for signal <mem<11><19>>.
+    Found 1-bit register for signal <mem<11><18>>.
+    Found 1-bit register for signal <mem<11><17>>.
+    Found 1-bit register for signal <mem<11><16>>.
+    Found 1-bit register for signal <mem<11><15>>.
+    Found 1-bit register for signal <mem<11><14>>.
+    Found 1-bit register for signal <mem<11><13>>.
+    Found 1-bit register for signal <mem<11><12>>.
+    Found 1-bit register for signal <mem<11><11>>.
+    Found 1-bit register for signal <mem<11><10>>.
+    Found 1-bit register for signal <mem<11><9>>.
+    Found 1-bit register for signal <mem<11><8>>.
+    Found 1-bit register for signal <mem<11><7>>.
+    Found 1-bit register for signal <mem<11><6>>.
+    Found 1-bit register for signal <mem<11><5>>.
+    Found 1-bit register for signal <mem<11><4>>.
+    Found 1-bit register for signal <mem<11><3>>.
+    Found 1-bit register for signal <mem<11><2>>.
+    Found 1-bit register for signal <mem<11><1>>.
+    Found 1-bit register for signal <mem<11><0>>.
+    Found 1-bit register for signal <mem<12><31>>.
+    Found 1-bit register for signal <mem<12><30>>.
+    Found 1-bit register for signal <mem<12><29>>.
+    Found 1-bit register for signal <mem<12><28>>.
+    Found 1-bit register for signal <mem<12><27>>.
+    Found 1-bit register for signal <mem<12><26>>.
+    Found 1-bit register for signal <mem<12><25>>.
+    Found 1-bit register for signal <mem<12><24>>.
+    Found 1-bit register for signal <mem<12><23>>.
+    Found 1-bit register for signal <mem<12><22>>.
+    Found 1-bit register for signal <mem<12><21>>.
+    Found 1-bit register for signal <mem<12><20>>.
+    Found 1-bit register for signal <mem<12><19>>.
+    Found 1-bit register for signal <mem<12><18>>.
+    Found 1-bit register for signal <mem<12><17>>.
+    Found 1-bit register for signal <mem<12><16>>.
+    Found 1-bit register for signal <mem<12><15>>.
+    Found 1-bit register for signal <mem<12><14>>.
+    Found 1-bit register for signal <mem<12><13>>.
+    Found 1-bit register for signal <mem<12><12>>.
+    Found 1-bit register for signal <mem<12><11>>.
+    Found 1-bit register for signal <mem<12><10>>.
+    Found 1-bit register for signal <mem<12><9>>.
+    Found 1-bit register for signal <mem<12><8>>.
+    Found 1-bit register for signal <mem<12><7>>.
+    Found 1-bit register for signal <mem<12><6>>.
+    Found 1-bit register for signal <mem<12><5>>.
+    Found 1-bit register for signal <mem<12><4>>.
+    Found 1-bit register for signal <mem<12><3>>.
+    Found 1-bit register for signal <mem<12><2>>.
+    Found 1-bit register for signal <mem<12><1>>.
+    Found 1-bit register for signal <mem<12><0>>.
+    Found 1-bit register for signal <mem<13><31>>.
+    Found 1-bit register for signal <mem<13><30>>.
+    Found 1-bit register for signal <mem<13><29>>.
+    Found 1-bit register for signal <mem<13><28>>.
+    Found 1-bit register for signal <mem<13><27>>.
+    Found 1-bit register for signal <mem<13><26>>.
+    Found 1-bit register for signal <mem<13><25>>.
+    Found 1-bit register for signal <mem<13><24>>.
+    Found 1-bit register for signal <mem<13><23>>.
+    Found 1-bit register for signal <mem<13><22>>.
+    Found 1-bit register for signal <mem<13><21>>.
+    Found 1-bit register for signal <mem<13><20>>.
+    Found 1-bit register for signal <mem<13><19>>.
+    Found 1-bit register for signal <mem<13><18>>.
+    Found 1-bit register for signal <mem<13><17>>.
+    Found 1-bit register for signal <mem<13><16>>.
+    Found 1-bit register for signal <mem<13><15>>.
+    Found 1-bit register for signal <mem<13><14>>.
+    Found 1-bit register for signal <mem<13><13>>.
+    Found 1-bit register for signal <mem<13><12>>.
+    Found 1-bit register for signal <mem<13><11>>.
+    Found 1-bit register for signal <mem<13><10>>.
+    Found 1-bit register for signal <mem<13><9>>.
+    Found 1-bit register for signal <mem<13><8>>.
+    Found 1-bit register for signal <mem<13><7>>.
+    Found 1-bit register for signal <mem<13><6>>.
+    Found 1-bit register for signal <mem<13><5>>.
+    Found 1-bit register for signal <mem<13><4>>.
+    Found 1-bit register for signal <mem<13><3>>.
+    Found 1-bit register for signal <mem<13><2>>.
+    Found 1-bit register for signal <mem<13><1>>.
+    Found 1-bit register for signal <mem<13><0>>.
+    Found 1-bit register for signal <mem<14><31>>.
+    Found 1-bit register for signal <mem<14><30>>.
+    Found 1-bit register for signal <mem<14><29>>.
+    Found 1-bit register for signal <mem<14><28>>.
+    Found 1-bit register for signal <mem<14><27>>.
+    Found 1-bit register for signal <mem<14><26>>.
+    Found 1-bit register for signal <mem<14><25>>.
+    Found 1-bit register for signal <mem<14><24>>.
+    Found 1-bit register for signal <mem<14><23>>.
+    Found 1-bit register for signal <mem<14><22>>.
+    Found 1-bit register for signal <mem<14><21>>.
+    Found 1-bit register for signal <mem<14><20>>.
+    Found 1-bit register for signal <mem<14><19>>.
+    Found 1-bit register for signal <mem<14><18>>.
+    Found 1-bit register for signal <mem<14><17>>.
+    Found 1-bit register for signal <mem<14><16>>.
+    Found 1-bit register for signal <mem<14><15>>.
+    Found 1-bit register for signal <mem<14><14>>.
+    Found 1-bit register for signal <mem<14><13>>.
+    Found 1-bit register for signal <mem<14><12>>.
+    Found 1-bit register for signal <mem<14><11>>.
+    Found 1-bit register for signal <mem<14><10>>.
+    Found 1-bit register for signal <mem<14><9>>.
+    Found 1-bit register for signal <mem<14><8>>.
+    Found 1-bit register for signal <mem<14><7>>.
+    Found 1-bit register for signal <mem<14><6>>.
+    Found 1-bit register for signal <mem<14><5>>.
+    Found 1-bit register for signal <mem<14><4>>.
+    Found 1-bit register for signal <mem<14><3>>.
+    Found 1-bit register for signal <mem<14><2>>.
+    Found 1-bit register for signal <mem<14><1>>.
+    Found 1-bit register for signal <mem<14><0>>.
+    Found 1-bit register for signal <mem<15><31>>.
+    Found 1-bit register for signal <mem<15><30>>.
+    Found 1-bit register for signal <mem<15><29>>.
+    Found 1-bit register for signal <mem<15><28>>.
+    Found 1-bit register for signal <mem<15><27>>.
+    Found 1-bit register for signal <mem<15><26>>.
+    Found 1-bit register for signal <mem<15><25>>.
+    Found 1-bit register for signal <mem<15><24>>.
+    Found 1-bit register for signal <mem<15><23>>.
+    Found 1-bit register for signal <mem<15><22>>.
+    Found 1-bit register for signal <mem<15><21>>.
+    Found 1-bit register for signal <mem<15><20>>.
+    Found 1-bit register for signal <mem<15><19>>.
+    Found 1-bit register for signal <mem<15><18>>.
+    Found 1-bit register for signal <mem<15><17>>.
+    Found 1-bit register for signal <mem<15><16>>.
+    Found 1-bit register for signal <mem<15><15>>.
+    Found 1-bit register for signal <mem<15><14>>.
+    Found 1-bit register for signal <mem<15><13>>.
+    Found 1-bit register for signal <mem<15><12>>.
+    Found 1-bit register for signal <mem<15><11>>.
+    Found 1-bit register for signal <mem<15><10>>.
+    Found 1-bit register for signal <mem<15><9>>.
+    Found 1-bit register for signal <mem<15><8>>.
+    Found 1-bit register for signal <mem<15><7>>.
+    Found 1-bit register for signal <mem<15><6>>.
+    Found 1-bit register for signal <mem<15><5>>.
+    Found 1-bit register for signal <mem<15><4>>.
+    Found 1-bit register for signal <mem<15><3>>.
+    Found 1-bit register for signal <mem<15><2>>.
+    Found 1-bit register for signal <mem<15><1>>.
+    Found 1-bit register for signal <mem<15><0>>.
+    Found 4-bit subtractor for signal <index[3]_GND_23_o_sub_4_OUT> created at line 233.
+    Found 4-bit adder for signal <index[3]_GND_23_o_add_4_OUT> created at line 235.
+    Found 32-bit 16-to-1 multiplexer for signal <dout> created at line 206.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 518 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sobel_filter_OUTPUT_STREAM_fifo_1> synthesized.
+
+Synthesizing Unit <sobel_filter_OUTPUT_STREAM_fifo_2>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_OUTPUT_STREAM_if.v".
+        DATA_BITS = 4
+        DEPTH_BITS = 4
+    Found 1-bit register for signal <empty>.
+    Found 4-bit register for signal <index>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <mem<0><3>>.
+    Found 1-bit register for signal <mem<0><2>>.
+    Found 1-bit register for signal <mem<0><1>>.
+    Found 1-bit register for signal <mem<0><0>>.
+    Found 1-bit register for signal <mem<1><3>>.
+    Found 1-bit register for signal <mem<1><2>>.
+    Found 1-bit register for signal <mem<1><1>>.
+    Found 1-bit register for signal <mem<1><0>>.
+    Found 1-bit register for signal <mem<2><3>>.
+    Found 1-bit register for signal <mem<2><2>>.
+    Found 1-bit register for signal <mem<2><1>>.
+    Found 1-bit register for signal <mem<2><0>>.
+    Found 1-bit register for signal <mem<3><3>>.
+    Found 1-bit register for signal <mem<3><2>>.
+    Found 1-bit register for signal <mem<3><1>>.
+    Found 1-bit register for signal <mem<3><0>>.
+    Found 1-bit register for signal <mem<4><3>>.
+    Found 1-bit register for signal <mem<4><2>>.
+    Found 1-bit register for signal <mem<4><1>>.
+    Found 1-bit register for signal <mem<4><0>>.
+    Found 1-bit register for signal <mem<5><3>>.
+    Found 1-bit register for signal <mem<5><2>>.
+    Found 1-bit register for signal <mem<5><1>>.
+    Found 1-bit register for signal <mem<5><0>>.
+    Found 1-bit register for signal <mem<6><3>>.
+    Found 1-bit register for signal <mem<6><2>>.
+    Found 1-bit register for signal <mem<6><1>>.
+    Found 1-bit register for signal <mem<6><0>>.
+    Found 1-bit register for signal <mem<7><3>>.
+    Found 1-bit register for signal <mem<7><2>>.
+    Found 1-bit register for signal <mem<7><1>>.
+    Found 1-bit register for signal <mem<7><0>>.
+    Found 1-bit register for signal <mem<8><3>>.
+    Found 1-bit register for signal <mem<8><2>>.
+    Found 1-bit register for signal <mem<8><1>>.
+    Found 1-bit register for signal <mem<8><0>>.
+    Found 1-bit register for signal <mem<9><3>>.
+    Found 1-bit register for signal <mem<9><2>>.
+    Found 1-bit register for signal <mem<9><1>>.
+    Found 1-bit register for signal <mem<9><0>>.
+    Found 1-bit register for signal <mem<10><3>>.
+    Found 1-bit register for signal <mem<10><2>>.
+    Found 1-bit register for signal <mem<10><1>>.
+    Found 1-bit register for signal <mem<10><0>>.
+    Found 1-bit register for signal <mem<11><3>>.
+    Found 1-bit register for signal <mem<11><2>>.
+    Found 1-bit register for signal <mem<11><1>>.
+    Found 1-bit register for signal <mem<11><0>>.
+    Found 1-bit register for signal <mem<12><3>>.
+    Found 1-bit register for signal <mem<12><2>>.
+    Found 1-bit register for signal <mem<12><1>>.
+    Found 1-bit register for signal <mem<12><0>>.
+    Found 1-bit register for signal <mem<13><3>>.
+    Found 1-bit register for signal <mem<13><2>>.
+    Found 1-bit register for signal <mem<13><1>>.
+    Found 1-bit register for signal <mem<13><0>>.
+    Found 1-bit register for signal <mem<14><3>>.
+    Found 1-bit register for signal <mem<14><2>>.
+    Found 1-bit register for signal <mem<14><1>>.
+    Found 1-bit register for signal <mem<14><0>>.
+    Found 1-bit register for signal <mem<15><3>>.
+    Found 1-bit register for signal <mem<15><2>>.
+    Found 1-bit register for signal <mem<15><1>>.
+    Found 1-bit register for signal <mem<15><0>>.
+    Found 4-bit subtractor for signal <index[3]_GND_25_o_sub_4_OUT> created at line 233.
+    Found 4-bit adder for signal <index[3]_GND_25_o_add_4_OUT> created at line 235.
+    Found 4-bit 16-to-1 multiplexer for signal <dout> created at line 206.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  70 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sobel_filter_OUTPUT_STREAM_fifo_2> synthesized.
+
+Synthesizing Unit <sobel_filter_OUTPUT_STREAM_fifo_3>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_OUTPUT_STREAM_if.v".
+        DATA_BITS = 1
+        DEPTH_BITS = 4
+    Found 1-bit register for signal <empty>.
+    Found 4-bit register for signal <index>.
+    Found 1-bit register for signal <full>.
+    Found 1-bit register for signal <mem<0>>.
+    Found 1-bit register for signal <mem<1>>.
+    Found 1-bit register for signal <mem<2>>.
+    Found 1-bit register for signal <mem<3>>.
+    Found 1-bit register for signal <mem<4>>.
+    Found 1-bit register for signal <mem<5>>.
+    Found 1-bit register for signal <mem<6>>.
+    Found 1-bit register for signal <mem<7>>.
+    Found 1-bit register for signal <mem<8>>.
+    Found 1-bit register for signal <mem<9>>.
+    Found 1-bit register for signal <mem<10>>.
+    Found 1-bit register for signal <mem<11>>.
+    Found 1-bit register for signal <mem<12>>.
+    Found 1-bit register for signal <mem<13>>.
+    Found 1-bit register for signal <mem<14>>.
+    Found 1-bit register for signal <mem<15>>.
+    Found 4-bit subtractor for signal <index[3]_GND_27_o_sub_4_OUT> created at line 233.
+    Found 4-bit adder for signal <index[3]_GND_27_o_add_4_OUT> created at line 235.
+    Found 1-bit 16-to-1 multiplexer for signal <dout> created at line 206.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <sobel_filter_OUTPUT_STREAM_fifo_3> synthesized.
+
+Synthesizing Unit <sobel_filter_ap_rst_if>.
+    Related source file is "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/sobel_filter_top_v1_01_a/synhdl/verilog/sobel_filter_ap_rst_if.v".
+        RESET_ACTIVE_LOW = 1
+    Summary:
+	no macro.
+Unit <sobel_filter_ap_rst_if> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 1920x8-bit dual-port RAM                              : 3
+# Multipliers                                          : 2
+ 8x5-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 41
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 3
+ 13-bit adder                                          : 2
+ 16-bit adder                                          : 6
+ 31-bit adder                                          : 2
+ 32-bit adder                                          : 4
+ 4-bit addsub                                          : 10
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 1
+# Registers                                            : 373
+ 1-bit register                                        : 233
+ 10-bit register                                       : 2
+ 11-bit register                                       : 4
+ 13-bit register                                       : 4
+ 2-bit register                                        : 1
+ 31-bit register                                       : 12
+ 32-bit register                                       : 37
+ 39-bit register                                       : 4
+ 4-bit register                                        : 42
+ 5-bit register                                        : 3
+ 8-bit register                                        : 31
+# Comparators                                          : 13
+ 30-bit comparator greater                             : 2
+ 31-bit comparator equal                               : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 6
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 22
+ 1-bit 16-to-1 multiplexer                             : 6
+ 31-bit 2-to-1 multiplexer                             : 1
+ 32-bit 16-to-1 multiplexer                            : 2
+ 32-bit 8-to-1 multiplexer                             : 1
+ 39-bit 2-to-1 multiplexer                             : 2
+ 4-bit 16-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 8
+# FSMs                                                 : 5
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 8-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1303 - From in and out of unit sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U, both signals b<3> and sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b<4> have a KEEP attribute, signal b<3> will be lost.
+WARNING:Xst:1303 - From in and out of unit sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U, both signals b<1> and sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b<2> have a KEEP attribute, signal b<1> will be lost.
+WARNING:Xst:1303 - From in and out of unit sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U, both signals b<0> and sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b<4> have a KEEP attribute, signal b<0> will be lost.
+WARNING:Xst:1303 - From in and out of unit sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U, both signals b<3> and sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b<4> have a KEEP attribute, signal b<3> will be lost.
+WARNING:Xst:1303 - From in and out of unit sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U, both signals b<1> and sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b<2> have a KEEP attribute, signal b<1> will be lost.
+WARNING:Xst:1303 - From in and out of unit sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U, both signals b<0> and sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b<4> have a KEEP attribute, signal b<0> will be lost.
+
+Synthesizing (advanced) Unit <sobel_filter>.
+INFO:Xst:3226 - The RAM <buff_A_M_2_U/sobel_filter_buff_A_M_2_ram_U/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <buff_A_M_2_U/sobel_filter_buff_A_M_2_ram_U/q1>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1920-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <ap_clk>        | rise     |
+    |     weA            | connected to signal <buff_A_M_1_U/sobel_filter_buff_A_M_0_ram_U/we1_0> | high     |
+    |     addrA          | connected to signal <tmp_12_reg_1343> |          |
+    |     diA            | connected to signal <buff_A_M_1_q0> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1920-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <ap_clk>        | rise     |
+    |     enB            | connected to signal <buff_A_M_2_ce1> | high     |
+    |     addrB          | connected to signal <ap_reg_ppstg_col_1_reg_361_pp0_it1<10:0>> |          |
+    |     doB            | connected to signal <buff_A_M_2_q1> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <buff_A_M_1_U/sobel_filter_buff_A_M_0_ram_U/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <buff_A_M_1_U/sobel_filter_buff_A_M_0_ram_U/q0>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1920-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <ap_clk>        | rise     |
+    |     weA            | connected to signal <buff_A_M_1_U/sobel_filter_buff_A_M_0_ram_U/we1_0> | high     |
+    |     addrA          | connected to signal <buff_A_M_1_addr_reg_1348> |          |
+    |     diA            | connected to signal <buff_A_M_0_q0> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1920-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <ap_clk>        | rise     |
+    |     enB            | connected to signal <buff_A_M_0_ce0> | high     |
+    |     addrB          | connected to signal <col_1_phi_fu_365_p4<10:0>> |          |
+    |     doB            | connected to signal <buff_A_M_1_q0> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <buff_A_M_0_U/sobel_filter_buff_A_M_0_ram_U/Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <buff_A_M_0_U/sobel_filter_buff_A_M_0_ram_U/q0>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1920-word x 8-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <ap_clk>        | rise     |
+    |     weA            | connected to signal <buff_A_M_0_U/sobel_filter_buff_A_M_0_ram_U/we1_0> | high     |
+    |     addrA          | connected to signal <ap_reg_ppstg_col_1_reg_361_pp0_it4<10:0>> |          |
+    |     diA            | connected to signal <buff_A_M_0_d1> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1920-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <ap_clk>        | rise     |
+    |     enB            | connected to signal <buff_A_M_0_ce0> | high     |
+    |     addrB          | connected to signal <col_1_phi_fu_365_p4<10:0>> |          |
+    |     doB            | connected to signal <buff_A_M_0_q0> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+	The following adders/subtractors are grouped into adder tree <Msub_y_weight_3_fu_991_p21> :
+ 	<Msub_y_weight_3_fu_991_p2> in block <sobel_filter>, 	<Madd__n1234> in block <sobel_filter>, 	<Madd__n1233> in block <sobel_filter>.
+	Multiplier <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Mmult_tmp_product> in block <sobel_filter> and adder/subtractor <Madd_tmp34_cast_fu_791_p1<12:0>> in block <sobel_filter> are combined into a MAC<sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Maddsub_tmp_product>.
+	The following registers are also absorbed by the MAC: <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/buff0> in block <sobel_filter>, <tmp34_cast_reg_1453<12:0>> in block <sobel_filter>.
+	Multiplier <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Mmult_tmp_product> in block <sobel_filter> and adder/subtractor <Madd_tmp30_cast_fu_662_p1<12:0>> in block <sobel_filter> are combined into a MAC<sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Maddsub_tmp_product>.
+	The following registers are also absorbed by the MAC: <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/buff0> in block <sobel_filter>, <tmp30_cast_reg_1428<12:0>> in block <sobel_filter>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b<4> may hinder XST clustering optimizations.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/a<0> may hinder XST clustering optimizations.
+Unit <sobel_filter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_INPUT_STREAM_fifo_1>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+Unit <sobel_filter_INPUT_STREAM_fifo_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_INPUT_STREAM_fifo_2>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+Unit <sobel_filter_INPUT_STREAM_fifo_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_INPUT_STREAM_fifo_3>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+Unit <sobel_filter_INPUT_STREAM_fifo_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_OUTPUT_STREAM_fifo_1>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+Unit <sobel_filter_OUTPUT_STREAM_fifo_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_OUTPUT_STREAM_fifo_2>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+Unit <sobel_filter_OUTPUT_STREAM_fifo_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_OUTPUT_STREAM_fifo_3>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
+Unit <sobel_filter_OUTPUT_STREAM_fifo_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_INPUT_STREAM_fifo_1>.
+	Found 16-bit dynamic shift register for signal <dout<0>>.
+	Found 16-bit dynamic shift register for signal <dout<1>>.
+	Found 16-bit dynamic shift register for signal <dout<2>>.
+	Found 16-bit dynamic shift register for signal <dout<3>>.
+	Found 16-bit dynamic shift register for signal <dout<4>>.
+	Found 16-bit dynamic shift register for signal <dout<5>>.
+	Found 16-bit dynamic shift register for signal <dout<6>>.
+	Found 16-bit dynamic shift register for signal <dout<7>>.
+	Found 16-bit dynamic shift register for signal <dout<8>>.
+	Found 16-bit dynamic shift register for signal <dout<9>>.
+	Found 16-bit dynamic shift register for signal <dout<10>>.
+	Found 16-bit dynamic shift register for signal <dout<11>>.
+	Found 16-bit dynamic shift register for signal <dout<12>>.
+	Found 16-bit dynamic shift register for signal <dout<13>>.
+	Found 16-bit dynamic shift register for signal <dout<14>>.
+	Found 16-bit dynamic shift register for signal <dout<15>>.
+	Found 16-bit dynamic shift register for signal <dout<16>>.
+	Found 16-bit dynamic shift register for signal <dout<17>>.
+	Found 16-bit dynamic shift register for signal <dout<18>>.
+	Found 16-bit dynamic shift register for signal <dout<19>>.
+	Found 16-bit dynamic shift register for signal <dout<20>>.
+	Found 16-bit dynamic shift register for signal <dout<21>>.
+	Found 16-bit dynamic shift register for signal <dout<22>>.
+	Found 16-bit dynamic shift register for signal <dout<23>>.
+	Found 16-bit dynamic shift register for signal <dout<24>>.
+	Found 16-bit dynamic shift register for signal <dout<25>>.
+	Found 16-bit dynamic shift register for signal <dout<26>>.
+	Found 16-bit dynamic shift register for signal <dout<27>>.
+	Found 16-bit dynamic shift register for signal <dout<28>>.
+	Found 16-bit dynamic shift register for signal <dout<29>>.
+	Found 16-bit dynamic shift register for signal <dout<30>>.
+	Found 16-bit dynamic shift register for signal <dout<31>>.
+Unit <sobel_filter_INPUT_STREAM_fifo_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_INPUT_STREAM_fifo_2>.
+	Found 16-bit dynamic shift register for signal <dout<0>>.
+	Found 16-bit dynamic shift register for signal <dout<1>>.
+	Found 16-bit dynamic shift register for signal <dout<2>>.
+	Found 16-bit dynamic shift register for signal <dout<3>>.
+Unit <sobel_filter_INPUT_STREAM_fifo_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_INPUT_STREAM_fifo_3>.
+	Found 16-bit dynamic shift register for signal <dout>.
+Unit <sobel_filter_INPUT_STREAM_fifo_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_OUTPUT_STREAM_fifo_1>.
+	Found 16-bit dynamic shift register for signal <dout<0>>.
+	Found 16-bit dynamic shift register for signal <dout<1>>.
+	Found 16-bit dynamic shift register for signal <dout<2>>.
+	Found 16-bit dynamic shift register for signal <dout<3>>.
+	Found 16-bit dynamic shift register for signal <dout<4>>.
+	Found 16-bit dynamic shift register for signal <dout<5>>.
+	Found 16-bit dynamic shift register for signal <dout<6>>.
+	Found 16-bit dynamic shift register for signal <dout<7>>.
+	Found 16-bit dynamic shift register for signal <dout<8>>.
+	Found 16-bit dynamic shift register for signal <dout<9>>.
+	Found 16-bit dynamic shift register for signal <dout<10>>.
+	Found 16-bit dynamic shift register for signal <dout<11>>.
+	Found 16-bit dynamic shift register for signal <dout<12>>.
+	Found 16-bit dynamic shift register for signal <dout<13>>.
+	Found 16-bit dynamic shift register for signal <dout<14>>.
+	Found 16-bit dynamic shift register for signal <dout<15>>.
+	Found 16-bit dynamic shift register for signal <dout<16>>.
+	Found 16-bit dynamic shift register for signal <dout<17>>.
+	Found 16-bit dynamic shift register for signal <dout<18>>.
+	Found 16-bit dynamic shift register for signal <dout<19>>.
+	Found 16-bit dynamic shift register for signal <dout<20>>.
+	Found 16-bit dynamic shift register for signal <dout<21>>.
+	Found 16-bit dynamic shift register for signal <dout<22>>.
+	Found 16-bit dynamic shift register for signal <dout<23>>.
+	Found 16-bit dynamic shift register for signal <dout<24>>.
+	Found 16-bit dynamic shift register for signal <dout<25>>.
+	Found 16-bit dynamic shift register for signal <dout<26>>.
+	Found 16-bit dynamic shift register for signal <dout<27>>.
+	Found 16-bit dynamic shift register for signal <dout<28>>.
+	Found 16-bit dynamic shift register for signal <dout<29>>.
+	Found 16-bit dynamic shift register for signal <dout<30>>.
+	Found 16-bit dynamic shift register for signal <dout<31>>.
+Unit <sobel_filter_OUTPUT_STREAM_fifo_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_OUTPUT_STREAM_fifo_2>.
+	Found 16-bit dynamic shift register for signal <dout<0>>.
+	Found 16-bit dynamic shift register for signal <dout<1>>.
+	Found 16-bit dynamic shift register for signal <dout<2>>.
+	Found 16-bit dynamic shift register for signal <dout<3>>.
+Unit <sobel_filter_OUTPUT_STREAM_fifo_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sobel_filter_OUTPUT_STREAM_fifo_3>.
+	Found 16-bit dynamic shift register for signal <dout>.
+Unit <sobel_filter_OUTPUT_STREAM_fifo_3> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 1920x8-bit dual-port block RAM                        : 3
+# MACs                                                 : 2
+ 8x5-to-13-bit MAC                                     : 2
+# Adders/Subtractors                                   : 26
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 2
+ 11-bit subtractor                                     : 2
+ 16-bit adder                                          : 6
+ 31-bit adder                                          : 2
+ 32-bit adder                                          : 4
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 1
+# Adder Trees                                          : 1
+ 11-bit / 4-inputs adder tree                          : 1
+# Counters                                             : 10
+ 4-bit updown counter                                  : 10
+# Registers                                            : 1130
+ Flip-Flops                                            : 1130
+# Shift Registers                                      : 78
+ 16-bit dynamic shift register                         : 78
+# Comparators                                          : 13
+ 30-bit comparator greater                             : 2
+ 31-bit comparator equal                               : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 6
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 56
+ 1-bit 2-to-1 multiplexer                              : 47
+ 32-bit 8-to-1 multiplexer                             : 1
+ 39-bit 2-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 5
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <or_cond_reg_1501_0> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <sel_tmp9_demorgan_reg_1514_0> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_0> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_0> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_1> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_1> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_2> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_2> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_3> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_3> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_4> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_4> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_10> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_10> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_5> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_5> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_0> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_0> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_6> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_6> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_1> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_1> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_1_2_fu_196_7> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_1_2_3_reg_1433_7> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_2> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_2> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_3> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_3> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_4> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_4> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_5> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_5> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_6> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_6> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_7> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_7> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_8> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_8> 
+INFO:Xst:2261 - The FF/Latch <buff_A_M_1_addr_reg_1348_9> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_12_reg_1343_9> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_1> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_2> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_0> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_0> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_1> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_1> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_0> in Unit <sobel_filter> is equivalent to the following 2 FFs/Latches, which will be removed : <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_3> <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_4> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_2> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_2> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_3> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_3> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_1> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_2> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_4> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_4> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_5> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_5> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_0> in Unit <sobel_filter> is equivalent to the following 2 FFs/Latches, which will be removed : <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_3> <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_4> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_6> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_6> 
+INFO:Xst:2261 - The FF/Latch <buff_C_M_0_2_4_reg_1438_7> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <buff_C_M_0_2_fu_184_7> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <sobel_filter_top_0/CONTROL_BUS_if_U/FSM_1> on signal <rstate[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0
+ 01    | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <sobel_filter_top_0/CONTROL_BUS_if_U/FSM_2> on signal <wstate[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <sobel_filter_top_0/INPUT_STREAM_if_U/rs/FSM_3> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 10    | 10
+ 01    | 01
+ 11    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <sobel_filter_top_0/OUTPUT_STREAM_if_U/rs/FSM_4> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 10    | 10
+ 01    | 01
+ 11    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <sobel_filter_top_0/sobel_filter_U/FSM_0> on signal <ap_CS_fsm[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+WARNING:Xst:2677 - Node <sobel_filter_mul_8ns_5ns_13_3_U2/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Maddsub_tmp_product1_12> of sequential type is unconnected in block <sobel_filter>.
+WARNING:Xst:2677 - Node <sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Maddsub_tmp_product1_12> of sequential type is unconnected in block <sobel_filter>.
+INFO:Xst:2261 - The FF/Latch <tempx_R_V_fu_172_0> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_reg_1423_1> 
+INFO:Xst:2261 - The FF/Latch <tempx_R_V_fu_172_1> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_reg_1423_2> 
+INFO:Xst:2261 - The FF/Latch <tempx_R_V_fu_172_2> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_reg_1423_3> 
+INFO:Xst:2261 - The FF/Latch <tempx_R_V_fu_172_3> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_reg_1423_4> 
+INFO:Xst:2261 - The FF/Latch <tempx_R_V_fu_172_4> in Unit <sobel_filter> is equivalent to the following FF/Latch, which will be removed : <tmp_reg_1423_5> 
+
+Optimizing unit <system_sobel_filter_top_0_wrapper> ...
+
+Optimizing unit <sobel_filter_CONTROL_BUS_if> ...
+
+Optimizing unit <sobel_filter_INPUT_STREAM_if> ...
+
+Optimizing unit <sobel_filter_INPUT_STREAM_reg_slice> ...
+
+Optimizing unit <sobel_filter_INPUT_STREAM_fifo_1> ...
+
+Optimizing unit <sobel_filter_INPUT_STREAM_fifo_2> ...
+
+Optimizing unit <sobel_filter_INPUT_STREAM_fifo_3> ...
+
+Optimizing unit <sobel_filter_OUTPUT_STREAM_if> ...
+
+Optimizing unit <sobel_filter_OUTPUT_STREAM_fifo_1> ...
+
+Optimizing unit <sobel_filter_OUTPUT_STREAM_fifo_2> ...
+
+Optimizing unit <sobel_filter_OUTPUT_STREAM_fifo_3> ...
+
+Optimizing unit <sobel_filter_OUTPUT_STREAM_reg_slice> ...
+
+Optimizing unit <sobel_filter> ...
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_38> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_37> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_36> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_35> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_34> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_33> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_32> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_31> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_30> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_29> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_28> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_27> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_26> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_25> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p1_24> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_38> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_37> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_36> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_35> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_34> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_33> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_32> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_31> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_30> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_29> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_28> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_27> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_26> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_25> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/rs/data_p2_24> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_31_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_30_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_29_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_28_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_27_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_26_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_25_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/Mshreg_dout_24_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/Mshreg_dout_3_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/Mshreg_dout_1_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/Mshreg_dout_0_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/Mshreg_dout_2_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_tdest_V_fifo/Mshreg_dout_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_last_V_fifo/Mshreg_dout_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+WARNING:Xst:2677 - Node <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_user_V_fifo/Mshreg_dout_0> of sequential type is unconnected in block <system_sobel_filter_top_0_wrapper>.
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_data_V_fifo/index_0> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_strb_V_fifo/index_0> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_tdest_V_fifo/index_0> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_last_V_fifo/index_0> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_user_V_fifo/index_0> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_data_V_fifo/index_1> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_strb_V_fifo/index_1> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_tdest_V_fifo/index_1> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_last_V_fifo/index_1> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_user_V_fifo/index_1> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_data_V_fifo/index_2> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_strb_V_fifo/index_2> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_tdest_V_fifo/index_2> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_last_V_fifo/index_2> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_user_V_fifo/index_2> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_data_V_fifo/index_3> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_strb_V_fifo/index_3> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_tdest_V_fifo/index_3> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_last_V_fifo/index_3> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_user_V_fifo/index_3> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_user_V_fifo/full> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/full> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/full> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_tdest_V_fifo/full> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_last_V_fifo/full> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_data_V_fifo/full> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_strb_V_fifo/full> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_tdest_V_fifo/full> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_last_V_fifo/full> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_user_V_fifo/full> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/empty> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/empty> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_tdest_V_fifo/empty> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_last_V_fifo/empty> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_user_V_fifo/empty> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/index_0> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/index_0> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_tdest_V_fifo/index_0> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_last_V_fifo/index_0> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_user_V_fifo/index_0> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/index_1> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/index_1> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_tdest_V_fifo/index_1> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_last_V_fifo/index_1> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_user_V_fifo/index_1> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/index_2> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/index_2> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_tdest_V_fifo/index_2> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_last_V_fifo/index_2> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_user_V_fifo/index_2> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_data_V_fifo/index_3> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_strb_V_fifo/index_3> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_tdest_V_fifo/index_3> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_last_V_fifo/index_3> <sobel_filter_top_0/INPUT_STREAM_if_U/inter_pix_user_V_fifo/index_3> 
+INFO:Xst:2261 - The FF/Latch <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_data_V_fifo/empty> in Unit <system_sobel_filter_top_0_wrapper> is equivalent to the following 4 FFs/Latches, which will be removed : <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_strb_V_fifo/empty> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_tdest_V_fifo/empty> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_last_V_fifo/empty> <sobel_filter_top_0/OUTPUT_STREAM_if_U/out_pix_user_V_fifo/empty> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_sobel_filter_top_0_wrapper, actual ratio is 3.
+
+Final Macro Processing ...
+
+Processing Unit <system_sobel_filter_top_0_wrapper> :
+	Found 2-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_tmp_i2_reg_1507_pp0_it9_1>.
+	Found 2-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_tmp_i2_reg_1507_pp0_it9_0>.
+	Found 7-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_tmp_20_reg_1363_pp0_it7_0>.
+	Found 9-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_output_pixel_last_V_reg_1373_pp0_it9_0>.
+	Found 9-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_or_cond1_reg_1369_pp0_it9_0>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_30>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_29>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_28>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_27>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_26>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_25>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_24>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_23>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_22>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_21>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_20>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_19>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_18>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_17>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_16>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_15>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_14>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_13>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_12>.
+	Found 4-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_11>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_10>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_9>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_8>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_7>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_6>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_5>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_4>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_3>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_2>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_1>.
+	Found 3-bit shift register for signal <sobel_filter_top_0/sobel_filter_U/ap_reg_ppstg_col_1_reg_361_pp0_it4_0>.
+Unit <system_sobel_filter_top_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 944
+ Flip-Flops                                            : 944
+# Shift Registers                                      : 36
+ 2-bit shift register                                  : 2
+ 3-bit shift register                                  : 11
+ 4-bit shift register                                  : 20
+ 7-bit shift register                                  : 1
+ 9-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_sobel_filter_top_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1708
+#      GND                         : 1
+#      INV                         : 84
+#      LUT1                        : 104
+#      LUT2                        : 113
+#      LUT3                        : 225
+#      LUT4                        : 197
+#      LUT5                        : 103
+#      LUT6                        : 155
+#      MUXCY                       : 423
+#      VCC                         : 1
+#      XORCY                       : 302
+# FlipFlops/Latches                : 980
+#      FD                          : 3
+#      FDC                         : 2
+#      FDE                         : 780
+#      FDP                         : 2
+#      FDPE                        : 8
+#      FDR                         : 16
+#      FDRE                        : 167
+#      FDS                         : 2
+# RAMS                             : 3
+#      RAMB18E1                    : 3
+# Shift Registers                  : 99
+#      SRLC16E                     : 99
+# DSPs                             : 2
+#      DSP48E1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             980  out of  106400     0%  
+ Number of Slice LUTs:                 1080  out of  53200     2%  
+    Number used as Logic:               981  out of  53200     1%  
+    Number used as Memory:               99  out of  17400     0%  
+       Number used as SRL:               99
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1390
+   Number with an unused Flip Flop:     410  out of   1390    29%  
+   Number with an unused LUT:           310  out of   1390    22%  
+   Number of fully used LUT-FF pairs:   670  out of   1390    48%  
+   Number of unique control sets:        42
+
+IO Utilization: 
+ Number of IOs:                         177
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    140     1%  
+    Number using Block RAM only:          2
+ Number of DSP48E1s:                      2  out of    220     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                    | Load  |
+-----------------------------------+----------------------------------------------------------+-------+
+aclk                               | NONE(sobel_filter_top_0/CONTROL_BUS_if_U/wstate_FSM_FFd2)| 1084  |
+-----------------------------------+----------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                         | Buffer(FF name)                                                                            | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------+
+sobel_filter_top_0/sobel_filter_U/buff_A_M_1_U/sobel_filter_buff_A_M_0_ram_U/we1_0(sobel_filter_top_0/sobel_filter_U/buff_A_M_1_ce11:O)| NONE(sobel_filter_top_0/sobel_filter_U/buff_A_M_2_U/sobel_filter_buff_A_M_2_ram_U/Mram_ram)| 4     |
+sobel_filter_top_0/sobel_filter_U/buff_A_M_0_U/sobel_filter_buff_A_M_0_ram_U/we1_0(sobel_filter_top_0/sobel_filter_U/buff_A_M_0_ce11:O)| NONE(sobel_filter_top_0/sobel_filter_U/buff_A_M_0_U/sobel_filter_buff_A_M_0_ram_U/Mram_ram)| 2     |
+---------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.417ns (Maximum Frequency: 226.398MHz)
+   Minimum input arrival time before clock: 1.584ns
+   Maximum output required time after clock: 0.951ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'aclk'
+  Clock period: 4.417ns (frequency: 226.398MHz)
+  Total number of paths / destination ports: 40305 / 2628
+-------------------------------------------------------------------------
+Delay:               4.417ns (Levels of Logic = 0)
+  Source:            sobel_filter_top_0/sobel_filter_U/sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_0 (FF)
+  Destination:       sobel_filter_top_0/sobel_filter_U/sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Maddsub_tmp_product (DSP)
+  Source Clock:      aclk rising
+  Destination Clock: aclk rising
+
+  Data Path: sobel_filter_top_0/sobel_filter_U/sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_0 to sobel_filter_top_0/sobel_filter_U/sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Maddsub_tmp_product
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.282   0.413  sobel_filter_top_0/sobel_filter_U/sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_0 (sobel_filter_top_0/sobel_filter_U/sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/b_reg_0)
+     DSP48E1:A0                3.722          sobel_filter_top_0/sobel_filter_U/sobel_filter_mul_8ns_5ns_13_3_U1/sobel_filter_mul_8ns_5ns_13_3_MAC3S_0_U/Maddsub_tmp_product
+    ----------------------------------------
+    Total                      4.417ns (4.004ns logic, 0.413ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'aclk'
+  Total number of paths / destination ports: 649 / 430
+-------------------------------------------------------------------------
+Offset:              1.584ns (Levels of Logic = 3)
+  Source:            s_axi_CONTROL_BUS_WSTRB<0> (PAD)
+  Destination:       sobel_filter_top_0/CONTROL_BUS_if_U/isr_1 (FF)
+  Destination Clock: aclk rising
+
+  Data Path: s_axi_CONTROL_BUS_WSTRB<0> to sobel_filter_top_0/CONTROL_BUS_if_U/isr_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            4   0.053   0.433  sobel_filter_top_0/CONTROL_BUS_if_U/w_hs_WSTRB[0]_AND_746_o21 (sobel_filter_top_0/CONTROL_BUS_if_U/w_hs_WSTRB[0]_AND_746_o_bdd2)
+     LUT3:I2->O            2   0.053   0.641  sobel_filter_top_0/CONTROL_BUS_if_U/w_hs_WSTRB[0]_AND_757_o1 (sobel_filter_top_0/CONTROL_BUS_if_U/w_hs_WSTRB[0]_AND_757_o)
+     LUT5:I1->O            1   0.053   0.000  sobel_filter_top_0/CONTROL_BUS_if_U/isr_1_glue_set (sobel_filter_top_0/CONTROL_BUS_if_U/isr_1_glue_set)
+     FDR:D                     0.011          sobel_filter_top_0/CONTROL_BUS_if_U/isr_1
+    ----------------------------------------
+    Total                      1.584ns (0.510ns logic, 1.074ns route)
+                                       (32.2% logic, 67.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'aclk'
+  Total number of paths / destination ports: 82 / 79
+-------------------------------------------------------------------------
+Offset:              0.951ns (Levels of Logic = 1)
+  Source:            sobel_filter_top_0/CONTROL_BUS_if_U/gie (FF)
+  Destination:       interrupt (PAD)
+  Source Clock:      aclk rising
+
+  Data Path: sobel_filter_top_0/CONTROL_BUS_if_U/gie to interrupt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.282   0.616  sobel_filter_top_0/CONTROL_BUS_if_U/gie (sobel_filter_top_0/CONTROL_BUS_if_U/gie)
+     LUT3:I0->O            0   0.053   0.000  sobel_filter_top_0/CONTROL_BUS_if_U/interrupt1 (interrupt)
+    ----------------------------------------
+    Total                      0.951ns (0.335ns logic, 0.616ns route)
+                                       (35.2% logic, 64.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock aclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+aclk           |    4.417|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 16.51 secs
+ 
+--> 
+
+
+Total memory usage is 522048 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   81 (   0 filtered)
+Number of infos    :   57 (   0 filtered)
+

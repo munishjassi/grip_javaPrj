@@ -1,0 +1,425 @@
+/***************************************************************************//**
+ *   @file   main.c
+
+ *******************************************************************************/
+
+/******************************************************************************/
+/***************************** Include Files **********************************/
+/******************************************************************************/
+#include <stdio.h>
+#include "xil_cache.h"
+#include "xbasic_types.h"
+#include "xil_io.h"
+#include "cf_hdmi.h"
+#include "atv_platform.h"
+#include "transmitter.h"
+#include "xil_exception.h"
+#include "xuartps.h"
+// for interrupt handling
+#include "axi_interrupt.h"
+#include "xscugic.h"
+
+#include "sw_functions.h"
+
+#include "xgray_scale.h"
+#include "ximage_filter.h"
+#include "xsobel_filter.h"
+#include "hw_config.h"
+
+XGray_scale xGrayScaleFilter;
+XImage_filter xErodeFilter;
+XSobel_filter xSobelFilter;
+
+#include "profile_cnt.h"
+#include "AXI_monitor.h"
+#include "AXI_Exerciser.h"
+
+extern int Ex_config = 0x80003400;
+extern void delay_ms(u32 ms_count);
+extern char inbyte(void);
+extern unsigned long HDMI_VIEW_ADDR = PROC_VIDEO_BASEADDR;
+
+/******************************************************************************/
+/************************** Macros Definitions ********************************/
+/******************************************************************************/
+#define HDMI_CALL_INTERVAL_MS	10			/* Interval between two         */
+
+/* iterations of the main loop  */
+#define DBG_MSG                 xil_printf
+static inline unsigned int test;
+
+/******************************************************************************/
+/************************ Variables Definitions *******************************/
+/******************************************************************************/
+static UCHAR MajorRev; /* Major Release Number */
+static UCHAR MinorRev; /* Usually used for code-drops */
+static UCHAR RcRev; /* Release Candidate Number */
+static BOOL DriverEnable;
+static BOOL LastEnable;
+short int FRAME_INTR = 0;
+short int ERODE_INTR = 0;
+short int SOBEL_INTR = 0;
+short int GRAY_INTR = 0;
+short int nbr_frame = 0;
+int SW_Processing = 0;
+
+XScuGic InterruptController; /* Instance of the Interrupt Controller */
+static XScuGic_Config *GicConfig;/* The configuration parameters of the controller */
+int ScuGicInterrupt_Init() {
+	int Status;
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 * */
+	Xil_ExceptionInit();
+
+	GicConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+	if (NULL == GicConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(&InterruptController, GicConfig,
+			GicConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	// **** Setup the Interrupt System *****
+
+//	 * Connect the interrupt controller interrupt handler to the hardware
+//	 * interrupt handling logic in the ARM processor.
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
+			(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			(void *) &InterruptController);
+
+//	 * Connect a device driver handler that will be called when an
+//	 * interrupt for the device occurs, the device driver handler performs
+//	 * the specific interrupt processing for the device
+	Status = XScuGic_Connect(&InterruptController,
+			XPAR_FABRIC_CAM_MEM_0_VSYNC_NEGEDGE_INTR,
+			(Xil_ExceptionHandler) AXI_INTERRUPT_VsyncIntr_Handler,
+			(void *) &InterruptController);
+	XScuGic_Enable(&InterruptController,
+			XPAR_FABRIC_CAM_MEM_0_VSYNC_NEGEDGE_INTR);
+
+	Status = XScuGic_Connect(&InterruptController,
+			XPAR_FABRIC_AXI_VDMA_2_S2MM_INTROUT_INTR,
+			(Xil_ExceptionHandler) AXI_INTERRUPT__VDMA2_S2MMIntr_Handler,
+			(void *) &InterruptController);
+	XScuGic_Enable(&InterruptController,
+			XPAR_FABRIC_AXI_VDMA_2_S2MM_INTROUT_INTR);
+
+	Status = XScuGic_Connect(&InterruptController,
+			XPAR_FABRIC_AXI_VDMA_4_S2MM_INTROUT_INTR,
+			(Xil_ExceptionHandler) AXI_INTERRUPT__VDMA4_S2MMIntr_Handler,
+			(void *) &InterruptController);
+	XScuGic_Enable(&InterruptController,
+			XPAR_FABRIC_AXI_VDMA_4_S2MM_INTROUT_INTR);
+
+	Status = XScuGic_Connect(&InterruptController,
+			XPAR_FABRIC_AXI_VDMA_3_S2MM_INTROUT_INTR,
+			(Xil_ExceptionHandler) AXI_INTERRUPT__VDMA3_S2MMIntr_Handler,
+			(void *) &InterruptController);
+	XScuGic_Enable(&InterruptController,
+			XPAR_FABRIC_AXI_VDMA_3_S2MM_INTROUT_INTR);
+
+// 	Enable interrupts in the ARM
+	Xil_ExceptionEnable();
+
+	//Only used for edge sensitive Interrupts
+	XScuGic_SetPriorityTriggerType(&InterruptController,
+			XPAR_FABRIC_CAM_MEM_0_VSYNC_NEGEDGE_INTR, 0xa0, 3);
+
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	return XST_SUCCESS;
+}
+
+void delay_us(u32 us_count) {
+	u32 count;
+	for (count = 0; count < ((us_count * 800) + 1); count++) {
+		asm("nop");
+	}
+}
+
+/***************************************************************************//**
+ * @brief Enables the driver.
+ *
+ * @return Returns ATVERR_OK.
+ *******************************************************************************/
+void APP_EnableDriver(BOOL Enable) {
+	DriverEnable = Enable;
+}
+
+/***************************************************************************//**
+ * @brief Returns the driver enable status.
+ *
+ * @return Returns the driver enable status.
+ *******************************************************************************/
+static BOOL APP_DriverEnabled(void) {
+	if ((DriverEnable && HAL_GetMBSwitchState()) != LastEnable) {
+		LastEnable = DriverEnable && HAL_GetMBSwitchState();
+		DBG_MSG("APP: Driver %s\n\r", LastEnable ? "Enabled" : "Disabled");
+	}
+	return (LastEnable);
+}
+
+/***************************************************************************//**
+ * @brief Changes the video resolution.
+ *
+ * @return None.
+ *******************************************************************************/
+static int APP_ChangeResolution(void) {
+	char *resolutions[7] = { "640x480", "800x600", "1024x768", "1280x720",
+			"1360x768", "1600x900", "1920x1080" };
+	char receivedChar = 0;
+	//unsigned long HDMI_VIEW_ADDR=SW_PROC_VIDEO_BASEADDR;
+	if (XUartPs_IsReceiveData(UART_BASEADDR)) {
+		//
+		// AXI monitor: Prints the AXI monitor performance results
+		//
+		//AXI_monitor_result(XPAR_AXI_PERF_MON_0_BASEADDR);
+		receivedChar = inbyte();
+
+		ConfigHdmiVDMA(detailedTiming[currentResolution][H_ACTIVE_TIME],
+				detailedTiming[currentResolution][V_ACTIVE_TIME],
+				HDMI_VIEW_ADDR);
+
+		if ((receivedChar >= 0x30) && (receivedChar <= 0x36)) {
+			SetVideoResolution(receivedChar - 0x30);
+			DBG_MSG("Resolution was changed to %s \r\n",
+					resolutions[receivedChar - 0x30]);
+		} else if (receivedChar == 'q') {
+			DBG_MSG("Exiting Application ...\n\r");
+			return (0);
+		} else if (receivedChar == 'r') {
+			HDMI_VIEW_ADDR = VIDEO_BASEADDR;
+			DBG_MSG("Displaying raw video\n\r");
+		} else if (receivedChar == 's') {
+			DBG_MSG("Displaying processed video\r\n");
+			HDMI_VIEW_ADDR = PROC_VIDEO_BASEADDR;
+		} else if (receivedChar == 'i') {
+			DBG_MSG("start HW Sobel...\n\r");
+			config_filterVDMA(XPAR_AXI_VDMA_4_BASEADDR, DMA_MEM_TO_DEV,
+			VIDEO_BASEADDR);
+			config_filterVDMA(XPAR_AXI_VDMA_4_BASEADDR, DMA_DEV_TO_MEM,
+			SOBEL_VIDEO_BASEADDR);
+			HDMI_VIEW_ADDR = PROC_VIDEO_BASEADDR;
+		} else if (receivedChar == 'j') {
+			DBG_MSG("stop HW Sobel...\n\r");
+			resetVDMA(XPAR_AXI_VDMA_4_BASEADDR);
+			HDMI_VIEW_ADDR = SOBEL_VIDEO_BASEADDR;
+		} else if (receivedChar == 'o') {
+			DBG_MSG("start HW Erode...\n\r");
+			//Init Grayscale conv IP
+			config_filterVDMA(XPAR_AXI_VDMA_2_BASEADDR, DMA_MEM_TO_DEV,
+			SOBEL_VIDEO_BASEADDR);
+			config_filterVDMA(XPAR_AXI_VDMA_2_BASEADDR, DMA_DEV_TO_MEM,
+			ERODE_VIDEO_BASEADDR);
+			HDMI_VIEW_ADDR = ERODE_VIDEO_BASEADDR;
+		} else if (receivedChar == 'k') {
+			DBG_MSG("stop HW 1 Erode...\n\r");
+			resetVDMA(XPAR_AXI_VDMA_2_BASEADDR);
+			HDMI_VIEW_ADDR = ERODE_VIDEO_BASEADDR;
+		} else if (receivedChar == 'p') {
+			DBG_MSG("start HW Grayscale...\n\r");
+			//Init Sobel IP
+			config_filterVDMA(XPAR_AXI_VDMA_3_BASEADDR, DMA_MEM_TO_DEV,
+			ERODE_VIDEO_BASEADDR);
+			config_filterVDMA(XPAR_AXI_VDMA_3_BASEADDR, DMA_DEV_TO_MEM,
+			PROC_VIDEO_BASEADDR);
+			HDMI_VIEW_ADDR = PROC_VIDEO_BASEADDR;
+		} else if (receivedChar == 'l') {
+			DBG_MSG("stop HW Grayscale...\n\r");
+			resetVDMA(XPAR_AXI_VDMA_3_BASEADDR);
+			HDMI_VIEW_ADDR = PROC_VIDEO_BASEADDR;
+		} else if (receivedChar == 'y') {
+			DBG_MSG("Displaying HW Sobel processed video ...\n\r");
+			HDMI_VIEW_ADDR = SOBEL_VIDEO_BASEADDR;
+		} else if (receivedChar == 'x') {
+			DBG_MSG("Displaying HW Erode processed video ...\n\r");
+			HDMI_VIEW_ADDR = ERODE_VIDEO_BASEADDR;
+		} else if (receivedChar == 'c') {
+			DBG_MSG("Displaying HW Grayscale processed video ...\n\r");
+			HDMI_VIEW_ADDR = PROC_VIDEO_BASEADDR;
+		} else {
+			if ((receivedChar != 0x0A) && (receivedChar != 0x0D)) {
+				//SetVideoResolution(RESOLUTION_640x480);
+				//DBG_MSG("Resolution was changed to %s \r\n", resolutions[0]);
+				DBG_MSG("Wrong command\n\r");
+			}
+		}
+	}
+	return 1;
+}
+
+/***************************************************************************//**
+ * @brief Main function.
+ *
+ * @return Returns 0.
+ *******************************************************************************/
+int main() {
+	int i;
+	int xstatus;
+	int CPUprocCLK;
+	AXI_monitor_config(XPAR_AXI_PERF_MON_0_BASEADDR);
+	UINT32 StartCount;
+	MajorRev = 1;
+	MinorRev = 1;
+	RcRev = 1;
+	DriverEnable = TRUE;
+	LastEnable = FALSE;
+	nbr_frame = 0;
+	Xil_ICacheEnable();
+	Xil_DCacheEnable();
+
+	HAL_PlatformInit(XPAR_AXI_IIC_0_BASEADDR, /* Perform any required platform init */
+	XPAR_SCUTIMER_DEVICE_ID, /* including hardware reset to HDMI devices */
+	XPAR_SCUGIC_SINGLE_DEVICE_ID, XPAR_SCUTIMER_INTR);
+
+	 //###########################################################################################################################
+	 //Init GrayScaleFilter
+	 xGrayScaleFilter.Control_bus_BaseAddress = XPAR_CONVERT_TO_GRAY_TOP_0_S_AXI_CONTROL_BUS_BASEADDR;
+	 xGrayScaleFilter.IsReady = XIL_COMPONENT_IS_READY;
+	 //config_grayScaleFilter();
+	 config_grayScaleFilter();
+	 resetVDMA(XPAR_AXI_VDMA_3_BASEADDR);
+	 config_filterVDMA(XPAR_AXI_VDMA_3_BASEADDR, DMA_MEM_TO_DEV, ERODE_VIDEO_BASEADDR);
+	 config_filterVDMA(XPAR_AXI_VDMA_3_BASEADDR, DMA_DEV_TO_MEM, PROC_VIDEO_BASEADDR);
+	 //###########################################################################################################################
+	 //Init ErodeFilter
+	 xErodeFilter.Control_bus_BaseAddress = XPAR_IMAGE_FILTER_TOP_0_S_AXI_CONTROL_BUS_BASEADDR;
+	 xErodeFilter.IsReady = XIL_COMPONENT_IS_READY;
+	 config_erodefilter();
+	 resetVDMA(XPAR_AXI_VDMA_2_BASEADDR);
+	 config_filterVDMA(XPAR_AXI_VDMA_2_BASEADDR, DMA_MEM_TO_DEV, SOBEL_VIDEO_BASEADDR);
+	 config_filterVDMA(XPAR_AXI_VDMA_2_BASEADDR, DMA_DEV_TO_MEM, ERODE_VIDEO_BASEADDR);
+	 //###########################################################################################################################
+	 //Init SobelFilter
+	 xSobelFilter.Control_bus_BaseAddress = XPAR_SOBEL_FILTER_TOP_0_S_AXI_CONTROL_BUS_BASEADDR ;
+	 xSobelFilter.IsReady = XIL_COMPONENT_IS_READY;
+	 config_sobelfilter();
+	 resetVDMA(XPAR_AXI_VDMA_4_BASEADDR);
+	 config_filterVDMA(XPAR_AXI_VDMA_4_BASEADDR, DMA_MEM_TO_DEV, VIDEO_BASEADDR);
+	 config_filterVDMA(XPAR_AXI_VDMA_4_BASEADDR, DMA_DEV_TO_MEM, SOBEL_VIDEO_BASEADDR);
+	 //###########################################################################################################################
+
+	 //AXI_Exerciser_config();
+
+	DBG_MSG("To change the video resolution press:\r\n");
+	DBG_MSG(
+			"  '0' - 640x480;  '1' - 800x600;  '2' - 1024x768; '3' - 1280x720 \r\n");
+	DBG_MSG("  '4' - 1360x768; '5' - 1600x900; '6' - 1920x1080.\r\n");
+
+	DBG_MSG(
+			"  'i' - HW Sobel ON; 'o' - HW Erode ON; 'p' - HW Grayscale ON.\r\n");
+	DBG_MSG(
+			"  'j' - HW Sobel OFF; 'k' - HW Erode OFF; 'l' - HW Grayscale OFF.\r\n");
+	DBG_MSG("  's' - complete SW ON; 'd' - complete SW OFF; \r\n");
+
+	ADIAPI_TransmitterInit(); /* Initialize ADI repeater software and h/w */
+	ADIAPI_TransmitterSetPowerMode(REP_POWER_UP);
+
+	StartCount = HAL_GetCurrentMsCount();
+
+	ADIAPI_TransmitterMain();
+	SetVideoResolution(RESOLUTION_640x480);
+
+//	int xstatus;
+
+	//init_perfcounters (1, 0);
+	xstatus = ScuGicInterrupt_Init();
+//	static inline unsigned int test;
+	if (xstatus != XST_SUCCESS) {
+		xil_printf("Unable to initialize Interrupts");
+		//return XST_FAILURE;
+	}
+
+	//
+	// Configures the CPU PMU module
+	//
+	EnablePerfCounters();
+
+	AXI_monitor_reset(XPAR_AXI_PERF_MON_0_BASEADDR);
+	while (APP_ChangeResolution()) {
+
+		while (FRAME_INTR == 0)	;
+		FRAME_INTR = 0;
+		int i  = 0;
+		//AXI_monitor_reset(XPAR_AXI_PERF_MON_0_BASEADDR);
+
+		//PerfResult(XPAR_AXI_PERF_MON_0_BASEADDR);
+		//AVRGPerfResult(XPAR_AXI_PERF_MON_0_BASEADDR);
+		//
+		// CPU PMU: Initialize and set the counters to zero for CPU PMU
+		//
+			init_perfcounters(1, 0);
+		//
+		// AXI monitor: Initialize the AXI monitor counters and set to zero
+		//
+		//AXI_monitor_reset(XPAR_AXI_PERF_MON_0_BASEADDR);
+		//
+		if (ATV_GetElapsedMs(StartCount, NULL ) >= HDMI_CALL_INTERVAL_MS) {
+			StartCount = HAL_GetCurrentMsCount();
+			if (APP_DriverEnabled()) {
+				ADIAPI_TransmitterMain();
+			}
+		}
+		//		printf("Start Proc: %d CPU clk\n\r", get_cyclecount());
+
+//------------ SOBEL Hardware ------------------//
+		config_filterVDMA(XPAR_AXI_VDMA_4_BASEADDR, DMA_MEM_TO_DEV,
+				VIDEO_BASEADDR);
+		config_filterVDMA(XPAR_AXI_VDMA_4_BASEADDR, DMA_DEV_TO_MEM,
+				SOBEL_VIDEO_BASEADDR);
+//		init_perfcounters(1, 0);
+//		AXI_monitor_reset(XPAR_AXI_PERF_MON_0_BASEADDR);
+		SOBEL_INTR = 0;
+		while (SOBEL_INTR == 0)	;
+		SOBEL_INTR = 0;
+		//		printf("Sobel Proc: %d CPU clk\n\r", get_cyclecount());
+
+		//EdgeDetection(VIDEO_BASEADDR, SOBEL_VIDEO_BASEADDR, 640, 480,
+		//		detailedTiming[currentResolution][H_ACTIVE_TIME]);
+		//	printf("SOBEL Proc: %d CPU clk\n\r", get_cyclecount());
+
+		//------------ ERODE Hardware ------------------//
+		config_filterVDMA(XPAR_AXI_VDMA_2_BASEADDR, DMA_MEM_TO_DEV,
+				SOBEL_VIDEO_BASEADDR);
+		config_filterVDMA(XPAR_AXI_VDMA_2_BASEADDR, DMA_DEV_TO_MEM,
+				ERODE_VIDEO_BASEADDR);
+//		init_perfcounters(1, 0);
+//		AXI_monitor_reset(XPAR_AXI_PERF_MON_0_BASEADDR);
+		ERODE_INTR = 0;
+		while (ERODE_INTR == 0);
+		ERODE_INTR = 0;
+		//		printf("Erode Proc: %d CPU clk\n\r", get_cyclecount());
+
+		//Erode(SOBEL_VIDEO_BASEADDR, ERODE_VIDEO_BASEADDR, 640, 480,
+		//		detailedTiming[currentResolution][H_ACTIVE_TIME]);
+		//	printf("ERODE Proc: %d CPU clk\n\r", get_cyclecount());
+
+//------------ GRAY Hardware ------------------//
+		config_filterVDMA(XPAR_AXI_VDMA_3_BASEADDR, DMA_MEM_TO_DEV,
+				ERODE_VIDEO_BASEADDR);
+		config_filterVDMA(XPAR_AXI_VDMA_3_BASEADDR, DMA_DEV_TO_MEM,
+				PROC_VIDEO_BASEADDR);
+//		init_perfcounters(1, 0);
+//		AXI_monitor_reset(XPAR_AXI_PERF_MON_0_BASEADDR);
+		GRAY_INTR = 0;
+		while (GRAY_INTR == 0);
+		GRAY_INTR = 0;
+		//	printf("Gray Proc: %d CPU clk\n\r", get_cyclecount());
+
+		//ConvToGray(ERODE_VIDEO_BASEADDR, PROC_VIDEO_BASEADDR, 640, 480,
+		//		detailedTiming[currentResolution][H_ACTIVE_TIME]);
+		// Displaying performance results
+		//	printf("Frame Proc: %d CPU clk\n\r", get_cyclecount());
+		//	printf("======================\n\r");
+	}
+	Xil_DCacheDisable();
+	Xil_ICacheDisable();
+
+	return (0);
+}

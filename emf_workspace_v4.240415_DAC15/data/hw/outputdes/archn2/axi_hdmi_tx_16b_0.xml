@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5">
+  <spirit:vendor>ARM</spirit:vendor>
+  <spirit:library>ip</spirit:library>
+  <spirit:name>axi_hdmi_tx_16b_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>S_AXI_ACLK</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hdmi_ref_clk</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hdmi_clk</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hdmi_data</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>15</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hdmi_hsync</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hdmi_vsync</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>hdmi_data_e</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vdma_clk</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vdma_fs</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vdma_fs_ret</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vdma_empty</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vdma_almost_empty</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>debug_data</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>63</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>INSTANCE</spirit:name>
+      <spirit:value>axi_hdmi_tx_16b_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HW_VER</spirit:name>
+      <spirit:value>1.00.a</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_BASEADDR</spirit:name>
+      <spirit:value>0x70e00000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_HIGHADDR</spirit:name>
+      <spirit:value>0x70e0ffff</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+</spirit:component>

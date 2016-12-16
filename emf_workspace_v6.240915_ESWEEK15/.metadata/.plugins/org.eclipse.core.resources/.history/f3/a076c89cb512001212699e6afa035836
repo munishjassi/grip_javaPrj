@@ -1,0 +1,134 @@
+package org.spiritconsortium.xml.schema.spirit.spirit.tests;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.BasicExtendedMetaData;
+import org.eclipse.emf.ecore.util.ExtendedMetaData;
+import org.eclipse.emf.ecore.util.FeatureMap;
+import org.eclipse.emf.ecore.util.FeatureMapUtil;
+import org.eclipse.emf.ecore.xmi.XMLResource;
+import org.eclipse.emf.ecore.xmi.impl.GenericXMLResourceFactoryImpl;
+
+public class _MyEMFEdit {
+
+	  /**
+	   * When running this examle as an Eclipse project, 
+	   * the current directory will be the root folder of the project.
+	   */
+	  public static final String WORKING_FOLDER;
+	  static
+	  {
+	    String result = "."; 
+	    try
+	    {
+	      result = new File(".").getCanonicalPath() + "/";
+	    }
+	    catch (Exception exception)
+	    {
+	    }
+	    WORKING_FOLDER = result;
+	  }
+	  
+	  /**
+	   * We will store data files in the "data" subfolder of the project.
+	   */
+	  public static final String DATA_FOLDER = WORKING_FOLDER + "data/";
+	  
+	  
+
+public static void main(String[] args) throws Exception
+{
+  //demonstrateDOMCreateAndSave();
+  //demonstrateDOMLoadAndTraverse();
+  //demonstateEMFDOMCreateAndSave();
+  //demonstrateEMFDOMLoadAndTraverse();
+  //demonstrateSchema();
+  demonstrateDynamicSchemaLoad();
+  //demonstrateStaticLoadAndTraverse();
+  //demonstrateMultiResourceStaticLoadAndTraverse();
+  //demonstrateEMFUsingFactory();
+}
+
+private static void demonstrateDynamicSchemaLoad() throws IOException {
+	// TODO Auto-generated method stub
+	System.out.println("EMF Dynamic Load Schema");
+    
+    // Set up the context as before.
+    //
+    ResourceSet resourceSet = new ResourceSetImpl();
+    final ExtendedMetaData extendedMetaData = new BasicExtendedMetaData(resourceSet.getPackageRegistry());
+    resourceSet.getLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData);
+    resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put
+      (Resource.Factory.Registry.DEFAULT_EXTENSION, 
+       new GenericXMLResourceFactoryImpl());
+       
+    // Load the example resource containing the xsi:schemaLocation,
+    // and display what's loaded.
+    //
+    
+    Resource resource = resourceSet.getResource(URI.createFileURI(DATA_FOLDER + "System.xml"), true);
+    resource.save(System.out, null);
+    System.out.println();
+    
+    System.out.println("Traversing EMF EObject");
+    
+    // Fetch the root object as before.
+    //
+    EObject documentRoot = (EObject)resource.getContents().get(0);
+    EObject rootTreeNode = (EObject)documentRoot.eContents().get(0);
+    
+    System.out.println(WORKING_FOLDER);
+     
+    final EStructuralFeature mixedFeature = extendedMetaData.getMixedFeature(rootTreeNode.eClass());
+    final EStructuralFeature vendorAttribute = extendedMetaData.getAttribute(rootTreeNode.eClass(), null, "spirit:vendor");
+    final EStructuralFeature referencesAttribute = extendedMetaData.getAttribute(rootTreeNode.eClass(), null, "references");
+    final EStructuralFeature munishAttribute = extendedMetaData.getAttribute(rootTreeNode.eClass(), null, "munish");
+    final EStructuralFeature munishElement = extendedMetaData.getElement(rootTreeNode.eClass(), null, "muniNode");
+    final EStructuralFeature childElement = extendedMetaData.getElement(rootTreeNode.eClass(), null, "spirit:componentInstances");
+    final EStructuralFeature vendorElement = extendedMetaData.getElement(rootTreeNode.eClass(), null, "vendor");
+
+    new Object()
+    {
+      public void traverse(String indent, EObject eObject)
+      {
+    	//  ((TreeNode)eObject).getMuniNodes().add("Just added");
+  		//eObject.eClass().getEStructuralFeatures().add(eObject.eClass().getEStructuralFeature(1));
+  		System.out.println("eObject Structure >>>" + eObject.eClass().getEStructuralFeatures());
+    	    EClass eClass = eObject.eClass();
+    	    //EStructuralFeature fea = eObject.eClass().getEStructuralFeature("muniNode");
+ //   	    eObject.eSet(fea, "NNN");
+    	    System.out.println("Class Name :" +eClass.getEStructuralFeature("childElement"));
+    	    System.out.println("Class Name :" +eClass.getEStructuralFeature("vendorAttribute"));
+    	    System.out.println("Class Name :" +eClass.getEStructuralFeature("vendorElement"));
+    	    
+    	    FeatureMap featureMap = (FeatureMap)eObject.eGet(mixedFeature);
+    	    //      featureMap.add(6, munishElement, "adf");
+    	    System.out.println("FEATUREMAP:::::" + featureMap.toString());
+    	    
+            for (int i = 0, size = featureMap.size(); i < size; ++i)
+            {
+              EStructuralFeature feature = featureMap.getEStructuralFeature(i);
+             System.out.println("FEATURE:: " + featureMap.size()+ "/"+ i + " :::" + featureMap.getValue(i));
+             if (feature instanceof EReference)
+             {
+               traverse(indent + "  ", (EObject)featureMap.getValue(i));
+             }
+            }
+    	          
+      }
+      
+    }.traverse("", rootTreeNode);   
+    	    
+}
+
+
+}

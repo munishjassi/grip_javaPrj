@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spirit:design_._type xmlns:funbase.cs.tut.fi="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5">
+  <spirit:vendor>TUM</spirit:vendor>
+  <spirit:library>soc</spirit:library>
+  <spirit:name>System.hierarchical.design</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:componentInstances>
+    <spirit:componentInstance>
+      <spirit:instanceName>DMA2_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="DMA2" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="60"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="dma_m1">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="dma_m2">
+						<funbase.cs.tut.fi:position x="80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="dma_s1">
+						<funbase.cs.tut.fi:position x="-80" y="70"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>HW_acc2_0_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="HW_acc2" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="180"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="HW2_s">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>wishbone_bus_1</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="wishbone_bus" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="270"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m1_wb">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m2_wb">
+						<funbase.cs.tut.fi:position x="80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m3_wb">
+						<funbase.cs.tut.fi:position x="-80" y="70"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m4_wb">
+						<funbase.cs.tut.fi:position x="80" y="70"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m5_wb">
+						<funbase.cs.tut.fi:position x="-80" y="100"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m6_wb">
+						<funbase.cs.tut.fi:position x="80" y="100"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m7_wb">
+						<funbase.cs.tut.fi:position x="-80" y="130"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m8_wb">
+						<funbase.cs.tut.fi:position x="80" y="130"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s1_wb">
+						<funbase.cs.tut.fi:position x="-80" y="160"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s2_wb">
+						<funbase.cs.tut.fi:position x="80" y="160"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s3_wb">
+						<funbase.cs.tut.fi:position x="-80" y="190"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s4_wb">
+						<funbase.cs.tut.fi:position x="80" y="190"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s5_wb">
+						<funbase.cs.tut.fi:position x="-80" y="220"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s6_wb">
+						<funbase.cs.tut.fi:position x="80" y="220"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s7_wb">
+						<funbase.cs.tut.fi:position x="-80" y="250"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s8_wb">
+						<funbase.cs.tut.fi:position x="80" y="250"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>CPU_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="CPU" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="570"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="cpu_m">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities>
+					<funbase.cs.tut.fi:adHocVisible portName="tempPort" x="80" y="40"/>
+				</funbase.cs.tut.fi:adHocVisibilities>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>DMA_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="DMA" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="660"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="dma_m">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>wishbone_bus_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="wishbone_bus" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="750"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m1_wb">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m2_wb">
+						<funbase.cs.tut.fi:position x="80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m3_wb">
+						<funbase.cs.tut.fi:position x="-80" y="70"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m4_wb">
+						<funbase.cs.tut.fi:position x="80" y="70"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m5_wb">
+						<funbase.cs.tut.fi:position x="-80" y="100"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m6_wb">
+						<funbase.cs.tut.fi:position x="80" y="100"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m7_wb">
+						<funbase.cs.tut.fi:position x="-80" y="130"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="m8_wb">
+						<funbase.cs.tut.fi:position x="80" y="130"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s1_wb">
+						<funbase.cs.tut.fi:position x="-80" y="160"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s2_wb">
+						<funbase.cs.tut.fi:position x="80" y="160"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s3_wb">
+						<funbase.cs.tut.fi:position x="-80" y="190"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s4_wb">
+						<funbase.cs.tut.fi:position x="80" y="190"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s5_wb">
+						<funbase.cs.tut.fi:position x="-80" y="220"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s6_wb">
+						<funbase.cs.tut.fi:position x="80" y="220"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s7_wb">
+						<funbase.cs.tut.fi:position x="-80" y="250"/>
+					</funbase.cs.tut.fi:portPosition>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="s8_wb">
+						<funbase.cs.tut.fi:position x="80" y="250"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>MEM_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="MEM" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="1050"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="mem_s">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>HW_acc1_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="HW_acc1" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="1140"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="HW_s">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities>
+					<funbase.cs.tut.fi:adHocVisible portName="tempPortHA" x="80" y="40"/>
+				</funbase.cs.tut.fi:adHocVisibilities>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>CAM_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="CAM" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="1230"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="cam_s">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>HW_acc2_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="HW_acc2" spirit:vendor="TUM" spirit:version="1.0"/>
+      <spirit:configurableElementValues/>
+      <spirit:vendorExtensions>
+        <funbase.cs.tut.fi:position x="510" y="1320"/>
+        <funbase.cs.tut.fi:portPositions>
+					<funbase.cs.tut.fi:portPosition funbase.cs.tut.fi:busRef="HW2_s">
+						<funbase.cs.tut.fi:position x="-80" y="40"/>
+					</funbase.cs.tut.fi:portPosition>
+				</funbase.cs.tut.fi:portPositions>
+        <funbase.cs.tut.fi:adHocVisibilities/>
+      </spirit:vendorExtensions>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>HW_acc2_0_1</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="HW_acc2" spirit:vendor="TUM" spirit:version="1.0"/>
+    </spirit:componentInstance>
+    <spirit:componentInstance>
+      <spirit:instanceName>DMA2_0_0</spirit:instanceName>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:componentRef spirit:library="soc" spirit:name="DMA2" spirit:vendor="TUM" spirit:version="1.0"/>
+    </spirit:componentInstance>
+  </spirit:componentInstances>
+  <spirit:interconnections>
+    <spirit:interconnection>
+      <spirit:name>DMA2_0_dma_m1__To__wishbone_bus_1_m1_wb</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="dma_m1" spirit:componentRef="DMA2_0"/>
+      <spirit:activeInterface spirit:busRef="m1_wb" spirit:componentRef="wishbone_bus_1"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>DMA2_0_dma_m2__To__wishbone_bus_0_s5_wb</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="dma_m2" spirit:componentRef="DMA2_0"/>
+      <spirit:activeInterface spirit:busRef="s5_wb" spirit:componentRef="wishbone_bus_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_1_s2_wb__To__HW_acc2_0_0_HW2_s</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s2_wb" spirit:componentRef="wishbone_bus_1"/>
+      <spirit:activeInterface spirit:busRef="HW2_s" spirit:componentRef="HW_acc2_0_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>CPU_0_cpu_m__To__wishbone_bus_0_m1_wb</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="cpu_m" spirit:componentRef="CPU_0"/>
+      <spirit:activeInterface spirit:busRef="m1_wb" spirit:componentRef="wishbone_bus_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>DMA_0_dma_m__To__wishbone_bus_0_m2_wb</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="dma_m" spirit:componentRef="DMA_0"/>
+      <spirit:activeInterface spirit:busRef="m2_wb" spirit:componentRef="wishbone_bus_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_0_s2_wb__To__MEM_0_mem_s</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s2_wb" spirit:componentRef="wishbone_bus_0"/>
+      <spirit:activeInterface spirit:busRef="mem_s" spirit:componentRef="MEM_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_0_s3_wb__To__CAM_0_cam_s</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s3_wb" spirit:componentRef="wishbone_bus_0"/>
+      <spirit:activeInterface spirit:busRef="cam_s" spirit:componentRef="CAM_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_0_s4_wb__To__HW_acc2_0_HW2_s</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s4_wb" spirit:componentRef="wishbone_bus_0"/>
+      <spirit:activeInterface spirit:busRef="HW2_s" spirit:componentRef="HW_acc2_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_0_s5_wb__To__DMA2_0_dma_s1</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s5_wb" spirit:componentRef="wishbone_bus_0"/>
+      <spirit:activeInterface spirit:busRef="dma_s1" spirit:componentRef="DMA2_0"/>
+      <spirit:activeInterface spirit:busRef="s5_wb" spirit:componentRef="wishbone_bus_0"/>
+      <spirit:activeInterface spirit:busRef="dma_s1" spirit:componentRef="DMA2_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_0_s6_wb__To__DMA2_0_0_dma_s1</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s6_wb" spirit:componentRef="wishbone_bus_0"/>
+      <spirit:activeInterface spirit:busRef="dma_s1" spirit:componentRef="DMA2_0_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_0_s1_wb__To__HW_acc1_0_HW_s</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s1_wb" spirit:componentRef="wishbone_bus_0"/>
+      <spirit:activeInterface spirit:busRef="HW_s" spirit:componentRef="HW_acc1_0"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>wishbone_bus_1_s2_wb__To__HW_acc2_0_1_HW2_s</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="s2_wb" spirit:componentRef="wishbone_bus_1"/>
+      <spirit:activeInterface spirit:busRef="HW2_s" spirit:componentRef="HW_acc2_0_1"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>DMA2_0_0_dma_m1__To__wishbone_bus_1_m1_wb</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="dma_m1" spirit:componentRef="DMA2_0_0"/>
+      <spirit:activeInterface spirit:busRef="m1_wb" spirit:componentRef="wishbone_bus_1"/>
+    </spirit:interconnection>
+    <spirit:interconnection>
+      <spirit:name>DMA2_0_0_dma_m2__To__wishbone_bus_0_s6_wb</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:activeInterface spirit:busRef="dma_m2" spirit:componentRef="DMA2_0_0"/>
+      <spirit:activeInterface spirit:busRef="s6_wb" spirit:componentRef="wishbone_bus_0"/>
+    </spirit:interconnection>
+  </spirit:interconnections>
+  <spirit:adHocConnections>
+    <spirit:adHocConnection>
+      <spirit:name>HW_acc1_0_tempPortHA_to_CPU_0_tempPort</spirit:name>
+      <spirit:displayName></spirit:displayName>
+      <spirit:description></spirit:description>
+      <spirit:internalPortReference spirit:componentRef="HW_acc1_0" spirit:left="0" spirit:portRef="tempPortHA" spirit:right="0"/>
+      <spirit:internalPortReference spirit:componentRef="CPU_0" spirit:left="0" spirit:portRef="tempPort" spirit:right="0"/>
+    </spirit:adHocConnection>
+  </spirit:adHocConnections>
+</spirit:design_._type>

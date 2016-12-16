@@ -1,0 +1,3519 @@
+================
+MODULE: System INSTANCE: System
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>processing_system7_0_MIO</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_PS_SRSTB</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_PS_CLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_PS_PORB</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_Clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_Clk_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_CKE</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_CS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_RAS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_CAS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_WEB_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_BankAddr</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>2</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_Addr</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>14</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_ODT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_DRSTB</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_DQ</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>31</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_DM</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>3</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_DQS</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>3</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_DQS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>3</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_VRN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>processing_system7_0_DDR_VRP</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_data</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:vector>
+				<spirit:left>15</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_hsync</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_vsync</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_data_e</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_spdif</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_int</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>otg_reset</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>otg_vbusoc</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>util_vector_logic_0_Op1_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:vector>
+				<spirit:left>0</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>axi_i2s_adi_0_BCLK_O_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>axi_i2s_adi_0_LRCLK_O_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>axi_i2s_adi_0_SDATA_I_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>axi_i2s_adi_0_SDATA_O_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>axi_i2s_adi_0_MCLK_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>util_i2c_mixer_0_downstream_scl_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>1</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>util_i2c_mixer_0_downstream_sda_pin</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>1</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_clk100</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_SIOC</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_RESET</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_VSYNC</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_PWDN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_HREF</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_PCLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_XCLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_config_finished</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_btn</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_SIOD</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>cam_mem_0_OV7670_D</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:vector>
+				<spirit:left>7</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>RESET</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+================
+MODULE: util_vector_logic INSTANCE: util_vector_logic_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>Res</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>Op1</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:vector>
+				<spirit:left>0</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: util_i2c_mixer INSTANCE: util_i2c_mixer_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>upstream_sda_O</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>upstream_sda_I</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>upstream_sda_T</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>upstream_scl_O</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>upstream_scl_I</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>upstream_scl_T</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>downstream_scl</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>1</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>downstream_sda</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>1</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: processing_system7 INSTANCE: processing_system7_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>MIO</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PS_SRSTB</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PS_CLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PS_PORB</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_Clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_Clk_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_CKE</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_CS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_RAS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_CAS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_WEB</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_BankAddr</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>2</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_Addr</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>14</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_ODT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_DRSTB</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_DQ</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>31</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_DM</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>3</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_DQS</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>3</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_DQS_n</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>3</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_VRN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>DDR_VRP</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>FCLK_CLK0</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>FCLK_CLK1</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>FCLK_RESET0_N</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>FCLK_RESET1_N</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>M_AXI_GP0_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>S_AXI_HP0_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>S_AXI_HP2_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>IRQ_F2P</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:vector>
+				<spirit:left>15</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>S_AXI_HP1_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>FCLK_CLK2</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: clock_generator INSTANCE: clock_generator_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>RST</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>CLKOUT0</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>CLKIN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: test_mem INSTANCE: cam_mem_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>clk100</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_SIOC</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_SIOD</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_RESET</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_PWDN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_VSYNC</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_HREF</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_PCLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_XCLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>OV7670_D</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:vector>
+				<spirit:left>7</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>config_finished</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>btn</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>vsync_negedge</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>href_negedge</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_vdma INSTANCE: axi_vdma_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>m_axis_mm2s_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_fsync_out</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_buffer_almost_empty</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_buffer_empty</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>s_axi_lite_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_mm2s_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_introut</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_fsync</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>s2mm_fsync_out</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_spdif_tx INSTANCE: axi_spdif_tx_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>spdif_tx_o</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>spdif_data_clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>spdif_tx_int_o</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_interconnect INSTANCE: axi_interconnect_2
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ARESETN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_interconnect INSTANCE: axi_interconnect_1
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ARESETN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_interconnect INSTANCE: axi_interconnect_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ARESETN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_iic INSTANCE: axi_iic_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>IIC2INTC_Irpt</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>Sda_I</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>Sda_O</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>Sda_T</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>Scl_I</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>Scl_O</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>Scl_T</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_i2s_adi INSTANCE: axi_i2s_adi_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>DATA_CLK_I</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>BCLK_O</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>LRCLK_O</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>SDATA_I</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>SDATA_O</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>M_AXIS_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_hdmi_tx_16b INSTANCE: axi_hdmi_tx_16b_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_ref_clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_data</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:vector>
+				<spirit:left>15</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_hsync</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_vsync</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>hdmi_data_e</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>vdma_clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>vdma_fs</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>vdma_fs_ret</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>vdma_empty</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>vdma_almost_empty</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>debug_data</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:vector>
+				<spirit:left>63</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_dma INSTANCE: axi_dma_spdif
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>s_axi_lite_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_mm2s_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_introut</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_sg_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_dma INSTANCE: axi_dma_i2s
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>s_axi_lite_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_mm2s_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_introut</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>s2mm_introut</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_sg_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_s2mm_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_clkgen INSTANCE: axi_clkgen_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>ref_clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>clk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_vdma INSTANCE: axi_vdma_2
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>s_axi_lite_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_mm2s_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_s2mm_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axis_mm2s_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>mm2s_introut</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: image_filter_top INSTANCE: image_filter_top_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_interconnect INSTANCE: axi_interconnect_3
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>INTERCONNECT_ARESETN</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>RST</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_vdma INSTANCE: axi_vdma_3
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>s_axi_lite_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_mm2s_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>m_axi_s2mm_aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>s2mm_introut</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>out</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>INTERRUPT</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: convert_to_gray_top INSTANCE: convert_to_gray_top_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>aclk</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: proc_sys_reset INSTANCE: sobel_filter_top_0_reset_1
+================
+<spirit:ports>
+</spirit:ports>
+
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+
+================
+MODULE: BEGIN INSTANCE: =
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+	<spirit:port>
+		<spirit:name>PORT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:vector>
+				<spirit:left>53</spirit:left>
+				<spirit:right>0</spirit:right>
+			</spirit:vector>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic_vector</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+
+
+================
+MODULE: axi_perf_mon INSTANCE: axi_perf_mon_0
+================
+<spirit:ports>
+	<spirit:port>
+		<spirit:name>S_AXI_ACLK</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>in</spirit:direction>
+			<spirit:driver>
+				<spirit:defaultValue>CLK</spirit:defaultValue>
+			</spirit:driver>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+</spirit:ports>
+

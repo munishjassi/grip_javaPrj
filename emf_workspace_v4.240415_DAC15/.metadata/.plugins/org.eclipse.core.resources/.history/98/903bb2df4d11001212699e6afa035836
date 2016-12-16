@@ -1,0 +1,25 @@
+package org.spiritconsortium.xml.schema.spirit.spirit.tests;
+
+public class _MyEMFEdit {
+
+
+public static void main(String[] args) throws Exception
+{
+  //demonstrateDOMCreateAndSave();
+  //demonstrateDOMLoadAndTraverse();
+  //demonstateEMFDOMCreateAndSave();
+  //demonstrateEMFDOMLoadAndTraverse();
+  //demonstrateSchema();
+  demonstrateDynamicSchemaLoad();
+  //demonstrateStaticLoadAndTraverse();
+  //demonstrateMultiResourceStaticLoadAndTraverse();
+  //demonstrateEMFUsingFactory();
+}
+
+private static void demonstrateDynamicSchemaLoad() {
+	// TODO Auto-generated method stub
+	
+}
+
+
+}

@@ -1,0 +1,737 @@
+[
+  {
+    "symbolicName": "org.eclipse.emf.common.ui",
+    "version": {
+      "major": 2,
+      "minor": 7,
+      "micro": 0,
+      "qualifier": "v20120917-0436"
+    },
+    "jarFileFingerprint": "22af5f43cdfec8e98bec6076a3f2299506449cba",
+    "jarFileModificationDate": "2012-09-20T10:22:33+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common.ui_2.7.0.v20120917-0436.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore.change",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": "v20130528-0742"
+    },
+    "jarFileFingerprint": "c71075e084ad043186ae0f5a7d46075dccbb7093",
+    "jarFileModificationDate": "2013-07-31T14:57:17+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore.change_2.9.0.v20130528-0742.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.ui.workbench",
+    "version": {
+      "major": 3,
+      "minor": 103,
+      "micro": 1,
+      "qualifier": "v20120906-120042"
+    },
+    "jarFileFingerprint": "03ee64a9f0d8b6e7996e72839046fe6ff41e4cac",
+    "jarFileModificationDate": "2012-09-20T10:23:10+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.ui.workbench_3.103.1.v20120906-120042.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.app",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 100,
+      "qualifier": "v20120522-1841"
+    },
+    "jarFileFingerprint": "6e906fe9634427913bb978f44ea148da946c404e",
+    "jarFileModificationDate": "2012-09-20T10:22:37+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a8426ee728e233a065d737d3b2be5a50bc518ae9",
+    "jarFileModificationDate": "2013-07-17T15:51:43+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "EMFsoftware.tests",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "qualifier"
+    },
+    "jarFileModificationDate": "2013-08-01T17:17:53+02:00",
+    "location": "/home/munish/Development/workspaces/workspace3/EMFsoftware.tests/src",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.registry",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 200,
+      "qualifier": "v20120522-1841"
+    },
+    "jarFileFingerprint": "4d7430750fab3cd4153c60d201aceef1d6f34d1e",
+    "jarFileModificationDate": "2012-09-20T10:22:39+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "space_exploration.editor",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "qualifier"
+    },
+    "jarFileModificationDate": "2012-08-01T12:26:35+02:00",
+    "location": "/home/munish/Development/workspaces/workspace3/space exploration.editor/src",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bd60d411ce0c670405211cd439cddf4b67651f7b",
+    "jarFileModificationDate": "2013-07-17T15:58:59+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8817629774003c2b8867737e65aef85c177e1a35",
+    "jarFileModificationDate": "2013-07-17T15:58:59+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dd2d6d2a5790627c3006cd243050d9b9bd2e0726",
+    "jarFileModificationDate": "2013-07-17T15:58:59+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.core.resources",
+    "version": {
+      "major": 3,
+      "minor": 8,
+      "micro": 1,
+      "qualifier": "v20120802-154922"
+    },
+    "jarFileFingerprint": "84680e32fab538bc874253a2ad9b82d82a905f11",
+    "jarFileModificationDate": "2012-09-20T10:22:30+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.core.resources_3.8.1.v20120802-154922.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.swt",
+    "version": {
+      "major": 3,
+      "minor": 100,
+      "micro": 1,
+      "qualifier": "v4234e"
+    },
+    "jarFileFingerprint": "62cfc540c857581a8a3c3a19241104af94e7b1bb",
+    "jarFileModificationDate": "2012-09-20T10:23:05+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.swt_3.100.1.v4234e.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.core.jobs",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 300,
+      "qualifier": "v20120622-204750"
+    },
+    "jarFileFingerprint": "3e8ee2bcf0f96932874af1fa17e8a2ded3ac61d5",
+    "jarFileModificationDate": "2012-09-20T10:22:29+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.core.jobs_3.5.300.v20120622-204750.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.ui.ide",
+    "version": {
+      "major": 3,
+      "minor": 8,
+      "micro": 1,
+      "qualifier": "v20120828-165804"
+    },
+    "jarFileFingerprint": "9214963ae264337ea8fbf0a828cda23303f7a7fa",
+    "jarFileModificationDate": "2012-09-20T10:23:08+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.ui.ide_3.8.1.v20120828-165804.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v20090501071000"
+    },
+    "jarFileFingerprint": "254c9660266e1177c94b1a9ba05f6f757e7fb85a",
+    "jarFileModificationDate": "2012-09-20T10:23:18+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.common.ui",
+    "version": {
+      "major": 2,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": "v20130610-0406"
+    },
+    "jarFileFingerprint": "de46d4f0e544856fc69e68065e89c04083e97d45",
+    "jarFileModificationDate": "2013-07-31T14:57:16+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common.ui_2.8.0.v20130610-0406.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "space_exploration.edit",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "qualifier"
+    },
+    "jarFileModificationDate": "2012-08-01T12:26:15+02:00",
+    "location": "/home/munish/Development/workspaces/workspace3/space exploration.edit/src",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.edit",
+    "version": {
+      "major": 2,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": "v20120917-0436"
+    },
+    "jarFileFingerprint": "59b5219a8930f463f5ad482fedf78b5040e8d58f",
+    "jarFileModificationDate": "2012-09-20T10:22:35+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.edit_2.8.0.v20120917-0436.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.ui",
+    "version": {
+      "major": 3,
+      "minor": 103,
+      "micro": 0,
+      "qualifier": "v20120705-114351"
+    },
+    "jarFileFingerprint": "026b40ba9417edf784b0bb1e8ac4a14e83c60a79",
+    "jarFileModificationDate": "2012-09-20T10:23:07+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.ui_3.103.0.v20120705-114351.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "uk.com.robust-it.cloning",
+    "version": {
+      "major": 1,
+      "minor": 8,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "98f1afca9691868b31a1211ac42973ca72e7c3ab",
+    "jarFileModificationDate": "2012-05-09T23:26:06+02:00",
+    "location": "/home/munish/Development/workspaces/workspace3/jars/cloning-1.8.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.edit.ui",
+    "version": {
+      "major": 2,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": "v20120917-0436"
+    },
+    "jarFileFingerprint": "5cab636436e25bd2034adba837c16dd3d3ced003",
+    "jarFileModificationDate": "2012-09-20T10:22:35+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.edit.ui_2.8.0.v20120917-0436.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.swt.gtk.linux.x86",
+    "version": {
+      "major": 3,
+      "minor": 100,
+      "micro": 1,
+      "qualifier": "v4234e"
+    },
+    "jarFileFingerprint": "197246dc00546931dc5abc77b735923db72a7556",
+    "jarFileModificationDate": "2012-09-20T10:23:05+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.swt.gtk.linux.x86_3.100.1.v4234e.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.core.runtime",
+    "version": {
+      "major": 3,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": "v20120521-2346"
+    },
+    "jarFileFingerprint": "67f491d25b9c90637c23ea801c8edda3019d5dc7",
+    "jarFileModificationDate": "2012-09-20T10:22:30+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.osgi",
+    "version": {
+      "major": 3,
+      "minor": 8,
+      "micro": 1,
+      "qualifier": "v20120830-144521"
+    },
+    "jarFileFingerprint": "6d1c8f8a1e0cf189c7fa0d9283ade270fcb83f46",
+    "jarFileModificationDate": "2012-09-20T10:22:50+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.osgi_3.8.1.v20120830-144521.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore.change",
+    "version": {
+      "major": 2,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": "v20120911-0500"
+    },
+    "jarFileFingerprint": "1bcaabaaa65e2a1059b3bf7433495ccdfa32b551",
+    "jarFileModificationDate": "2012-09-20T10:22:34+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore.change_2.8.0.v20120911-0500.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.jface",
+    "version": {
+      "major": 3,
+      "minor": 8,
+      "micro": 101,
+      "qualifier": "v20120817-083647"
+    },
+    "jarFileFingerprint": "e90ecb479584cd8ea0a031073cbb7c1417cc9746",
+    "jarFileModificationDate": "2012-09-20T10:22:48+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.jface_3.8.101.v20120817-083647.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "EMFsoftware",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "qualifier"
+    },
+    "jarFileModificationDate": "2013-07-31T15:08:33+02:00",
+    "location": "/home/munish/Development/workspaces/workspace3/EMFsoftware/src",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.core.contenttype",
+    "version": {
+      "major": 3,
+      "minor": 4,
+      "micro": 200,
+      "qualifier": "v20120523-2004"
+    },
+    "jarFileFingerprint": "68e082392b14a5433ebb77a9d51809bff77e10c0",
+    "jarFileModificationDate": "2012-09-20T10:22:29+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "743a6c6d32264a850989a0237e4eee3582ebd7f5",
+    "jarFileModificationDate": "2013-07-17T15:58:59+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "space_exploration.tests",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "qualifier"
+    },
+    "jarFileModificationDate": "2012-08-01T12:26:37+02:00",
+    "location": "/home/munish/Development/workspaces/workspace3/space exploration.tests/src",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "aspectjtools-1.1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "08a2f2f22b38e0e3b0ae35b63b3683ef40541c46",
+    "jarFileModificationDate": "2012-11-05T14:32:26+01:00",
+    "location": "/home/munish/Development/workspaces/workspace3/jars/aspectjtools-1.1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6c4b1ad3bbf05f5ac0624123c93a67b39306cf45",
+    "jarFileModificationDate": "2013-07-17T15:50:37+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.objenesis",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bfcb0539a071a4c5a30690388903ac48c0667f2a",
+    "jarFileModificationDate": "2012-11-05T14:11:36+01:00",
+    "location": "/home/munish/Development/workspaces/workspace3/jars/objenesis-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.common",
+    "version": {
+      "major": 2,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": "v20120911-0500"
+    },
+    "jarFileFingerprint": "97e8e24e762ed37a2df558a44dd885f065fde1e5",
+    "jarFileModificationDate": "2012-09-20T10:22:33+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common_2.8.0.v20120911-0500.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore.xmi",
+    "version": {
+      "major": 2,
+      "minor": 8,
+      "micro": 0,
+      "qualifier": "v20120911-0500"
+    },
+    "jarFileFingerprint": "6552d7c23847f37f63e2e1c31159aee0de075e84",
+    "jarFileModificationDate": "2012-09-20T10:22:35+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore.xmi_2.8.0.v20120911-0500.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.ui.views",
+    "version": {
+      "major": 3,
+      "minor": 6,
+      "micro": 100,
+      "qualifier": "v20120705-114010"
+    },
+    "jarFileFingerprint": "c219f9aab7cff2b7cb624ac198f98a7f617c2f3f",
+    "jarFileModificationDate": "2012-09-20T10:23:10+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.ui.views_3.6.100.v20120705-114010.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore.xmi",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": "v20130528-0742"
+    },
+    "jarFileFingerprint": "a77b2af20d7127e4a551eebb2a87dfab2516eb45",
+    "jarFileModificationDate": "2013-07-31T14:57:19+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore.xmi_2.9.0.v20130528-0742.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "365907cf1e488e967f1d3e923d0111b36d930ee6",
+    "jarFileModificationDate": "2012-05-26T12:46:30+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.e4.ui.workbench3",
+    "version": {
+      "major": 0,
+      "minor": 12,
+      "micro": 0,
+      "qualifier": "v20120521-2329"
+    },
+    "jarFileFingerprint": "4f21b6ce6712b1b6b10e3b168e39ccad52d6e888",
+    "jarFileModificationDate": "2012-09-20T10:22:32+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.e4.ui.workbench3_0.12.0.v20120521-2329.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "runtime_registry_compatibility",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c185f03ea1482d256f400958761e1e3297f5858f",
+    "jarFileModificationDate": "2012-07-26T18:45:18+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.100.v20120521-2346/runtime_registry_compatibility.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f317c1b846ab01a1c00d849881778a47a7e728bf",
+    "jarFileModificationDate": "2012-09-20T11:21:42+02:00",
+    "location": "/usr/share/java/java-atk-wrapper.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4fb355e2c244858305c3f18c31a79d0adf876fc1",
+    "jarFileModificationDate": "2013-07-17T15:51:39+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore",
+    "version": {
+      "major": 2,
+      "minor": 8,
+      "micro": 1,
+      "qualifier": "v20120911-0500"
+    },
+    "jarFileFingerprint": "ab5dbc5a583dbbfbac4838425fb30a85ad231da7",
+    "jarFileModificationDate": "2012-09-20T10:22:34+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore_2.8.1.v20120911-0500.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.core.commands",
+    "version": {
+      "major": 3,
+      "minor": 6,
+      "micro": 1,
+      "qualifier": "v20120814-150512"
+    },
+    "jarFileFingerprint": "c63b6e0a0fd55c626730f6e183949150a7f49f46",
+    "jarFileModificationDate": "2012-09-20T10:22:29+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.core.commands_3.6.1.v20120814-150512.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "space_exploration",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "qualifier"
+    },
+    "jarFileModificationDate": "2012-10-23T14:59:13+02:00",
+    "location": "/home/munish/Development/workspaces/workspace3/space exploration/src",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "junit-4.10",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e4f1766ce7404a08f45d859fb9c226fc9e41a861",
+    "jarFileModificationDate": "2012-11-05T14:11:46+01:00",
+    "location": "/home/munish/Development/workspaces/workspace3/jars/junit-4.10.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.edit",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": "v20130610-0406"
+    },
+    "jarFileFingerprint": "7e7a284a57e82b33bbc8570837df03c7be80bb03",
+    "jarFileModificationDate": "2013-07-31T14:57:20+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.edit_2.9.0.v20130610-0406.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d60c590cc191d485094e3f429b2bd913ab37d157",
+    "jarFileModificationDate": "2013-07-17T15:50:41+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.emf.ecore",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": "v20130528-0742"
+    },
+    "jarFileFingerprint": "652c93949acf2e55e18200e770a168827d22db69",
+    "jarFileModificationDate": "2013-07-31T14:57:18+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore_2.9.0.v20130528-0742.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.preferences",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 0,
+      "qualifier": "v20120522-1841"
+    },
+    "jarFileFingerprint": "e3ac06f07f369a21195a217a9882fb2aed65ff92",
+    "jarFileModificationDate": "2012-09-20T10:22:39+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.emf.edit.ui",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": "v20130610-0406"
+    },
+    "jarFileFingerprint": "9b198fa3503192e794c91ce9a286f83e76472619",
+    "jarFileModificationDate": "2013-07-31T14:57:20+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.edit.ui_2.9.0.v20130610-0406.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "76681c854a479dbe53caa005e510f9860581339b",
+    "jarFileModificationDate": "2013-07-17T15:50:23+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.equinox.common",
+    "version": {
+      "major": 3,
+      "minor": 6,
+      "micro": 100,
+      "qualifier": "v20120522-1841"
+    },
+    "jarFileFingerprint": "fafcf2db0911260c6d452bca2ff0bd55534cef78",
+    "jarFileModificationDate": "2012-09-20T10:22:37+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "939eb859aae5b923b745fd15f2820ef5463a2140",
+    "jarFileModificationDate": "2013-07-17T15:51:55+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "36963edfb30f4f2f89d68ca78f2e30a255b75626",
+    "jarFileModificationDate": "2013-07-17T15:41:08+02:00",
+    "location": "/usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/pulse-java.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.emf.common",
+    "version": {
+      "major": 2,
+      "minor": 9,
+      "micro": 0,
+      "qualifier": "v20130528-0742"
+    },
+    "jarFileFingerprint": "be080e83e026467dcfcf0fc845263da0772995fd",
+    "jarFileModificationDate": "2013-07-31T14:57:16+02:00",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common_2.9.0.v20130528-0742.jar",
+    "javaRuntime": false
+  }
+]

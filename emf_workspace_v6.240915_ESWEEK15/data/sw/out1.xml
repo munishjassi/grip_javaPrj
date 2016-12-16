@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<application
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com software1.xsd">
+   <specifications>
+	<applicationname> redlinefollower </applicationname>
+   </specifications>
+   <submodules>
+		<submodule>
+			<modulename> Task1 </modulename>
+			<specifications>
+				<mapping> cpu </mapping>
+				<mode> computed </mode>
+			</specifications>
+			<hwmappings>
+				<hwmapping>
+					<mappingname> cpu </mappingname>
+					<performance>
+						<CPUcycles> 0 </CPUcycles>
+						<BUScycles> 0 </BUScycles>
+					</performance>
+					<description>
+						<Cdescription> cpp </Cdescription>
+					</description>
+				</hwmapping>
+			</hwmappings>
+	</submodule>
+	<loop>
+			<specifications>
+				<loopName> Loop2 </loopName>
+				<number> 100000 </number>
+				<startSubmodule> Task3 </startSubmodule>
+			</specifications>
+		</loop>
+	<submodule> 
+		<modulename> submodule1 </modulename>
+		<specifications>
+			<mapping> hwacc </mapping>
+			<mode> computed </mode>
+		</specifications>
+	</submodule>
+	<submodule> 
+		<modulename> submodule2 </modulename>
+		<specifications>
+			<mapping> cpu </mapping>
+			<mode> computed </mode>
+		</specifications>
+		<hwmappings>
+				<hwmapping>
+					<mappingname> cpu </mappingname>
+					<performance>
+						<CPUcycles> 0 </CPUcycles>
+						<BUScycles> 0 </BUScycles>
+					</performance>
+					<description>
+						<Cdescription> cpp </Cdescription>
+					</description>
+				</hwmapping>
+		</hwmappings>
+	</submodule>
+	<loop>
+		<specifications>
+			<loopName> loop1 </loopName>
+			<number> 100000 </number>
+			<startSubmodule> Task3 </startSubmodule>
+		</specifications>
+	</loop>
+   </submodules>
+</application>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus206:16:24 24.04.2014-->
+<spirit:component xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>ARM</spirit:vendor>
+	<spirit:library>ip</spirit:library>
+	<spirit:name>cam_mem_0</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:busInterfaces>
+		<spirit:busInterface>
+			<spirit:name>S_AXI</spirit:name>
+			<spirit:busType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite" spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="ARM" spirit:library="bus" spirit:name="axilite.absDef" spirit:version="1.0"/>
+			<spirit:slave/>
+			<spirit:connectionRequired>false</spirit:connectionRequired>
+			<spirit:bitsInLau>8</spirit:bitsInLau>
+			<spirit:endianness>little</spirit:endianness>
+		</spirit:busInterface>
+	</spirit:busInterfaces>
+	<spirit:model>
+		<spirit:views>
+			<spirit:view>
+				<spirit:name>rtl</spirit:name>
+				<spirit:envIdentifier>::</spirit:envIdentifier>
+			</spirit:view>
+			<spirit:view>
+				<spirit:name>structural</spirit:name>
+				<spirit:envIdentifier></spirit:envIdentifier>
+				<spirit:hierarchyRef spirit:vendor="ARM" spirit:library="ip" spirit:name="test_mem.designcfg" spirit:version="1.0"/>
+			</spirit:view>
+		</spirit:views>
+	</spirit:model>
+<spirit:parameters>
+	<spirit:parameter>
+		<spirit:name>INSTANCE</spirit:name>
+		<spirit:value>cam_mem_0</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>HW_VER</spirit:name>
+		<spirit:value>1.00.a</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>C_S_AXI_MEM0_BASEADDR</spirit:name>
+		<spirit:value>0x43010000</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>C_S_AXI_MEM0_HIGHADDR</spirit:name>
+		<spirit:value>0x43010fff</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>C_S_AXI_MEM1_BASEADDR</spirit:name>
+		<spirit:value>0x43011000</spirit:value>
+	</spirit:parameter>
+	<spirit:parameter>
+		<spirit:name>C_S_AXI_MEM1_HIGHADDR</spirit:name>
+		<spirit:value>0x43011fff</spirit:value>
+	</spirit:parameter>
+</spirit:parameters>
+
+
+	<spirit:vendorExtensions>
+		<kactus2:extensions>
+			<kactus2:kts_attributes>
+				<kactus2:kts_productHier>IP</kactus2:kts_productHier>
+				<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+				<kactus2:kts_firmness>Template</kactus2:kts_firmness>
+			</kactus2:kts_attributes>
+		</kactus2:extensions>
+	</spirit:vendorExtensions>
+</spirit:component>

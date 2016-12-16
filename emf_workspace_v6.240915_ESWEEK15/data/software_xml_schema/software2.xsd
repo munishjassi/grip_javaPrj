@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element name="note">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="to" type="xs:string"/>
+      <xs:element name="from" type="xs:string"/>
+      <xs:element name="heading" type="xs:string"/>
+      <xs:element ref="body"/>
+      <xs:element ref="family"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="body" type="bodyType"/>
+<xs:element name="family" type="childinfo"/>
+
+<xs:complexType name="childinfo">
+  <xs:sequence>
+    <xs:element name="firstname" type="xs:string"/>
+    <xs:element name="lastname" type="xs:string"/>
+    <xs:element name="child" type="childinfo"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bodyType">
+  <xs:sequence>
+    <xs:element name="firstname" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+
+</xs:schema>

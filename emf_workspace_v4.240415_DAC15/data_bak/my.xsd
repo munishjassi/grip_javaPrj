@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:dom="http://www.eclipse.org/emf/example/DOM" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.eclipse.org/emf/example/DOM">
+  <xsd:complexType name="Root">
+    <xsd:sequence>
+      <xsd:element name="child" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="x" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="root" type="dom:Root"/>
+</xsd:schema>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/EMFsoftware/src" modelPluginID="EMFsoftware" modelName="Software"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>file:/home/munish/Development/workspaces/workspace3/data/software_xml_schema/software.xsd</foreignModel>
+  <genPackages prefix="W3schools" basePackage="com" resource="XML" disposableProviderFactory="true"
+      ecorePackage="w3schools.ecore#/">
+    <genClasses ecoreClass="w3schools.ecore#//ApplicationType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//ApplicationType/specifications"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//ApplicationType/submodules"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//AppSpecificationsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//AppSpecificationsType/applicationname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//AppSpecificationsType/cpucycles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//AppSpecificationsType/buscycles"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//Description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//Description/cdescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//Description/cppdescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//Description/asmdescription"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference w3schools.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference w3schools.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//DocumentRoot/application"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//DocumentRoot/specifications"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//DocumentRoot/submodules"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//Hwmapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//Hwmapping/mappingname"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//Hwmapping/performance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//Hwmapping/description"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//Hwmappings">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//Hwmappings/hwmapping"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//LoopSpecificationsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//LoopSpecificationsType/loopname"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//LoopSpecificationsType/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//LoopSpecificationsType/startsubmodule"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//LoopType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//LoopType/specifications"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//ModSpecificationsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//ModSpecificationsType/mapping"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//ModSpecificationsType/mode"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//Performance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//Performance/cpucycles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//Performance/buscycles"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//SubmodulesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//SubmodulesType/submodule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//SubmodulesType/loop"/>
+    </genClasses>
+    <genClasses ecoreClass="w3schools.ecore#//SubmoduleType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute w3schools.ecore#//SubmoduleType/modulename"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//SubmoduleType/specifications"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference w3schools.ecore#//SubmoduleType/hwmappings"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

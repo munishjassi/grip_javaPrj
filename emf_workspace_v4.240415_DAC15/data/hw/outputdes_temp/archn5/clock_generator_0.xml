@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5">
+  <spirit:vendor>ARM</spirit:vendor>
+  <spirit:library>ip</spirit:library>
+  <spirit:name>clock_generator_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>RST</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>CLKOUT0</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>CLKIN</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>INSTANCE</spirit:name>
+      <spirit:value>clock_generator_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HW_VER</spirit:name>
+      <spirit:value>4.03.a</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_CLKIN_FREQ</spirit:name>
+      <spirit:value>200000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_CLKOUT0_FREQ</spirit:name>
+      <spirit:value>12288135</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+</spirit:component>

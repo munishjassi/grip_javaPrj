@@ -1,0 +1,42 @@
+{
+  "/home/munish/Development/workspaces/workspace3/space exploration/src": {
+    "location": "/home/munish/Development/workspaces/workspace3/space exploration/src",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/home/munish/Development/workspaces/workspace3/space exploration/src\u0027. Neither fingerprint \u0027null\u0027 nor symbolic name \u0027space_exploration\u0027 are known."
+  },
+  "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore_2.8.1.v20120911-0500.jar": {
+    "coordinate": "org.eclipse.emf:org.eclipse.emf.ecore:zip:call:2.0.0",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore_2.8.1.v20120911-0500.jar",
+    "status": "RESOLVED"
+  },
+  "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/home/munish/Development/workspaces/workspace3/jars/cloning-1.8.1.jar": {
+    "location": "/home/munish/Development/workspaces/workspace3/jars/cloning-1.8.1.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/home/munish/Development/workspaces/workspace3/jars/cloning-1.8.1.jar\u0027. Neither fingerprint \u002798f1afca9691868b31a1211ac42973ca72e7c3ab\u0027 nor symbolic name \u0027uk.com.robust-it.cloning\u0027 are known."
+  },
+  "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common_2.8.0.v20120911-0500.jar": {
+    "coordinate": "org.eclipse.emf:org.eclipse.emf.common:zip:call:2.0.0",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common_2.8.0.v20120911-0500.jar",
+    "status": "RESOLVED"
+  },
+  "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common_2.9.0.v20130528-0742.jar": {
+    "coordinate": "org.eclipse.emf:org.eclipse.emf.common:zip:call:2.0.0",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.common_2.9.0.v20130528-0742.jar",
+    "status": "RESOLVED"
+  },
+  "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore_2.9.0.v20130528-0742.jar": {
+    "coordinate": "org.eclipse.emf:org.eclipse.emf.ecore:zip:call:2.0.0",
+    "location": "/home/munish/Development/eclipse-java/plugins/org.eclipse.emf.ecore_2.9.0.v20130528-0742.jar",
+    "status": "RESOLVED"
+  },
+  "/home/munish/Development/workspaces/workspace3/EMFsoftware/src": {
+    "location": "/home/munish/Development/workspaces/workspace3/EMFsoftware/src",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/home/munish/Development/workspaces/workspace3/EMFsoftware/src\u0027. Neither fingerprint \u0027null\u0027 nor symbolic name \u0027EMFsoftware\u0027 are known."
+  }
+}

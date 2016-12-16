@@ -1,0 +1,226 @@
+package generativeGrammar.designAbstractionGraph.impl;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import com.rits.cloning.Cloner;
+
+import generativeGrammar.designAbstractionGraph.CompAbstraction;
+import generativeGrammar.designAbstractionGraph.DesignAbstraction;
+import generativeGrammar.utils.GenerativRulePair;
+import generativeGrammar.utils.PortCompPair;
+
+public class DesignGeneration {
+
+	// Note: seedDesign and rule are assumed as STATIC input linked to
+	// GlobalVars
+	// seedDesign is locally deep cloned.
+	// Returns new design
+	//
+	public DesignAbstraction GenerateNewDesign(DesignAbstraction seedDesign, GenerativRulePair rule) {
+
+		System.out.println("Design Generation: STARTING GENERATION OF NEW DESIGN BY USING GERERATIVE RULES....");
+		Cloner cloner = new Cloner();
+		DesignAbstraction finalDesign = cloner.deepClone(seedDesign);
+
+		DesignAbstraction rulePat = rule.getGenerativPattern();
+		DesignAbstraction replacementPat = rule.getReplacementPattern();
+		List<CompAbstraction> toRemoveComp = new ArrayList<CompAbstraction>();
+		List<CompAbstraction> toAddComp = new ArrayList<CompAbstraction>();
+		
+		if (!seedDesign.MatchPattern(rulePat)) {
+			System.out.printf("Design Generation: Given rule-pattern was NOT FOUND in the Seed Design. \n");
+			return null;
+		} else {
+			System.out.printf("Design Generation: Given rule-pattern was FOUND in the Seed Design. \n");
+		}
+		
+		// Compare startPat and replacementPat
+		this.CompareRulePatterns(rulePat, replacementPat);
+
+		// Reducing the "rule" to the reduced form
+		GenerativRulePair reducedRule = this.ReduceRule(rule);
+
+		for (Iterator<CompAbstraction> i = rulePat.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			if (object.isMapped()) {
+				for (Iterator<CompAbstraction> j = finalDesign.getDesComponents().iterator(); j.hasNext();) {
+					CompAbstraction obj = (CompAbstraction) j.next();
+					if (!obj.getIS_BUS()) {
+						if (obj.IsEquivalent(object)) {
+							obj.setMapped(true);
+							System.out.println("Design Generation: While DesignGeneration this Component will be untouched: "
+									+ obj.getInstanceName());
+						}
+					}
+				}
+			}
+		}
+
+		boolean doNotRemove = false;
+		for (Iterator<CompAbstraction> i = rulePat.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			for (Iterator<CompAbstraction> j = replacementPat.getDesComponents().iterator(); j.hasNext();) {
+				CompAbstraction obj = (CompAbstraction) j.next();
+				if (obj.getLibAbsRef().getInstanceName().equals(object.getLibAbsRef().getInstanceName())) {
+					doNotRemove = true;
+					System.out.println("Design Generation: Component will be retained while Generation: "
+							+ obj.getLibAbsRef().getInstanceName());
+				}
+			}
+			if (!doNotRemove) {
+				for (Iterator<CompAbstraction> j = finalDesign.getDesComponents().iterator(); j.hasNext();) {
+					CompAbstraction obj = (CompAbstraction) j.next();
+					if (obj.getLibAbsRef().getInstanceName().equals(object.getLibAbsRef().getInstanceName())) {
+						// this.removeComponent(finalDesign, obj);
+						obj.setToRemoved(true);
+						System.out.println("Design Generation: Component is REMOVED while Generation: "
+								+ object.getLibAbsRef().getInstanceName());
+					}
+				}
+			}
+		}
+
+		return finalDesign;
+	} // End Method GenerateNewDesign(DesignAbstraction seedDesign,
+		// GenerativRulePair rule)
+
+	// Assumes "rule" is static variable input
+	public GenerativRulePair ReduceRule(GenerativRulePair rule) {
+
+		this.FindCommonComponents(rule.getGenerativPattern(), rule.getReplacementPattern());
+		
+		Cloner cloner = new Cloner();
+		DesignAbstraction nrulePat = cloner.deepClone(rule.getGenerativPattern());
+		DesignAbstraction nreplacePat = cloner.deepClone(rule.getReplacementPattern());
+
+		List<CompAbstraction> commonComps = new ArrayList<CompAbstraction>();
+		for (Iterator<CompAbstraction> j = rule.getGenerativPattern().getDesComponents().iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (object.isMapped()) {
+				commonComps.add(object);
+			}
+		}
+
+		for (Iterator<CompAbstraction> j = commonComps.iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (!object.getIS_BUS()) {
+				nrulePat = this.RemoveComponent(nrulePat, object);
+				nreplacePat = this.RemoveComponent(nreplacePat, object);
+			}
+		}
+
+		nrulePat = this.CleanPortConnections(nrulePat);
+		nreplacePat = this.CleanPortConnections(nreplacePat);
+		GenerativRulePair nrule = new GenerativRulePair(nrulePat, nreplacePat);
+		return nrule;
+	}
+
+	public DesignAbstraction CleanPortConnections(DesignAbstraction design) {
+		
+		Cloner cloner = new Cloner();
+		DesignAbstraction ndesign = cloner.deepClone(design);
+		
+		int cnt = 0;
+		int chkCnt = 0;
+		for (Iterator<CompAbstraction> i = design.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			cnt = 0;
+			for (Iterator<PortCompPair> j = object.getPortTORefComponentPair().iterator(); j.hasNext();) {
+				PortCompPair obj = (PortCompPair) j.next();
+				try { obj.getRefComp(); } 
+				catch (NullPointerException e) { chkCnt = cnt; }
+			}
+			object.getPortTORefComponentPair().remove(chkCnt);
+		}
+		
+		return ndesign;
+	}
+
+	public DesignAbstraction RemoveComponent(DesignAbstraction inputDesign, CompAbstraction comp) {
+
+		Cloner cloner = new Cloner();
+		DesignAbstraction outputDesign = cloner.deepClone(inputDesign);
+
+		int cnt = 0;
+		int chkCnt = 0;
+		List<CompAbstraction> connectedComps = new ArrayList<CompAbstraction>();
+
+		for (Iterator<CompAbstraction> j = outputDesign.getDesComponents().iterator(); j.hasNext();) {
+			CompAbstraction object = (CompAbstraction) j.next();
+			if (object.getLibAbsRef().getInstanceName().equals(comp.getLibAbsRef().getInstanceName())) {
+				chkCnt = cnt;
+			}
+			++cnt;
+		}
+
+		System.out.println("Design Generation: REMOVING Component " + outputDesign.getDesComponents().get(chkCnt).getInstanceName()
+				+ " from Design. ");
+		//outputDesign.getDesComponents().remove(chkCnt);
+		
+		/*
+		for (Iterator<PortCompPair> i = outputDesign.getDesComponents().get(chkCnt).getPortTORefComponentPair().iterator(); i.hasNext();) {
+			PortCompPair object = (PortCompPair) i.next();
+			connectedComps.add(object.getRefComp());
+		}
+
+		for (Iterator<CompAbstraction> i = connectedComps.iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			cnt = 0;
+			for (Iterator<CompAbstraction> j = outputDesign.getDesComponents().iterator(); j.hasNext();) {
+				CompAbstraction obj = (CompAbstraction) j.next();
+				if (obj.getLibAbsRef().getInstanceName().equals(object.getLibAbsRef().getInstanceName())) {
+					chkCnt = cnt;
+				}
+				++cnt;
+			}
+		}
+*/
+		
+		return outputDesign;
+
+	}
+
+	public void CompareRulePatterns(DesignAbstraction ades, DesignAbstraction bdes) {
+
+		System.out.println("Design Generation: Components for Design-a");
+		for (Iterator<CompAbstraction> i = ades.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			System.out.println("	" + object.getInstanceName());
+		}
+
+		System.out.println("Design Generation: Components for Design-b");
+		for (Iterator<CompAbstraction> i = bdes.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			System.out.println("	" + object.getInstanceName());
+		}
+	}
+
+	// Assumes ades and bdes are static objects which comes from
+	// GlobalVars.GENERATIV_RULES
+	public void FindCommonComponents(DesignAbstraction ades, DesignAbstraction bdes) {
+
+		ades.ResetMapped();
+		bdes.ResetMapped();
+
+		for (Iterator<CompAbstraction> i = ades.getDesComponents().iterator(); i.hasNext();) {
+			CompAbstraction object = (CompAbstraction) i.next();
+			for (Iterator<CompAbstraction> j = bdes.getDesComponents().iterator(); j.hasNext();) {
+				CompAbstraction obj = (CompAbstraction) j.next();
+				if (!obj.isMapped()) {
+					if (!obj.getIS_BUS()) {
+						if (object.IsEquivalent(obj)) {
+							System.out.println("Design Generation: Equivalent Component found for Generative Rule: " + object.getInstanceName()
+									+ "==" + obj.getInstanceName());
+							obj.setMapped(true);
+							object.setMapped(true);
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+
+} // Class Design Generation Ends

@@ -1,0 +1,434 @@
+package generativeGrammar.designAbstractionGraph.impl;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import generativeGrammar.designAbstractionGraph.CompAbstraction;
+import generativeGrammar.designAbstractionGraph.LibCompAbstraction;
+import generativeGrammar.utils.ConnectedPort;
+import generativeGrammar.utils.PortCompPair;
+import generativeGrammar.utils.Parameter;
+
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.spiritconsortium.xml.schema.spirit.spirit.LibraryRefType;
+
+public class CompAbstractionImpl extends EObjectImpl implements CompAbstraction {
+
+	protected List<ConnectedPort> mirMasterPorts = new ArrayList<ConnectedPort>();
+
+	protected List<ConnectedPort> mirSlavePorts = new ArrayList<ConnectedPort>();
+
+	protected List<ConnectedPort> masterPorts = new ArrayList<ConnectedPort>();
+
+	protected List<ConnectedPort> slavePorts = new ArrayList<ConnectedPort>();
+
+	protected List<ConnectedPort> allPorts = new ArrayList<ConnectedPort>();
+
+	protected List<PortCompPair> portToRefComponentPair = new ArrayList<PortCompPair>();
+	
+	protected List<Parameter> parameters = new ArrayList<Parameter>();
+	
+	protected List<ConnectedPort> allPins = new ArrayList<ConnectedPort>();
+
+	protected List<PortCompPair> pinToRefComponentPair = new ArrayList<PortCompPair>();
+
+	protected String instanceName;
+
+	protected LibraryRefType libRefComponent;
+
+	protected LibCompAbstraction libAbsRef;
+	
+	boolean IS_BUS = false;
+	
+	protected int compId;
+
+	protected boolean mapped;
+	
+	protected boolean toRemoved;
+
+	public List<Parameter> getParameters() {
+		return parameters;
+	}
+
+	public void setParameters(List<Parameter> parameters) {
+		this.parameters = parameters;
+	}
+
+	public void addParameter(Parameter parameter) {
+		this.parameters.add(parameter);
+	}
+	
+	public List<ConnectedPort> getAllPins() {
+		return allPins;
+	}
+
+	public void setAllPins(List<ConnectedPort> allPins) {
+		this.allPins = allPins;
+	}
+
+	public void addPin(ConnectedPort pin) {
+		this.allPins.add(pin);
+	}
+	
+	public List<PortCompPair> getPinToRefComponentPair() {
+		return pinToRefComponentPair;
+	}
+
+	public void setPinToRefComponentPair(List<PortCompPair> pinToRefComponentPair) {
+		this.pinToRefComponentPair = pinToRefComponentPair;
+	}
+
+	public void addPinToRefComponentPair(PortCompPair pintoref) {
+		this.pinToRefComponentPair.add(pintoref);
+	}
+	
+	public int getCompId() {
+		return compId;
+	}
+
+	public void setCompId(int compId) {
+		this.compId = compId;
+	}
+	
+	public boolean isToRemoved() {
+		return toRemoved;
+	}
+
+	public void setToRemoved(boolean toRemoved) {
+		this.toRemoved = toRemoved;
+	}
+
+	public boolean isMapped() {
+		return mapped;
+	}
+
+	public void setMapped(boolean mapped) {
+		this.mapped = mapped;
+	}
+
+	public LibCompAbstraction getLibAbsRef() {
+		return libAbsRef;
+	}
+
+	public void setLibAbsRef(LibCompAbstraction libAbsRef) {
+		this.libAbsRef = libAbsRef;
+	}
+
+	public boolean getIS_BUS() {
+		return IS_BUS;
+	}
+
+	public void setIS_BUS(boolean is_bus) {
+		IS_BUS = is_bus;
+	}
+
+	public LibraryRefType getLibRefComponent() {
+		return libRefComponent;
+	}
+
+	public void setLibRefComponent(LibraryRefType libRefComponent) {
+		this.libRefComponent = libRefComponent;
+	}
+
+	public boolean addPortToRefComponentPair(PortCompPair e) {
+		return portToRefComponentPair.add(e);
+	}
+
+	public List<PortCompPair> getPortToRefComponentPair() {
+		return portToRefComponentPair;
+	}
+
+	public void setPortToRefComponentPair(List<PortCompPair> portToRefComponentPair) {
+		this.portToRefComponentPair = portToRefComponentPair;
+	}
+
+	@Override
+	public void setInstanceName(String name) {
+		instanceName = name;
+	}
+
+	@Override
+	public List<ConnectedPort> getMirMasterPorts() {
+		return mirMasterPorts;
+	}
+
+	@Override
+	public List<ConnectedPort> getMirSlavePorts() {
+		return mirSlavePorts;
+	}
+
+	@Override
+	public List<ConnectedPort> getMasterPorts() {
+		return masterPorts;
+	}
+
+	@Override
+	public List<ConnectedPort> getSlavePorts() {
+		return slavePorts;
+	}
+
+	@Override
+	public List<ConnectedPort> getAllPorts() {
+		allPorts = new ArrayList<ConnectedPort>();
+		allPorts.addAll(mirMasterPorts);
+		allPorts.addAll(mirSlavePorts);
+		allPorts.addAll(masterPorts);
+		allPorts.addAll(slavePorts);
+		return allPorts;
+	}
+
+	@Override
+	public String getInstanceName() {
+		return instanceName;
+	}
+
+	@Override
+	public void removeConnection(String portName) {
+		for (Iterator<PortCompPair> j = portToRefComponentPair.iterator(); j.hasNext();) {
+			// InterconnectionType object = (InterconnectionType) j.next();
+			PortCompPair pair = (PortCompPair) j.next();
+			if (pair.getPort().equals(portName)) {
+				portToRefComponentPair.remove(pair);
+			}
+		}
+	}
+
+	public CompAbstractionImpl() {
+		super();
+	}
+
+	public List<String> getUnconnectedPorts(String portType) {
+
+		this.setPortConnections();
+
+		List<String> unconnectedPorts = new ArrayList<String>();
+
+		if (portType.equalsIgnoreCase("master")) {
+			for (Iterator<ConnectedPort> j = masterPorts.iterator(); j.hasNext();) {
+				ConnectedPort object = (ConnectedPort) j.next();
+				if (!object.isConnected()) {
+					unconnectedPorts.add(object.getPort());
+				}
+			}
+		} else if (portType.equalsIgnoreCase("slave")) {
+			for (Iterator<ConnectedPort> j = slavePorts.iterator(); j.hasNext();) {
+				ConnectedPort object = (ConnectedPort) j.next();
+				if (!object.isConnected()) {
+					unconnectedPorts.add(object.getPort());
+				}
+			}
+		} else if (portType.equalsIgnoreCase("mirMaster")) {
+			for (Iterator<ConnectedPort> j = mirMasterPorts.iterator(); j.hasNext();) {
+				ConnectedPort object = (ConnectedPort) j.next();
+				if (!object.isConnected()) {
+					unconnectedPorts.add(object.getPort());
+				}
+			}
+		} else if (portType.equalsIgnoreCase("mirSlave")) {
+			for (Iterator<ConnectedPort> j = mirSlavePorts.iterator(); j.hasNext();) {
+				ConnectedPort object = (ConnectedPort) j.next();
+				if (!object.isConnected()) {
+					unconnectedPorts.add(object.getPort());
+				}
+			}
+		} else {
+			System.err.println("ERROR: Accepted values of portType are: master, slave, mirMaster, mirSlave");
+		}
+
+		if (unconnectedPorts.size() == 0) {
+			System.out.println("CAUTION: No unconnected ports found for: " + this.instanceName);
+		}
+		System.out.println("Unconnected Ports: " + unconnectedPorts.toString() + "\n");
+		return unconnectedPorts;
+	}
+
+	public void resetPortConnections() {
+
+		masterPorts = new ArrayList<ConnectedPort>();
+		mirMasterPorts = new ArrayList<ConnectedPort>();
+		slavePorts = new ArrayList<ConnectedPort>();
+		mirSlavePorts = new ArrayList<ConnectedPort>();
+
+		for (Iterator<String> i = libAbsRef.getMasterPorts().iterator(); i.hasNext();) {
+			String port = (String) i.next();
+			ConnectedPort pair = new ConnectedPort(port, false);
+			masterPorts.add(pair);
+		}
+		for (Iterator<String> i = libAbsRef.getMirMasterPorts().iterator(); i.hasNext();) {
+			String port = (String) i.next();
+			ConnectedPort pair = new ConnectedPort(port, false);
+			mirMasterPorts.add(pair);
+		}
+
+		for (Iterator<String> i = libAbsRef.getSlavePorts().iterator(); i.hasNext();) {
+			String port = (String) i.next();
+			ConnectedPort pair = new ConnectedPort(port, false);
+			slavePorts.add(pair);
+		}
+		for (Iterator<String> i = libAbsRef.getMirSlavePorts().iterator(); i.hasNext();) {
+			String port = (String) i.next();
+			ConnectedPort pair = new ConnectedPort(port, false);
+			mirSlavePorts.add(pair);
+		}
+		System.out.println("Port connections resetted: " + this.instanceName);
+	}
+
+	@Override
+	public void setPortConnections() {
+		if (libAbsRef.toString().isEmpty()) {
+			System.err
+					.println("Reference Library unavailable: Please set the LibAbsRef (run setLibAbsRef(LibCompAbstraction libAbsRef)) before setPortConnections");
+			return;
+		}
+
+		this.resetPortConnections();
+
+		for (Iterator<PortCompPair> j = portToRefComponentPair.iterator(); j.hasNext();) {
+			PortCompPair dport = (PortCompPair) j.next();
+
+			int cnt = 0;
+			for (Iterator<ConnectedPort> i = masterPorts.iterator(); i.hasNext();) {
+
+				ConnectedPort port = (ConnectedPort) i.next();
+				if (dport.getPort().equals(port.getPort())) {
+					masterPorts.get(cnt).setIsConnected(true);
+					System.out.println("Set Connected to Master Port: " + port.getPort());
+				}
+				++cnt;
+			}
+			cnt = 0;
+			for (Iterator<ConnectedPort> i = mirMasterPorts.iterator(); i.hasNext();) {
+				ConnectedPort port = (ConnectedPort) i.next();
+				if (dport.getPort().equals(port.getPort())) {
+					mirMasterPorts.get(cnt).setIsConnected(true);
+					System.out.println("Set Connected to Mirrored-Master Port: " + port.getPort());
+				}
+				++cnt;
+			}
+			cnt = 0;
+			for (Iterator<ConnectedPort> i = slavePorts.iterator(); i.hasNext();) {
+				ConnectedPort port = (ConnectedPort) i.next();
+				if (dport.getPort().equals(port.getPort())) {
+					slavePorts.get(cnt).setIsConnected(true);
+					System.out.println("Set Connected to Slave Port: " + port.getPort());
+				}
+				++cnt;
+			}
+			cnt = 0;
+			for (Iterator<ConnectedPort> i = mirSlavePorts.iterator(); i.hasNext();) {
+				ConnectedPort port = (ConnectedPort) i.next();
+				if (dport.getPort().equals(port.getPort())) {
+					mirSlavePorts.get(cnt).setIsConnected(true);
+					System.out.println("Set Connected to Mirrored-Slave Port: " + port.getPort());
+				}
+				++cnt;
+			}
+		}
+
+		if (libAbsRef.getAllPorts().size() != this.getAllPorts().size()) {
+			System.err.println("ERROR:: Port mapping conflict: Total library ports not matching to Design connection ports");
+			return;
+		}
+	} // End Method
+
+	public boolean IsEquivalent(CompAbstraction comp) {
+		boolean equi = true;
+
+		String reason = "";
+		if (comp.getIS_BUS() != this.getIS_BUS()) {
+			equi = false;
+			reason = reason.concat(" IS_bus,");
+		}
+		if (!comp.getLibAbsRef().getInstanceName().equals(this.getLibAbsRef().getInstanceName())) {
+			equi = false;
+			reason = reason.concat(" Instance Name, ");
+		}
+		if (comp.getMasterPorts().size() != this.getMasterPorts().size()) {
+			equi = false;
+			reason = reason.concat(" MasterPort size, ");
+		}
+		if (comp.getSlavePorts().size() != this.getSlavePorts().size()) {
+			equi = false;
+			reason = reason.concat(" SlavePort size, ");
+		}
+		if (comp.getMirMasterPorts().size() != this.getMirMasterPorts().size()) {
+			equi = false;
+			reason = reason.concat(" MirMasterPort size, ");
+		}
+		if (comp.getMirSlavePorts().size() != this.getMirSlavePorts().size()) {
+			equi = false;
+			reason = reason.concat(" MirSlavePort size, ");
+		}
+		if (!this.getLibAbsRef().IsEquivalent(comp.getLibAbsRef())) {
+			equi = false;
+			reason = reason.concat(" AbsLib reference ");
+		}
+
+		if (!equi) {
+			System.out.println("Equivalence Check: Component mapping is not Equivalent: " + this.getInstanceName() + "!="
+					+ comp.getInstanceName());
+			System.out.println("Equivalence Check: Mismatch was found with:" + reason);
+			return equi;
+		}
+		
+		equi = false;
+		
+		if (!comp.getIS_BUS()) {
+			for (Iterator<PortCompPair> i = this.getPortToRefComponentPair().iterator(); i.hasNext();) {
+				PortCompPair object = (PortCompPair) i.next();
+				String pname = object.getPort();
+				for (Iterator<PortCompPair> j = comp.getPortToRefComponentPair().iterator(); j.hasNext();) {
+					PortCompPair obj = (PortCompPair) j.next();
+					String name = obj.getPort();
+					if (name.equals(pname) &&
+							object.getRefComp().getInstanceName() == obj.getRefComp().getInstanceName() &&
+							( object.getRefPort().equals(obj.getRefPort()) || object.getRefComp().getIS_BUS())) {
+						System.out.printf("Equivalence Check: Equivalent Connection found: %-7s Instances: %s<%s> == %s<%s> \n", name,
+								comp.getInstanceName(), comp.getLibAbsRef().getInstanceName(), this.getInstanceName(), this.getLibAbsRef()
+										.getInstanceName());
+//						if (object.getRefComp().getInstanceName() == obj.getRefComp().getInstanceName()
+//								&& object.getRefPort().equals(obj.getRefPort())) {
+//							System.out
+//									.printf("Equivalence Check: Equivalent connection found for port: %-7s Instances: %s<%s> == %s<%s>  Connected Instance: %s \n",
+//											name, comp.getInstanceName(), comp.getLibAbsRef().getInstanceName(), this.getInstanceName(),
+//											this.getLibAbsRef().getInstanceName(), object.getRefComp().getInstanceName());
+						equi = true;
+//						} else {
+//							equi = false;
+//							System.out
+//									.printf("Equivalence Check: Unequivalent connection found for port: %-7s Instances: %s<%s> != %s<%s> \n",
+//											name, comp.getInstanceName(), comp.getLibAbsRef().getInstanceName(), this.getInstanceName(),
+//											this.getLibAbsRef().getInstanceName());
+//						}
+					}
+
+					if (!equi) {
+//						System.out.println("CHECK: "+ name  + " " + pname + " " +
+//								object.getRefPort()  + " " + obj.getRefPort()  + " " +
+//								object.getRefComp().getInstanceName()  + " " + obj.getRefComp().getInstanceName());
+						System.out.println("Equivalence Check: Component mapping is not Equivalent: " + this.getInstanceName() + "!="
+								+ comp.getInstanceName());
+						System.out.println("Equivalence Check: Mismatch was found with:" + "No equivalent port connection for," +
+								this.getInstanceName() + " Port-" + pname);
+						return equi;
+					}
+				
+				}
+			}
+			System.out.println("Equivalence found between :" + this.getInstanceName() + " and " + comp.getInstanceName());
+			return true;
+		}
+
+		if (!equi) {
+			System.out.println("Equivalence Check: Component mapping is not Equivalent: " + this.getInstanceName() + "!="
+					+ comp.getInstanceName());
+			System.out.println("Equivalence Check: Mismatch was found with:" + reason);
+		} else {
+			System.out.println("Equivalence Check: Component mapping is Equivalent: " + this.getInstanceName() + "=="
+					+ comp.getInstanceName());
+		}
+		return equi;
+	} // End Method - IsEquivalent();
+
+} // End Class

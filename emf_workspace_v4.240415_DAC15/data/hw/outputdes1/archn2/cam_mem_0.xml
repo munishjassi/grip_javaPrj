@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5">
+  <spirit:vendor>ARM</spirit:vendor>
+  <spirit:library>ip</spirit:library>
+  <spirit:name>cam_mem_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>S_AXI_ACLK</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>clk100</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_SIOC</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_SIOD</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>inout</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_RESET</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_PWDN</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_VSYNC</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_HREF</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_PCLK</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_XCLK</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>OV7670_D</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>7</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>config_finished</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>btn</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vsync_negedge</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>href_negedge</spirit:name>
+        <spirit:wire spirit:allLogicalDirectionsAllowed="false">
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left>0</spirit:left>
+            <spirit:right>0</spirit:right>
+          </spirit:vector>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>INSTANCE</spirit:name>
+      <spirit:value>cam_mem_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HW_VER</spirit:name>
+      <spirit:value>1.00.a</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_MEM0_BASEADDR</spirit:name>
+      <spirit:value>0x43010000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_MEM0_HIGHADDR</spirit:name>
+      <spirit:value>0x43010fff</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_MEM1_BASEADDR</spirit:name>
+      <spirit:value>0x43011000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_MEM1_HIGHADDR</spirit:name>
+      <spirit:value>0x43011fff</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+</spirit:component>

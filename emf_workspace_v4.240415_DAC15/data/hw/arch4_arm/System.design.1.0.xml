@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus210:26:20 25.06.2014-->
+<spirit:design xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>ARM</spirit:vendor>
+	<spirit:library>design</spirit:library>
+	<spirit:name>System.design</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:componentInstances>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_i2s_adi_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_i2s_adi" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="210"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXIS_S2MM">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_dma_i2s</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_dma" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="60"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXI_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_S2MM">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_SG">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_S2MM">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_LITE">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_vdma_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_vdma" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="300"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXIS_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_MM2S">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_S2MM">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_S2MM">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_LITE">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_hdmi_tx_16b_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_hdmi_tx_16b" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="450"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXIS_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_dma_spd</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_dma" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="540"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXI_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_S2MM">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_SG">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_S2MM">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_LITE">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_spdif_tx</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_spdif_tx" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="690"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_MM2S">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_iic_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_iic" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="780"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_interconnect_1</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="bus" spirit:name="AXILITEBUS" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="390" y="330"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="axil_m0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_m1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s0">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s1">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s10">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s11">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s2">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s3">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s4">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s5">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s6">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s7">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s8">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s9">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_interconnect_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="bus" spirit:name="AXIBUS" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="390" y="60"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="axi_m0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m10">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m11">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m2">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m3">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m4">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m5">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m6">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m7">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m8">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m9">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s0">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s1">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_interconnect_2</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="bus" spirit:name="AXIBUS" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="390" y="600"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="axi_m0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m10">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m11">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m2">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m3">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m4">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m5">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m6">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m7">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m8">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m9">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s0">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s1">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>processing_system7_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="processing_system7" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="60"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXI_GP0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_GP1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP0">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP1">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP2">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP3">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>util_vector_logic_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="util_vector_logic" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="210"/>
+				<kactus2:portPositions/>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>util_i2c_mixer_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="util_i2c_mixer_0" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="210"/>
+				<kactus2:portPositions/>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>camera_interface_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="cam_interface" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="300"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_clkgen_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="axi_clkgen" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="390"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>clock_generator_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="clock_generator" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="480"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+	</spirit:componentInstances>
+	<spirit:interconnections>
+		<spirit:interconnection>
+			<spirit:name>clkgen_0_S_AXI_to_axi_1_axil_s4</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="clock_generator_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s4"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_clkgen_S_AXI_to_axi_1_axil_s2</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_clkgen_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s2"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>camera_interface_0_S_AXI_to_axi_1_axil_s10</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="camera_interface_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s10"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>ps7_system_0_M_AXI_GP0_to_axi_1_axil_m0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="processing_system7_0" spirit:busRef="M_AXI_GP0"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_m0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>ps7_system_0_S_AXI_HP0_to_axi_0_axi_s0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="processing_system7_0" spirit:busRef="S_AXI_HP0"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_0" spirit:busRef="axi_s0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>ps7_system_0_S_AXI_HP1_to_axi_2_axi_s0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="processing_system7_0" spirit:busRef="S_AXI_HP1"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_2" spirit:busRef="axi_s0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_i2s_S_AXI_LITE_to_axi_1_axil_s0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_i2s" spirit:busRef="S_AXI_LITE"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_i2s_M_AXI_MM2S_to_axi_0_axi_m0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_i2s" spirit:busRef="M_AXI_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_0" spirit:busRef="axi_m0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_i2s_adi_0_S_AXI_to_axi_1_axil_s1</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_i2s_adi_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s1"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_i2s_adi_0_M_AXIS_S2MM_to_axi_dma_i2s_S_AXIS_S2MM</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_i2s_adi_0" spirit:busRef="M_AXIS_S2MM"/>
+			<spirit:activeInterface spirit:componentRef="axi_dma_i2s" spirit:busRef="S_AXIS_S2MM"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_vdma_0_S_AXI_LITE_to_axi_1_axil_s11</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_vdma_0" spirit:busRef="S_AXI_LITE"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s11"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_vdma_0_M_AXI_MM2S_to_axi_2_axi_m1</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_vdma_0" spirit:busRef="M_AXI_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_2" spirit:busRef="axi_m1"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_vdma_0_M_AXIS_MM2S_to_axi_hdmi_tx_16b_0_M_AXIS_MM2S</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_vdma_0" spirit:busRef="M_AXIS_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_hdmi_tx_16b_0" spirit:busRef="M_AXIS_MM2S"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_hdmi_tx_16b_0_S_AXI_to_axi_1_axil_s3</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_hdmi_tx_16b_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s3"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_spd_S_AXI_LITE_to_axi_1_axil_s5</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_spd" spirit:busRef="S_AXI_LITE"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s5"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_spd_M_AXI_MM2S_to_axi_0_axi_m5</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_spd" spirit:busRef="M_AXI_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_0" spirit:busRef="axi_m5"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_spdif_tx_S_AXI_to_axi_1_axil_s7</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_spdif_tx" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s7"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_iic_0_S_AXI_to_axi_1_axil_s9</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_iic_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_interconnect_1" spirit:busRef="axil_s9"/>
+		</spirit:interconnection>
+	</spirit:interconnections>
+	<spirit:adHocConnections>
+		<spirit:adHocConnection>
+			<spirit:name>util_i2c_mixer_0_downstream_sda</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="util_i2c_mixer_0_downstream_sda_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="downstream_sda" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_iic_0_Sda_O</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="Sda_O" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="upstream_sda_I" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_href_negedge</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="href_negedge" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_dma_i2s_mm2s_introut</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_dma_i2s" spirit:portRef="mm2s_introut" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_CKE</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_CKE" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_CKE" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>util_i2c_mixer_0_downstream_scl</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="util_i2c_mixer_0_downstream_scl_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="downstream_scl" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>util_i2c_mixer_0_upstream_sda_O</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="Sda_I" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="upstream_sda_O" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_D</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_D_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_D" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_iic_0_Sda_T</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="Sda_T" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="upstream_sda_T" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_i2s_adi_0_SDATA_I</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="axi_i2s_adi_0_SDATA_I_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="SDATA_I" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_vsync_negedge</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="vsync_negedge" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_href_posedge</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="href_posedge" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_RAS_n</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_RAS_n" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_RAS_n" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_DQS_n</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_DQS_n" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_DQS_n" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_VRN</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_VRN" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_VRN" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_i2s_adi_0_SDATA_O</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="axi_i2s_adi_0_SDATA_O_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="SDATA_O" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>net_gnd</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="clock_generator_0" spirit:portRef="RST" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_VRP</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_VRP" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_VRP" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_Clk</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_Clk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_Clk" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_vdma_0_mm2s_introut</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="mm2s_introut" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_Addr</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_Addr" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_Addr" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_HREF</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_HREF_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_HREF" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>util_vector_logic_0_Res</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="USB0_VBUS_PWRFAULT" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_vector_logic_0" spirit:portRef="Res" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_FCLK_RESET0_N</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_RESET0_N" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="INTERCONNECT_ARESETN" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="INTERCONNECT_ARESETN" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_DRSTB</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_DRSTB" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_DRSTB" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_DQS</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_DQS" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_DQS" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_i2s_adi_0_LRCLK_O</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="axi_i2s_adi_0_LRCLK_O_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="LRCLK_O" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_hdmi_tx_16b_0_hdmi_hsync</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="hdmi_hsync" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="hdmi_hsync" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_CAS_n</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_CAS_n" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_CAS_n" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_hdmi_tx_16b_0_hdmi_data_e</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="hdmi_data_e" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="hdmi_data_e" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_vdma_0_mm2s_buffer_almost_empty</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="mm2s_buffer_almost_empty" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="vdma_almost_empty" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>hdmi_int</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="hdmi_int" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_vdma_0_mm2s_buffer_empty</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="mm2s_buffer_empty" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="vdma_empty" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_WEB</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_WEB_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_WEB" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_BankAddr</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_BankAddr" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_BankAddr" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_ODT</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_ODT" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_ODT" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_DM</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_DM" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_DM" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_PCLK</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_PCLK_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_PCLK" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_MIO</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_MIO" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="MIO" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_iic_0_Scl_O</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="Scl_O" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="upstream_scl_I" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_hdmi_tx_16b_0_vdma_fs</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="mm2s_fsync" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="vdma_fs" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_DQ</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_DQ" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_DQ" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>util_i2c_mixer_0_upstream_scl_O</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="Scl_I" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="upstream_scl_O" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_SIOC</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_SIOC_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_SIOC" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_FCLK_RESET1_N</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_RESET1_N" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_interconnect_2" spirit:portRef="INTERCONNECT_ARESETN" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_Clk_n</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_Clk_n" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_Clk_n" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_SIOD</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_SIOD_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_SIOD" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_vdma_0_mm2s_fsync_out</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="mm2s_fsync_out" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="vdma_fs_ret" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_hdmi_tx_16b_0_hdmi_clk</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="hdmi_clk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="hdmi_clk" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_hdmi_tx_16b_0_hdmi_vsync</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="hdmi_vsync" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="hdmi_vsync" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_iic_0_Scl_T</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="Scl_T" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_i2c_mixer_0" spirit:portRef="upstream_scl_T" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>net_otg_oc</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="otg_vbusoc" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="util_vector_logic_0" spirit:portRef="Op1" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_XCLK</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_XCLK_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_XCLK" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_PS_CLK</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_PS_CLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="PS_CLK" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>net_vcc</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="otg_reset" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_i2s_adi_0_BCLK_O</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="axi_i2s_adi_0_BCLK_O_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="BCLK_O" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_PS_SRSTB</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_PS_SRSTB" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="PS_SRSTB" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_config_finished</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_config_finished_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="config_finished" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_FCLK_CLK0</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK0" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="M_AXI_GP0_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_HP2_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="s_axi_lite_aclk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="INTERCONNECT_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="S_AXI_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="INTERCONNECT_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="S_AXI_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_clkgen_0" spirit:portRef="S_AXI_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="S_AXI_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="M_AXIS_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_dma_i2s" spirit:portRef="s_axi_lite_aclk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_dma_i2s" spirit:portRef="m_axi_mm2s_aclk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_dma_i2s" spirit:portRef="m_axi_sg_aclk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_dma_i2s" spirit:portRef="m_axi_s2mm_aclk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="S_AXI_ACLK" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_hdmi_tx_16b_0_hdmi_data</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="hdmi_data" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="hdmi_data" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>net_util_vector_logic_0_Op1_pin</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="util_vector_logic_0_Op1_pin" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_FCLK_CLK1</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK1" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="S_AXI_HP0_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="m_axis_mm2s_aclk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_vdma_0" spirit:portRef="m_axi_mm2s_aclk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_interconnect_2" spirit:portRef="INTERCONNECT_ACLK" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="vdma_clk" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_PWDN</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_PWDN_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_PWDN" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_FCLK_CLK2</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="FCLK_CLK2" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_clkgen_0" spirit:portRef="ref_clk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="clock_generator_0" spirit:portRef="CLKIN" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_DDR_CS_n</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_DDR_CS_n" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="DDR_CS_n" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_RESET</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_RESET_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_RESET" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_clk100</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_clk100_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="clk100" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_hdmi_tx_16b_0_hdmi_ref_clk</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="axi_hdmi_tx_16b_0" spirit:portRef="hdmi_ref_clk" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_clkgen_0" spirit:portRef="clk" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>processing_system7_0_PS_PORB</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="processing_system7_0_PS_PORB" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="PS_PORB" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_btn</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_btn_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="btn" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_dma_i2s_s2mm_introut</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_dma_i2s" spirit:portRef="s2mm_introut" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>clock_generator_0_CLKOUT0</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="axi_i2s_adi_0_MCLK_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="clock_generator_0" spirit:portRef="CLKOUT0" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_i2s_adi_0" spirit:portRef="DATA_CLK_I" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>cam_interface_0_OV7670_VSYNC</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:externalPortReference spirit:portRef="cam_interface_0_OV7670_VSYNC_pin" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="cam_interface_0" spirit:portRef="OV7670_VSYNC" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+		<spirit:adHocConnection>
+			<spirit:name>axi_iic_0_IIC2INTC_Irpt</spirit:name>
+ 			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P" spirit:left="0" spirit:right="0"/>
+			<spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="IIC2INTC_Irpt" spirit:left="0" spirit:right="0"/>
+		</spirit:adHocConnection>
+	</spirit:adHocConnections>
+	<spirit:vendorExtensions>
+		<kactus2:columnLayout>
+			<kactus2:column name="Components" contentType="2" allowedItems="2"/>
+			<kactus2:column name="Buses" contentType="2" allowedItems="2"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="clkgen_0_S_AXI_to_axi_1_axil_s4" kactus2:offPage="false">
+				<kactus2:position x="210" y="520"/>
+				<kactus2:position x="300" y="520"/>
+				<kactus2:position x="300" y="490"/>
+				<kactus2:position x="310" y="490"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_clkgen_S_AXI_to_axi_1_axil_s2" kactus2:offPage="false">
+				<kactus2:position x="210" y="430"/>
+				<kactus2:position x="300" y="430"/>
+				<kactus2:position x="300" y="460"/>
+				<kactus2:position x="310" y="460"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="camera_interface_0_S_AXI_to_axi_1_axil_s10" kactus2:offPage="false">
+				<kactus2:position x="210" y="340"/>
+				<kactus2:position x="240" y="340"/>
+				<kactus2:position x="240" y="430"/>
+				<kactus2:position x="310" y="430"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ps7_system_0_M_AXI_GP0_to_axi_1_axil_m0" kactus2:offPage="false">
+				<kactus2:position x="50" y="100"/>
+				<kactus2:position x="20" y="100"/>
+				<kactus2:position x="20" y="370"/>
+				<kactus2:position x="310" y="370"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ps7_system_0_S_AXI_HP0_to_axi_0_axi_s0" kactus2:offPage="false">
+				<kactus2:position x="50" y="130"/>
+				<kactus2:position x="40" y="130"/>
+				<kactus2:position x="40" y="280"/>
+				<kactus2:position x="310" y="280"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ps7_system_0_S_AXI_HP1_to_axi_2_axi_s0" kactus2:offPage="false">
+				<kactus2:position x="210" y="130"/>
+				<kactus2:position x="260" y="130"/>
+				<kactus2:position x="260" y="820"/>
+				<kactus2:position x="310" y="820"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_i2s_S_AXI_LITE_to_axi_1_axil_s0" kactus2:offPage="false">
+				<kactus2:position x="570" y="160"/>
+				<kactus2:position x="300" y="160"/>
+				<kactus2:position x="300" y="400"/>
+				<kactus2:position x="310" y="400"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_i2s_M_AXI_MM2S_to_axi_0_axi_m0" kactus2:offPage="false">
+				<kactus2:position x="570" y="100"/>
+				<kactus2:position x="550" y="100"/>
+				<kactus2:position x="550" y="110"/>
+				<kactus2:position x="300" y="110"/>
+				<kactus2:position x="300" y="100"/>
+				<kactus2:position x="310" y="100"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_i2s_adi_0_S_AXI_to_axi_1_axil_s1" kactus2:offPage="false">
+				<kactus2:position x="730" y="250"/>
+				<kactus2:position x="780" y="250"/>
+				<kactus2:position x="780" y="400"/>
+				<kactus2:position x="470" y="400"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_i2s_adi_0_M_AXIS_S2MM_to_axi_dma_i2s_S_AXIS_S2MM" kactus2:offPage="false">
+				<kactus2:position x="570" y="250"/>
+				<kactus2:position x="560" y="250"/>
+				<kactus2:position x="560" y="200"/>
+				<kactus2:position x="740" y="200"/>
+				<kactus2:position x="740" y="130"/>
+				<kactus2:position x="730" y="130"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_vdma_0_S_AXI_LITE_to_axi_1_axil_s11" kactus2:offPage="false">
+				<kactus2:position x="570" y="400"/>
+				<kactus2:position x="520" y="400"/>
+				<kactus2:position x="520" y="430"/>
+				<kactus2:position x="470" y="430"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_vdma_0_M_AXI_MM2S_to_axi_2_axi_m1" kactus2:offPage="false">
+				<kactus2:position x="730" y="340"/>
+				<kactus2:position x="740" y="340"/>
+				<kactus2:position x="740" y="640"/>
+				<kactus2:position x="470" y="640"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_vdma_0_M_AXIS_MM2S_to_axi_hdmi_tx_16b_0_M_AXIS_MM2S" kactus2:offPage="false">
+				<kactus2:position x="570" y="340"/>
+				<kactus2:position x="560" y="340"/>
+				<kactus2:position x="560" y="490"/>
+				<kactus2:position x="570" y="490"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_hdmi_tx_16b_0_S_AXI_to_axi_1_axil_s3" kactus2:offPage="false">
+				<kactus2:position x="730" y="490"/>
+				<kactus2:position x="740" y="490"/>
+				<kactus2:position x="740" y="460"/>
+				<kactus2:position x="470" y="460"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_spd_S_AXI_LITE_to_axi_1_axil_s5" kactus2:offPage="false">
+				<kactus2:position x="570" y="640"/>
+				<kactus2:position x="500" y="640"/>
+				<kactus2:position x="500" y="490"/>
+				<kactus2:position x="470" y="490"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_spd_M_AXI_MM2S_to_axi_0_axi_m5" kactus2:offPage="false">
+				<kactus2:position x="570" y="580"/>
+				<kactus2:position x="550" y="580"/>
+				<kactus2:position x="550" y="190"/>
+				<kactus2:position x="470" y="190"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_spdif_tx_S_AXI_to_axi_1_axil_s7" kactus2:offPage="false">
+				<kactus2:position x="570" y="730"/>
+				<kactus2:position x="520" y="730"/>
+				<kactus2:position x="520" y="520"/>
+				<kactus2:position x="470" y="520"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_iic_0_S_AXI_to_axi_1_axil_s9" kactus2:offPage="false">
+				<kactus2:position x="570" y="820"/>
+				<kactus2:position x="540" y="820"/>
+				<kactus2:position x="540" y="550"/>
+				<kactus2:position x="470" y="550"/>
+			</kactus2:route>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities/>
+	</spirit:vendorExtensions>
+</spirit:design>

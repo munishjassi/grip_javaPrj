@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by Kactus214:59:46 18.06.2014-->
+<spirit:design xmlns:kactus2="http://funbase.cs.tut.fi/" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.5/index.xsd">
+	<spirit:vendor>ARM</spirit:vendor>
+	<spirit:library>design</spirit:library>
+	<spirit:name>System.design</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:componentInstances>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_i2s_adi_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="AXI_I2S_ADI" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="210"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXIS_S2MM">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_dma_i2s</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="AXI_DMA" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="60"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXI_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_S2MM">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_SG">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_S2MM">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_LITE">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_vdma_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="VDMA" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="300"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXIS_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_MM2S">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_S2MM">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_S2MM">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_LITE">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_hdmi_tx_16b_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="HDMI" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="450"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXIS_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_dma_spd</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="AXI_DMA" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="540"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXI_MM2S">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_S2MM">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_SG">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_S2MM">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_LITE">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_spdif_tx</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="AXI_SPDIF_TX" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="690"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXIS_MM2S">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_iic_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="AXI_IIC" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="650" y="780"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_1</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="bus" spirit:name="AXILITEBUS" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="390" y="330"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="axil_m0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_m1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s0">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s1">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s10">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s11">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s2">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s3">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s4">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s5">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s6">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s7">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s8">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axil_s9">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="bus" spirit:name="AXIBUS" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="390" y="60"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="axi_m0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m10">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m11">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m2">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m3">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m4">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m5">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m6">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m7">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m8">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m9">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s0">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s1">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_2</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="bus" spirit:name="AXIBUS" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="390" y="600"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="axi_m0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m10">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m11">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m2">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m3">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m4">
+						<kactus2:position x="-80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m5">
+						<kactus2:position x="80" y="130"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m6">
+						<kactus2:position x="-80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m7">
+						<kactus2:position x="80" y="160"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m8">
+						<kactus2:position x="-80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_m9">
+						<kactus2:position x="80" y="190"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s0">
+						<kactus2:position x="-80" y="220"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="axi_s1">
+						<kactus2:position x="80" y="220"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>ps7_system_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="CPU" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="60"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="M_AXI_GP0">
+						<kactus2:position x="-80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="M_AXI_GP1">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP0">
+						<kactus2:position x="-80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP1">
+						<kactus2:position x="80" y="70"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP2">
+						<kactus2:position x="-80" y="100"/>
+					</kactus2:portPosition>
+					<kactus2:portPosition kactus2:busRef="S_AXI_HP3">
+						<kactus2:position x="80" y="100"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>util_vector_logic</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="UTIL_VECTOR_LOGIC" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="210"/>
+				<kactus2:portPositions/>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>camera_interface_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="CAM_INTERFACE" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="300"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>axi_clkgen</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="AXI_CLKGEN" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="390"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+		<spirit:componentInstance>
+			<spirit:instanceName>clkgen_0</spirit:instanceName>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:componentRef spirit:vendor="ARM" spirit:library="ip" spirit:name="CLKGEN" spirit:version="1.0"/>
+			<spirit:configurableElementValues/>
+			<spirit:vendorExtensions>
+				<kactus2:position x="130" y="480"/>
+				<kactus2:portPositions>
+					<kactus2:portPosition kactus2:busRef="S_AXI">
+						<kactus2:position x="80" y="40"/>
+					</kactus2:portPosition>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities/>
+			</spirit:vendorExtensions>
+		</spirit:componentInstance>
+	</spirit:componentInstances>
+	<spirit:interconnections>
+		<spirit:interconnection>
+			<spirit:name>clkgen_0_S_AXI_to_axi_1_axil_s4</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="clkgen_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s4"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_clkgen_S_AXI_to_axi_1_axil_s2</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_clkgen" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s2"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>camera_interface_0_S_AXI_to_axi_1_axil_s10</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="camera_interface_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s10"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>ps7_system_0_M_AXI_GP0_to_axi_1_axil_m0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="ps7_system_0" spirit:busRef="M_AXI_GP0"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_m0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>ps7_system_0_S_AXI_HP0_to_axi_0_axi_s0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="ps7_system_0" spirit:busRef="S_AXI_HP0"/>
+			<spirit:activeInterface spirit:componentRef="axi_0" spirit:busRef="axi_s0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>ps7_system_0_S_AXI_HP1_to_axi_2_axi_s0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="ps7_system_0" spirit:busRef="S_AXI_HP1"/>
+			<spirit:activeInterface spirit:componentRef="axi_2" spirit:busRef="axi_s0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_i2s_S_AXI_LITE_to_axi_1_axil_s0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_i2s" spirit:busRef="S_AXI_LITE"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_i2s_M_AXI_MM2S_to_axi_0_axi_m0</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_i2s" spirit:busRef="M_AXI_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_0" spirit:busRef="axi_m0"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_i2s_adi_0_S_AXI_to_axi_1_axil_s1</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_i2s_adi_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s1"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_i2s_adi_0_M_AXIS_S2MM_to_axi_dma_i2s_S_AXIS_S2MM</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_i2s_adi_0" spirit:busRef="M_AXIS_S2MM"/>
+			<spirit:activeInterface spirit:componentRef="axi_dma_i2s" spirit:busRef="S_AXIS_S2MM"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_vdma_0_S_AXI_LITE_to_axi_1_axil_s11</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_vdma_0" spirit:busRef="S_AXI_LITE"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s11"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_vdma_0_M_AXI_MM2S_to_axi_2_axi_m1</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_vdma_0" spirit:busRef="M_AXI_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_2" spirit:busRef="axi_m1"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_vdma_0_M_AXIS_MM2S_to_axi_hdmi_tx_16b_0_M_AXIS_MM2S</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_vdma_0" spirit:busRef="M_AXIS_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_hdmi_tx_16b_0" spirit:busRef="M_AXIS_MM2S"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_hdmi_tx_16b_0_S_AXI_to_axi_1_axil_s3</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_hdmi_tx_16b_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s3"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_spd_S_AXI_LITE_to_axi_1_axil_s5</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_spd" spirit:busRef="S_AXI_LITE"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s5"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_dma_spd_M_AXI_MM2S_to_axi_0_axi_m5</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_dma_spd" spirit:busRef="M_AXI_MM2S"/>
+			<spirit:activeInterface spirit:componentRef="axi_0" spirit:busRef="axi_m5"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_spdif_tx_S_AXI_to_axi_1_axil_s7</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_spdif_tx" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s7"/>
+		</spirit:interconnection>
+		<spirit:interconnection>
+			<spirit:name>axi_iic_0_S_AXI_to_axi_1_axil_s9</spirit:name>
+			<spirit:displayName></spirit:displayName>
+			<spirit:description></spirit:description>
+			<spirit:activeInterface spirit:componentRef="axi_iic_0" spirit:busRef="S_AXI"/>
+			<spirit:activeInterface spirit:componentRef="axi_1" spirit:busRef="axil_s9"/>
+		</spirit:interconnection>
+	</spirit:interconnections>
+	<spirit:vendorExtensions>
+		<kactus2:columnLayout>
+			<kactus2:column name="Components" contentType="2" allowedItems="2"/>
+			<kactus2:column name="Buses" contentType="2" allowedItems="2"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="clkgen_0_S_AXI_to_axi_1_axil_s4" kactus2:offPage="false">
+				<kactus2:position x="210" y="520"/>
+				<kactus2:position x="300" y="520"/>
+				<kactus2:position x="300" y="490"/>
+				<kactus2:position x="310" y="490"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_clkgen_S_AXI_to_axi_1_axil_s2" kactus2:offPage="false">
+				<kactus2:position x="210" y="430"/>
+				<kactus2:position x="300" y="430"/>
+				<kactus2:position x="300" y="460"/>
+				<kactus2:position x="310" y="460"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="camera_interface_0_S_AXI_to_axi_1_axil_s10" kactus2:offPage="false">
+				<kactus2:position x="210" y="340"/>
+				<kactus2:position x="240" y="340"/>
+				<kactus2:position x="240" y="430"/>
+				<kactus2:position x="310" y="430"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ps7_system_0_M_AXI_GP0_to_axi_1_axil_m0" kactus2:offPage="false">
+				<kactus2:position x="50" y="100"/>
+				<kactus2:position x="20" y="100"/>
+				<kactus2:position x="20" y="370"/>
+				<kactus2:position x="310" y="370"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ps7_system_0_S_AXI_HP0_to_axi_0_axi_s0" kactus2:offPage="false">
+				<kactus2:position x="50" y="130"/>
+				<kactus2:position x="40" y="130"/>
+				<kactus2:position x="40" y="280"/>
+				<kactus2:position x="310" y="280"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ps7_system_0_S_AXI_HP1_to_axi_2_axi_s0" kactus2:offPage="false">
+				<kactus2:position x="210" y="130"/>
+				<kactus2:position x="260" y="130"/>
+				<kactus2:position x="260" y="820"/>
+				<kactus2:position x="310" y="820"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_i2s_S_AXI_LITE_to_axi_1_axil_s0" kactus2:offPage="false">
+				<kactus2:position x="570" y="160"/>
+				<kactus2:position x="300" y="160"/>
+				<kactus2:position x="300" y="400"/>
+				<kactus2:position x="310" y="400"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_i2s_M_AXI_MM2S_to_axi_0_axi_m0" kactus2:offPage="false">
+				<kactus2:position x="570" y="100"/>
+				<kactus2:position x="550" y="100"/>
+				<kactus2:position x="550" y="110"/>
+				<kactus2:position x="300" y="110"/>
+				<kactus2:position x="300" y="100"/>
+				<kactus2:position x="310" y="100"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_i2s_adi_0_S_AXI_to_axi_1_axil_s1" kactus2:offPage="false">
+				<kactus2:position x="730" y="250"/>
+				<kactus2:position x="780" y="250"/>
+				<kactus2:position x="780" y="400"/>
+				<kactus2:position x="470" y="400"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_i2s_adi_0_M_AXIS_S2MM_to_axi_dma_i2s_S_AXIS_S2MM" kactus2:offPage="false">
+				<kactus2:position x="570" y="250"/>
+				<kactus2:position x="560" y="250"/>
+				<kactus2:position x="560" y="200"/>
+				<kactus2:position x="740" y="200"/>
+				<kactus2:position x="740" y="130"/>
+				<kactus2:position x="730" y="130"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_vdma_0_S_AXI_LITE_to_axi_1_axil_s11" kactus2:offPage="false">
+				<kactus2:position x="570" y="400"/>
+				<kactus2:position x="520" y="400"/>
+				<kactus2:position x="520" y="430"/>
+				<kactus2:position x="470" y="430"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_vdma_0_M_AXI_MM2S_to_axi_2_axi_m1" kactus2:offPage="false">
+				<kactus2:position x="730" y="340"/>
+				<kactus2:position x="740" y="340"/>
+				<kactus2:position x="740" y="640"/>
+				<kactus2:position x="470" y="640"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_vdma_0_M_AXIS_MM2S_to_axi_hdmi_tx_16b_0_M_AXIS_MM2S" kactus2:offPage="false">
+				<kactus2:position x="570" y="340"/>
+				<kactus2:position x="560" y="340"/>
+				<kactus2:position x="560" y="490"/>
+				<kactus2:position x="570" y="490"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_hdmi_tx_16b_0_S_AXI_to_axi_1_axil_s3" kactus2:offPage="false">
+				<kactus2:position x="730" y="490"/>
+				<kactus2:position x="740" y="490"/>
+				<kactus2:position x="740" y="460"/>
+				<kactus2:position x="470" y="460"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_spd_S_AXI_LITE_to_axi_1_axil_s5" kactus2:offPage="false">
+				<kactus2:position x="570" y="640"/>
+				<kactus2:position x="500" y="640"/>
+				<kactus2:position x="500" y="490"/>
+				<kactus2:position x="470" y="490"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_dma_spd_M_AXI_MM2S_to_axi_0_axi_m5" kactus2:offPage="false">
+				<kactus2:position x="570" y="580"/>
+				<kactus2:position x="550" y="580"/>
+				<kactus2:position x="550" y="190"/>
+				<kactus2:position x="470" y="190"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_spdif_tx_S_AXI_to_axi_1_axil_s7" kactus2:offPage="false">
+				<kactus2:position x="570" y="730"/>
+				<kactus2:position x="520" y="730"/>
+				<kactus2:position x="520" y="520"/>
+				<kactus2:position x="470" y="520"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_iic_0_S_AXI_to_axi_1_axil_s9" kactus2:offPage="false">
+				<kactus2:position x="570" y="820"/>
+				<kactus2:position x="540" y="820"/>
+				<kactus2:position x="540" y="550"/>
+				<kactus2:position x="470" y="550"/>
+			</kactus2:route>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities/>
+	</spirit:vendorExtensions>
+</spirit:design>

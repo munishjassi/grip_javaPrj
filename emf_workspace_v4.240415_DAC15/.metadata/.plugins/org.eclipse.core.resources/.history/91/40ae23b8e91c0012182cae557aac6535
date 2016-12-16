@@ -1,0 +1,29 @@
+package generativeGrammar.designAbstractionGraph;
+
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.spiritconsortium.xml.schema.spirit.spirit.Interface;
+
+
+public interface BusAbstraction extends EObject {
+
+
+	
+	void addMirMasterPort(Interface port) ;
+	
+	void addMirSlavePort(Interface port) ;
+	
+	void setInstanceName(String name);	
+	
+	EList getMirMasterPorts();
+	
+	EList getMirSlavePorts();
+	
+	EList getAllPorts();
+	
+	String getInstanceName();
+	
+	void removeConnection(String portName);
+	
+	
+}

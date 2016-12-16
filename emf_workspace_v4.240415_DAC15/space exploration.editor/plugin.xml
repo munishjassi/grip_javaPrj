@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.spiritconsortium.xml.schema.spirit.spirit.presentation._1ModelWizardID"
+            name="%_UI__1ModelWizard_label"
+            class="org.spiritconsortium.xml.schema.spirit.spirit.presentation._1ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_1ModelFile.gif">
+         <description>%_UI__1ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="org.spiritconsortium.xml.schema.spirit.spirit.presentation._1EditorID"
+            name="%_UI__1Editor_label"
+            icon="icons/full/obj16/_1ModelFile.gif"
+            extensions="_1"
+            class="org.spiritconsortium.xml.schema.spirit.spirit.presentation._1Editor"
+            contributorClass="org.spiritconsortium.xml.schema.spirit.spirit.presentation._1ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

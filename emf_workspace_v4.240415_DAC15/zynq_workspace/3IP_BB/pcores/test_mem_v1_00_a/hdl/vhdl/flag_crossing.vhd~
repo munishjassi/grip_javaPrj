@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity  Flag_CrossDomain is
+	PORT (
+	clkA 		: in std_logic;
+	FlagIn_clkA	: in std_logic; 
+	clkB		: in std_logic;
+	FlagOut_clkB	: in std_logic
+	)
+end Flag_CrossDomain;
+
+architecture behav of Flag_CrossDomain is
+
+signal FlagToggle_clkA 	: in std_logic;
+signal SyncA_clkB 	: in std_logic_vector(2 downto 0);
+begin
+--this changes level when the FlagIn_clkA is seen in clkA
+	process(clkA)
+	begin
+		if rising_edge(clkA) then
+			FlagToggle_clkA <= FlagToggle_clkA xor FlagIn_clkA;
+		end if;
+	end process;
+
+--which can then be sync-ed to clkB
+	process(clkB)
+	begin
+		if rising_edge(clkB) then
+			SyncA_clkB <= SyncA_clkB(1 downto 0) & FlagToggle_clkA;
+		end if;
+	end process;
+--and recreate the flag in clkB
+FlagOut_clkB <= SyncA_clkB(2) xor SyncA_clkB(1);
+
+end behav;

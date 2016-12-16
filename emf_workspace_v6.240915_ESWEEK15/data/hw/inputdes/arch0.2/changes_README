@@ -1,0 +1,19 @@
+processing_system7_0.1.0.xml
+
+	<spirit:port>
+		<spirit:name>USB0_VBUS_PWRFAULT</spirit:name>
+		<spirit:wire spirit:allLogicalDirectionsAllowed="false">
+			<spirit:direction>inout</spirit:direction>
+			<spirit:wireTypeDefs>
+				<spirit:wireTypeDef>
+				<spirit:typeName spirit:constrained="false">std_logic</spirit:typeName>
+				<spirit:typeDefinition>IEEE.std_logic_1164.all</spirit:typeDefinition>
+				<spirit:viewNameRef>flat</spirit:viewNameRef>
+				<spirit:viewNameRef>hierarchical</spirit:viewNameRef>
+			</spirit:wireTypeDef>
+		</spirit:wireTypeDefs>
+	</spirit:wire>
+	<spirit:vendorExtensions/>
+	</spirit:port>
+
+

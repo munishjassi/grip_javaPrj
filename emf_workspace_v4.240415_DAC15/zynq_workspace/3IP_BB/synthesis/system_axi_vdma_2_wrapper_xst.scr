@@ -1,0 +1,14 @@
+set -tmpdir /nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/synthesis/xst_temp_dir/
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc7z020clg484-1
+-top system_axi_vdma_2_wrapper
+-ifmt MIXED
+-ifn system_axi_vdma_2_wrapper_xst.prj
+-ofn ../implementation/system_axi_vdma_2_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"/nfs/tools/xilinx/ise/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/" "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/pcores/" "/nfs/TUEIEDAprojects/SystemDesign/work/ipxact/benjamin-bordes/DSE/3IP_/3IP/cf_lib/edk/pcores/" "/nfs/tools/xilinx/ise/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/nfs/tools/xilinx/ise/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }

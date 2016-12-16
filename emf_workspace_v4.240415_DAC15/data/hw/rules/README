@@ -1,0 +1,6 @@
+rule1:
+	- Adding HA to the system. 
+	- HA is added with vdma_1 attached to new bus axi_interconnect_3
+
+rule2:
+	- Same as rule1, but BUS library for AXILITE and AXIBUS changed to axi_interconnect

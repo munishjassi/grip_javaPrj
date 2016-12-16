@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree:rootNode
+    xmlns:tree="http://www.eclipse.org/emf/example/dom/Tree" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" label="root"
+    references="#root">
+  <tree:childNode label="text" references="#root">text</tree:childNode>
+  <tree:childNode label="comment" references="#root"><!--comment--></tree:childNode>
+  <tree:childNode label="cdata" references="#root"><![CDATA[<cdata>]]></tree:childNode>
+</tree:rootNode>

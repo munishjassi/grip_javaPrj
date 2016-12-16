@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element name="application">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="specifications"/>
+      <xs:element ref="submodules"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+ <xs:element name="specifications" type="appSpecificationsType"/>
+ <xs:element name="submodules" type="submodulesType"/>
+ 
+ <xs:complexType name="appSpecificationsType">
+   <xs:sequence>
+     <xs:element name="applicationname" type="xs:string"/>
+     <xs:element name="cpucycles" type="xs:int"/>
+     <xs:element name="buscycles" type="xs:int"/>
+   </xs:sequence>
+ </xs:complexType>
+
+<xs:complexType name="modSpecificationsType">
+  <xs:sequence>
+    <xs:element name="mapping" type="xs:string"/>
+    <xs:element name="mode" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loopSpecificationsType">
+  <xs:sequence>
+    <xs:element name="loopname" type="xs:string"/>
+    <xs:element name="number" type="xs:string"/>
+    <xs:element name="startsubmodule" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+ <xs:complexType name="submodulesType">
+   <xs:sequence>
+     <xs:element name="submodule" type="submoduleType" maxOccurs="unbounded"/>
+     <xs:element name="loop" type="loopType" maxOccurs="unbounded"/>
+   </xs:sequence>
+ </xs:complexType>
+
+<xs:complexType name="submoduleType">
+  <xs:sequence>
+    <xs:element name="modulename" type="xs:string"/>
+    <xs:element name="specifications" type="modSpecificationsType"/>
+    <xs:element name="hwmappings" type="hwmappings"/>
+  </xs:sequence>
+</xs:complexType>
+
+ <xs:complexType name="loopType">
+   <xs:sequence>
+    <xs:element name="specifications" type="loopSpecificationsType"/>
+   </xs:sequence>
+ </xs:complexType>
+
+<xs:complexType name="hwmappings">
+  <xs:sequence>
+    <xs:element name="hwmapping" type="hwmapping" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="hwmapping">
+  <xs:sequence>
+    <xs:element name="mappingname" type="xs:string"/>
+    <xs:element name="performance" type="performance"/>
+    <xs:element name="description" type="description"/>
+  </xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="performance">
+  <xs:sequence>
+    <xs:element name="cpucycles" type="xs:int"/>
+    <xs:element name="buscycles" type="xs:int"/>
+  </xs:sequence>
+</xs:complexType>
+
+
+<xs:complexType name="description">
+  <xs:sequence>
+    <xs:element name="cdescription" type="xs:string"/>
+    <xs:element name="cppdescription" type="xs:string"/>
+    <xs:element name="asmdescription" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

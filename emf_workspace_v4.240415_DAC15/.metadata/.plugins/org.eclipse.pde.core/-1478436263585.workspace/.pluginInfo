@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="538" localization="plugin" name="%pluginName" project="space exploration" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="539" localization="plugin" name="%pluginName" project="EMFsoftware" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="540" localization="plugin" name="%pluginName" project="space exploration.tests" provider="%providerName">
+		<library name="."/>
+		<library name="Referenced_Libraries"/>
+		<library name="cloning-1.8.1-sources.jar"/>
+		<library name="cloning-1.8.1.jar"/>
+	</bundle>
+</map>
